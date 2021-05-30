@@ -1,6 +1,8 @@
+References:
+https://angular.io/guide/deployment
+
 Run the following commands:
 
-  1. git checkout -b gh-pages
-  2. ng build --output-path docs --base-href=michaelkintscher.github.io
-  3. git commit -m "[message]"
-  4. git push
+  1. ng build --output-path docs --base-href=michaelkintscher.github.io
+  2. git commit -m "[message]"
+  3. git push
