@@ -9,7 +9,10 @@ export class ContentShowcaseComponent implements OnInit {
 
   // Properties
   @Input() title = 'Title';
-  @Input() description = 'A breif description of this showcase!'
+  @Input() description = 'A breif description of this showcase!';
+  @Input() imageSource1 = '';
+  @Input() imageSource2 = '';
+  @Input() imageSource3 = '';
 
   constructor() { }
 

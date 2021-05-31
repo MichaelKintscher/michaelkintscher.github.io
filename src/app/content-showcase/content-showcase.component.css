@@ -12,3 +12,10 @@
 mat-card {
   margin: 20px;
 }
+
+.card-image {
+    min-width: 125px;
+    padding-bottom: 75%;
+    background-position: center center;
+    background-size: cover;
+}

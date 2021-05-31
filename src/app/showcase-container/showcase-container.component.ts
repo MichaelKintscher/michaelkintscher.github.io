@@ -18,6 +18,19 @@ export class ShowcaseContainerComponent implements OnInit {
   showcase3Description = 'My research interests include collaboration software, graphics, and data visualization!';
   showcase4Description = 'Game development is an opportunity for me to build meaingful experiences!';
 
+  imageSource1 = '../../assets/test-image1.jpg';
+  imageSource2 = '../../assets/test-image2.jpg';
+  imageSource3 = '../../assets/test-image3.jpg';
+  imageSource4 = '../../assets/test-image1.jpg';
+  imageSource5 = '../../assets/test-image2.jpg';
+  imageSource6 = '../../assets/test-image3.jpg';
+  imageSource7 = '../../assets/test-image1.jpg';
+  imageSource8 = '../../assets/test-image2.jpg';
+  imageSource9 = '../../assets/test-image3.jpg';
+  imageSource10 = '../../assets/test-image1.jpg';
+  imageSource11 = '../../assets/test-image2.jpg';
+  imageSource12 = '../../assets/test-image3.jpg';
+
   constructor() { }
 
   ngOnInit(): void {
