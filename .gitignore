@@ -43,3 +43,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# GitHub Pages CNAME file
+/docs/CNAME
+docs/CNAME
+docs/CNAME

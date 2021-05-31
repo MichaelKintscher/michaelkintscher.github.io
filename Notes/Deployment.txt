@@ -3,6 +3,6 @@ https://angular.io/guide/deployment
 
 Run the following commands:
 
-  1. ng build --output-path docs --base-href=michaelkintscher.github.io
+  1. ng build --output-path docs
   2. git commit -m "[message]"
   3. git push
