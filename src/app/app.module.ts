@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileSidebarComponent } from './profile-sidebar/profile-sidebar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContentShowcaseComponent } from './content-showcase/content-showcase.component';
+import { ShowcaseContainerComponent } from './showcase-container/showcase-container.component';
 
 // Material Design
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileSidebarComponent
+    ProfileSidebarComponent,
+    ContentShowcaseComponent,
+    ShowcaseContainerComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +27,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatDividerModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

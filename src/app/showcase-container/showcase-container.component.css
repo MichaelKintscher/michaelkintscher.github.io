@@ -1,0 +1,7 @@
+.main-container {
+    display: block;
+}
+
+app-content-showcase {
+    margin: 20px;
+}
