@@ -1,6 +1,6 @@
 <div class="main-container">
-  <app-content-showcase [title]="showcase1Title" [description]="showcase1Description" [imageSource1]="imageSource1" [imageSource2]="imageSource2" [imageSource3]="imageSource3"></app-content-showcase>
-  <app-content-showcase [title]="showcase2Title" [description]="showcase2Description" [imageSource1]="imageSource4" [imageSource2]="imageSource5" [imageSource3]="imageSource6"></app-content-showcase>
-  <app-content-showcase [title]="showcase3Title" [description]="showcase3Description" [imageSource1]="imageSource7" [imageSource2]="imageSource8" [imageSource3]="imageSource9"></app-content-showcase>
-  <app-content-showcase [title]="showcase4Title" [description]="showcase4Description" [imageSource1]="imageSource10" [imageSource2]="imageSource11" [imageSource3]="imageSource12"></app-content-showcase>
+  <app-content-showcase [title]="showcaseData[0].title" [description]="showcaseData[0].description" [imageSources]="showcaseData[0].imageSources"></app-content-showcase>
+  <app-content-showcase [title]="showcaseData[1].title" [description]="showcaseData[1].description" [imageSources]="showcaseData[1].imageSources"></app-content-showcase>
+  <app-content-showcase [title]="showcaseData[2].title" [description]="showcaseData[2].description" [imageSources]="showcaseData[2].imageSources"></app-content-showcase>
+  <app-content-showcase [title]="showcaseData[3].title" [description]="showcaseData[3].description" [imageSources]="showcaseData[3].imageSources"></app-content-showcase>
 </div>

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+// Custom types
+import { ShowcaseSourceInterface } from '../../types/ShowcaseSource.interface';
+
 @Component({
   selector: 'app-showcase-container',
   templateUrl: './showcase-container.component.html',
@@ -8,32 +11,51 @@ import { Component, OnInit } from '@angular/core';
 export class ShowcaseContainerComponent implements OnInit {
 
   // Properties
-  showcase1Title = 'Writing';
-  showcase2Title = 'YouTube';
-  showcase3Title = 'Research';
-  showcase4Title = 'Game Dev';
-
-  showcase1Description = 'I write to share my thoughts and experiences and to tell my story.';
-  showcase2Description = 'Videos are my way of teaching through educational and informative content.';
-  showcase3Description = 'My research interests include collaboration software, graphics, and data visualization!';
-  showcase4Description = 'Game development is an opportunity for me to build meaingful experiences!';
-
-  imageSource1 = '../../assets/test-image1.jpg';
-  imageSource2 = '../../assets/test-image2.jpg';
-  imageSource3 = '../../assets/test-image3.jpg';
-  imageSource4 = '../../assets/test-image1.jpg';
-  imageSource5 = '../../assets/test-image2.jpg';
-  imageSource6 = '../../assets/test-image3.jpg';
-  imageSource7 = '../../assets/test-image1.jpg';
-  imageSource8 = '../../assets/test-image2.jpg';
-  imageSource9 = '../../assets/test-image3.jpg';
-  imageSource10 = '../../assets/test-image1.jpg';
-  imageSource11 = '../../assets/test-image2.jpg';
-  imageSource12 = '../../assets/test-image3.jpg';
+  showcaseData: ShowcaseSourceInterface[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
+
+    // Populate the showcase data.
+    this.showcaseData = [
+      {
+        "title": "Writing",
+        "description": "I write to share my thoughts and experiences and to tell my story.",
+        "imageSources": [
+          '../../assets/test-image1.jpg',
+          '../../assets/test-image2.jpg',
+          '../../assets/test-image3.jpg'
+        ]
+      },
+      {
+        "title": "YouTube",
+        "description": "Videos are my way of teaching through educational and informative content.",
+        "imageSources": [
+          '../../assets/test-image1.jpg',
+          '../../assets/test-image2.jpg',
+          '../../assets/test-image3.jpg'
+        ]
+      },
+      {
+        "title": "Research",
+        "description": "My research interests include collaboration software, graphics, and data visualization!",
+        "imageSources": [
+          '../../assets/test-image1.jpg',
+          '../../assets/test-image2.jpg',
+          '../../assets/test-image3.jpg'
+        ]
+      },
+      {
+        "title": "Game Dev",
+        "description": "Game development is an opportunity for me to build meaingful experiences!",
+        "imageSources": [
+          '../../assets/test-image1.jpg',
+          '../../assets/test-image2.jpg',
+          '../../assets/test-image3.jpg'
+        ]
+      }
+    ];
   }
 
 }
