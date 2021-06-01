@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 // Custom types
 import { ShowcaseSourceInterface } from '../../types/ShowcaseSource.interface';
+import { ContentCardDataInterface } from '../../types/ContentCardData.interface';
 
 @Component({
   selector: 'app-content-showcase',
@@ -13,10 +14,7 @@ export class ContentShowcaseComponent implements OnInit {
   // Properties
   @Input() title = 'Title';
   @Input() description = 'A breif description of this showcase!';
-  @Input() imageSource1 = '';
-  @Input() imageSource2 = '';
-  @Input() imageSource3 = '';
-  @Input() imageSources: string[] = [];
+  @Input() cardData: ContentCardDataInterface[] = [];
 
   constructor() { }
 

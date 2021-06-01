@@ -1,5 +1,7 @@
+import { ContentCardDataInterface } from './ContentCardData.interface';
+
 export interface ShowcaseSourceInterface {
   title: string;
   description: string;
-  imageSources: string[];
+  cardData: ContentCardDataInterface[];
 }

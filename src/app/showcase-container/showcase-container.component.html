@@ -1,6 +1,6 @@
 <div class="main-container">
-  <app-content-showcase [title]="showcaseData[0].title" [description]="showcaseData[0].description" [imageSources]="showcaseData[0].imageSources"></app-content-showcase>
-  <app-content-showcase [title]="showcaseData[1].title" [description]="showcaseData[1].description" [imageSources]="showcaseData[1].imageSources"></app-content-showcase>
-  <app-content-showcase [title]="showcaseData[2].title" [description]="showcaseData[2].description" [imageSources]="showcaseData[2].imageSources"></app-content-showcase>
-  <app-content-showcase [title]="showcaseData[3].title" [description]="showcaseData[3].description" [imageSources]="showcaseData[3].imageSources"></app-content-showcase>
+  <app-content-showcase *ngFor="let data of showcaseData"
+                        [title]="data.title"
+                        [description]="data.description"
+                        [cardData]="data.cardData"></app-content-showcase>
 </div>
