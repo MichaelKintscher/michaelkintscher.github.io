@@ -27,4 +27,19 @@ mat-sidenav-container {
 
 app-showcase-container {
     display: block;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    padding: 20px;
+  }
 }

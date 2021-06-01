@@ -19,3 +19,10 @@ mat-card {
     background-position: center center;
     background-size: cover;
 }
+
+@media screen and (max-width: 600px) {
+  .cards-panel {
+      flex-direction: column;
+      width: 100%;
+  }
+}

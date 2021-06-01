@@ -5,3 +5,10 @@
 app-content-showcase {
     margin: 20px;
 }
+
+@media screen and (max-width: 600px) {
+  app-content-showcase {
+    margin: 20px;
+    width: 100%;
+  }
+}
