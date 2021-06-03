@@ -3,6 +3,9 @@ import { Component, OnInit } from '@angular/core';
 // Custom types
 import { ShowcaseSourceInterface } from '../../types/ShowcaseSource.interface';
 import { ContentCardDataInterface } from '../../types/ContentCardData.interface';
+import { YoutubeService } from '../youtube.service';
+import { takeUntil } from 'rxjs/operators';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-showcase-container',
@@ -13,12 +16,17 @@ export class ShowcaseContainerComponent implements OnInit {
 
   // Properties
   showcaseData: ShowcaseSourceInterface[] = [];
+  videos: any[] = [];
+  private unsubscribe$: Subject<any> = new Subject();
 
-  constructor() { }
+  constructor(private youTubeService: YoutubeService) { }
 
   ngOnInit(): void {
 
     // Populate the showcase data.
+    this.getYouTubeData();
+    console.log(this.videos);
+
     this.showcaseData = [
       {
         "title": "Writing",
@@ -105,6 +113,18 @@ export class ShowcaseContainerComponent implements OnInit {
         ]
       }
     ];
+  }
+
+  async getYouTubeData() {
+    // Refer to sample here:
+
+    this.youTubeService.getVideosForChanel("UC4gfAPs8PsNyHnPX1cMl-WQ", 3)
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(lista => {
+        for (let element of lista["items"]) {
+          this.videos.push(element)
+        }
+      });
   }
 
 }

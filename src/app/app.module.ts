@@ -7,6 +7,7 @@ import { ProfileSidebarComponent } from './profile-sidebar/profile-sidebar.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContentShowcaseComponent } from './content-showcase/content-showcase.component';
 import { ShowcaseContainerComponent } from './showcase-container/showcase-container.component';
+import { HttpClientModule } from '@angular/common/http';
 
 // Material Design
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -25,6 +26,7 @@ import { MatCardModule } from '@angular/material/card';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatToolbarModule,
     MatDividerModule,
     MatSidenavModule,
