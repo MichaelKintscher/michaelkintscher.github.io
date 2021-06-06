@@ -6,6 +6,8 @@ import { ContentCardDataInterface } from '../../types/ContentCardData.interface'
 import { YoutubeService } from '../youtube.service';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
+import { YouTubeDataV3 } from '../../types/YouTubeDataV3.interface';
+import { YoutubeUtil } from '../utilities/youtube-util';
 
 @Component({
   selector: 'app-showcase-container',
@@ -16,17 +18,40 @@ export class ShowcaseContainerComponent implements OnInit {
 
   // Properties
   showcaseData: ShowcaseSourceInterface[] = [];
-  videos: any[] = [];
+  videoCardData: any[] = [];
   private unsubscribe$: Subject<any> = new Subject();
 
   constructor(private youTubeService: YoutubeService) { }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
 
     // Populate the showcase data.
-    this.getYouTubeData();
-    console.log(this.videos);
+    await this.getYouTubeData();
+    console.log(this.videoCardData);
+    console.log("hi2");
+  }
 
+  async getYouTubeData() {
+    // Refer to sample here:
+    const videos: YouTubeDataV3[] = [];
+
+    this.youTubeService.getVideosForChanel("UC4gfAPs8PsNyHnPX1cMl-WQ", 3)
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(lista => {
+        for (let element of lista["items"]) {
+          videos.push(element);
+        }
+
+        this.videoCardData = YoutubeUtil.extractCardData(videos, 20, 100);
+
+        console.log(this.videoCardData);
+        this.populateShowcaseData();
+      });
+
+    console.log("hi3");
+  }
+
+  populateShowcaseData() {
     this.showcaseData = [
       {
         "title": "Writing",
@@ -52,23 +77,7 @@ export class ShowcaseContainerComponent implements OnInit {
       {
         "title": "YouTube",
         "description": "Videos are my way of teaching through educational and informative content.",
-        "cardData": [
-          {
-            "title": "Card A2",
-            "content": "Aa2",
-            "imageSource": '../../assets/test-image1.jpg'
-          },
-          {
-            "title": "Card B2",
-            "content": "Bb2",
-            "imageSource": '../../assets/test-image2.jpg'
-          },
-          {
-            "title": "Card C2",
-            "content": "Cc2",
-            "imageSource": '../../assets/test-image3.jpg'
-          }
-        ]
+        "cardData": this.videoCardData
       },
       {
         "title": "Research",
@@ -113,18 +122,6 @@ export class ShowcaseContainerComponent implements OnInit {
         ]
       }
     ];
-  }
-
-  async getYouTubeData() {
-    // Refer to sample here:
-
-    this.youTubeService.getVideosForChanel("UC4gfAPs8PsNyHnPX1cMl-WQ", 3)
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(lista => {
-        for (let element of lista["items"]) {
-          this.videos.push(element)
-        }
-      });
   }
 
 }

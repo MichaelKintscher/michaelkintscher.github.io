@@ -12,6 +12,8 @@ let yt_api = credentials.credentials.yt_api;
   providedIn: 'root'
 })
 export class YoutubeService {
+  // See this example: https://kheronn-machado.medium.com/youtube-angular-en-2ed98f07e0f9, but
+  //    with this additional fix: https://stackoverflow.com/questions/67827624/how-do-i-read-a-local-json-file-in-angular-12
 
   constructor(public http: HttpClient) { }
 
