@@ -58,19 +58,19 @@ export class ShowcaseContainerComponent implements OnInit {
         "description": "I write to share my thoughts and experiences and to tell my story.",
         "cardData": [
           {
-            "title": "Card A1",
-            "content": "Aa",
-            "imageSource": '../../assets/test-image1.jpg'
+            "title": "Medium",
+            "content": ("Entertainer. Storyteller. Thinker. I draw from past experience as an LGBTQ+ person and team leader to explore our world with others through new perspective").substring(0,100) + "...",
+            "imageSource": 'https://miro.medium.com/fit/c/197/197/1*lJBg6kaa3ksF3EnQwDk2qg.png'
           },
           {
-            "title": "Card B1",
-            "content": "Bb",
+            "title": "Blog",
+            "content": ("For… sometimes I’ll see an old picture of me?. It’s staring at me…. but there’s an emptiness to its eyes – a hole, a void, something incomplete.").substring(0, 100) + "...",
             "imageSource": '../../assets/test-image2.jpg'
           },
           {
-            "title": "Card C1",
-            "content": "Cc",
-            "imageSource": '../../assets/test-image3.jpg'
+            "title": "LinkedIn",
+            "content": ("I've always been an architect and a builder, but I didn't always understand the value of the people in the system.").substring(0, 100) + "...",
+            "imageSource": 'https://media-exp1.licdn.com/dms/image/C5603AQHpOp-YVId-XA/profile-displayphoto-shrink_800_800/0/1619819917543?e=1633564800&v=beta&t=yhkeGCCwH1ueeTPC2Cy4C5Ep_AnsbiojNEgcigcYCO0'
           }
         ]
       },
