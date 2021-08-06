@@ -3,13 +3,17 @@
     <h1>{{ title }}</h1>
     <p>{{ description }}</p>
   </div>
-  <mat-card *ngFor="let data of cardData">
-    <mat-card-header>
-      <mat-card-title>{{ data.title }}</mat-card-title>
-    </mat-card-header>
-    <div mat-card-image class="card-image" [ngStyle]="{'background-image': 'url(' + data.imageSource + ')'}"></div>
-    <mat-card-content>
-      <p>{{ data.content }}</p>
-    </mat-card-content>
-  </mat-card>
+  <div *ngFor="let data of cardData">
+    <a href="{{ data.link }}">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ data.title }}</mat-card-title>
+        </mat-card-header>
+        <div mat-card-image class="card-image" [ngStyle]="{'background-image': 'url(' + data.imageSource + ')'}"></div>
+        <mat-card-content>
+          <p>{{ data.content }}</p>
+        </mat-card-content>
+      </mat-card>
+    </a>
+  </div>
 </div>
