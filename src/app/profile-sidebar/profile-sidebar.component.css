@@ -1,5 +1,9 @@
 .panel-container {
-    padding: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .panel-item {
@@ -7,8 +11,18 @@
 }
 
 .profile-pic {
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
+    border-radius: 10px;
+}
+
+.profile-details-container {
+  padding: 20px 0px 20px 20px;
+  width: 100%;
+}
+
+h1 {
+    font-size: 48px;
 }
 
 /* Responsive Styles */
@@ -21,11 +35,6 @@
     .profile-pic {
         max-width: 250px;
     }
-
-  .profile-details-container {
-      padding: 20px 0px 20px 20px;
-      width: 100%;
-  }
 }
 
 @media screen and (max-width: 600px) {
