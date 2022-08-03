@@ -104,5 +104,8 @@
       }
     }
   },
-  "defaultProject": "michaelkintscher-github-io"
+  "defaultProject": "michaelkintscher-github-io",
+  "cli": {
+    "analytics": false
+  }
 }
