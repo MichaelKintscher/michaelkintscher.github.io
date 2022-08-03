@@ -45,8 +45,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# GitHub Pages CNAME file
-/docs/CNAME
-docs/CNAME
-docs/CNAME
+# Credentials for YouTube API
 src/app/api-config/api-credentials.json
