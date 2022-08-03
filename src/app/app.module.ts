@@ -14,13 +14,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
+import { ResearchProjectComponent } from './research-project/research-project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileSidebarComponent,
     ContentShowcaseComponent,
-    ShowcaseContainerComponent
+    ShowcaseContainerComponent,
+    ResearchProjectComponent
   ],
   imports: [
     BrowserModule,

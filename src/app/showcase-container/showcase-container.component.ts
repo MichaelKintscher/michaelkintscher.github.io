@@ -54,6 +54,30 @@ export class ShowcaseContainerComponent implements OnInit {
   populateShowcaseData() {
     this.showcaseData = [
       {
+        "title": "Research",
+        "description": "My research interests include collaboration software, graphics, and data visualization!",
+        "cardData": [
+          {
+            "title": "AR Collaboration Study",
+            "content": "Aa3",
+            "imageSource": '../../assets/thesis.jpg',
+            "link": "https://repository.asu.edu/items/63098"
+          },
+          {
+            "title": "Real-time AR Video Processing",
+            "content": "Aa3",
+            "imageSource": '../../assets/bridging-realities.png',
+            "link": "https://repository.asu.edu/items/63098"
+          },
+          //{
+          //  "title": "Card C3",
+          //  "content": "Cc3",
+          //  "imageSource": '../../assets/test-image3.jpg',
+          //  "link": ""
+          //}
+        ]
+      },
+      {
         "title": "Developer",
         "description": "I develop fullstack applications and useful tools for fun, primarily in .NET and UWP.",
         "cardData": [
@@ -105,30 +129,6 @@ export class ShowcaseContainerComponent implements OnInit {
         "title": "YouTube",
         "description": "Videos are my way of teaching through educational and informative content.",
         "cardData": this.videoCardData
-      },
-      {
-        "title": "Research",
-        "description": "My research interests include collaboration software, graphics, and data visualization!",
-        "cardData": [
-          {
-            "title": "Exploring the Impact of Augmented Reality on Collaborative Decision-Making in Small Teams",
-            "content": "Aa3",
-            "imageSource": '../../assets/test-image1.jpg',
-            "link": "https://repository.asu.edu/items/63098"
-          },
-          //{
-          //  "title": "Card B3",
-          //  "content": "Bb3",
-          //  "imageSource": '../../assets/test-image2.jpg',
-          //  "link": ""
-          //},
-          //{
-          //  "title": "Card C3",
-          //  "content": "Cc3",
-          //  "imageSource": '../../assets/test-image3.jpg',
-          //  "link": ""
-          //}
-        ]
       },
       //{
       //  "title": "Game Dev",
