@@ -23,12 +23,18 @@ export class ShowcaseContainerComponent implements OnInit {
 
   constructor(private youTubeService: YoutubeService) { }
 
-  async ngOnInit(): Promise<void> {
+  // UNCOMMENT THIS TO USE YOUTUBE API
+  //async ngOnInit(): Promise<void> {
 
-    // Populate the showcase data.
-    await this.getYouTubeData();
-    console.log(this.videoCardData);
-    console.log("hi2");
+  //  // Populate the showcase data.
+  //  await this.getYouTubeData();
+  //  console.log(this.videoCardData);
+  //  console.log("hi2");
+  //}
+
+  // UNCOMMENT THIS WHEN NOT USING YOUTUBE API
+  ngOnInit(): void {
+    this.populateShowcaseData();
   }
 
   async getYouTubeData() {
