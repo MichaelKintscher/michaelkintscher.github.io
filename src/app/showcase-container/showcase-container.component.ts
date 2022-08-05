@@ -62,6 +62,7 @@ export class ShowcaseContainerComponent implements OnInit {
       {
         "title": "Research",
         "description": "My research interests include collaboration software, graphics, and data visualization!",
+        "fullWidth": true,
         "cardData": [
           {
             "title": "Collaboration Patterns in Augmented Reality",
@@ -86,6 +87,7 @@ export class ShowcaseContainerComponent implements OnInit {
       {
         "title": "Developer",
         "description": "I develop fullstack applications and useful tools for fun, primarily in .NET and UWP.",
+        "fullWidth": true,
         "cardData": [
           //{
           //  "title": "GitHub",
@@ -110,6 +112,7 @@ export class ShowcaseContainerComponent implements OnInit {
       {
         "title": "Writing",
         "description": "I write to share my thoughts and experiences and to tell my story.",
+        "fullWidth": false,
         "cardData": [
           {
             "title": "Medium",
@@ -134,11 +137,13 @@ export class ShowcaseContainerComponent implements OnInit {
       {
         "title": "YouTube",
         "description": "Videos are my way of teaching through educational and informative content.",
+        "fullWidth": true,
         "cardData": this.videoCardData
       },
       //{
       //  "title": "Game Dev",
       //  "description": "Game development is an opportunity for me to build meaingful experiences!",
+      //  "fullWidth": true,
       //  "cardData": [
       //    {
       //      "title": "Card A4",

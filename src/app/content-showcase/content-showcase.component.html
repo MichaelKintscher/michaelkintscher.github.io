@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <p class="showcase-description">{{ description }}</p>
   </div>
-  <div class="cards-container">
+  <div class="cards-container" [ngClass]="{'full-width' : fullWidth}">
     <div *ngFor="let data of cardData" >
       <a href="{{ data.link }}">
         <mat-card class="card-class">

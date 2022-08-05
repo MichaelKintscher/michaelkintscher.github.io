@@ -1,0 +1,18 @@
+To bind data:
+
+1. Add the appropriate property declaration in the interface (under /types folder).
+
+        propertyName: dataType;
+
+
+2. Add the appropriate property with the @Input tag on the component in the OnInit method.
+
+        @Input() propertyName = defaultValue;
+
+
+3. Set the data wherever the component is being created (such as within an ngFor).
+
+        [propertyName] = "valueExpression"
+
+
+The property is now available in the HTML to bind to on that component. Be sure to set the property value of the component wherever the data is being given to that component.

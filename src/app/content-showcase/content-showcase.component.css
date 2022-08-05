@@ -22,12 +22,24 @@ h1 {
 
 .cards-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 0px 10px 0px 10px;
+}
+
+/* Applies only to full-width showcases. */
+.cards-container.full-width {
+    display: flex;
+    flex-direction: column;
 }
 
 .card-class {
-  margin: 20px 5px 20px 5px;
+  margin: 20px 10px 20px 10px;
   border-radius: 10px;
+}
+
+/* Applies only to cards within a full-width showcase. */
+.cards-container.full-width .card-class {
+  
 }
 
 .card-image {

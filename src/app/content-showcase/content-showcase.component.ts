@@ -14,6 +14,7 @@ export class ContentShowcaseComponent implements OnInit {
   // Properties
   @Input() title = 'Title';
   @Input() description = 'A breif description of this showcase!';
+  @Input() fullWidth = true;
   @Input() cardData: ContentCardDataInterface[] = [];
 
   constructor() { }
