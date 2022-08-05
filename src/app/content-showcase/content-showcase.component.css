@@ -1,6 +1,7 @@
 .cards-panel {
     border: 1px solid;
-    border-radius: 4px;
+    border-radius: 10px;
+    padding: 0px 0px 100px 0px;
     display: flex;
     flex-direction: column;
 }
@@ -10,13 +11,23 @@
     max-width: 300px;
 }
 
+h1 {
+    font-size: 40px;
+    margin: 10px 10px 20px 10px;
+}
+
+.showcase-description {
+    margin: 10px;
+}
+
 .cards-container {
   display: flex;
   flex-direction: column;
 }
 
 .card-class {
-  margin: 20px 0px 20px 0px;
+  margin: 20px 5px 20px 5px;
+  border-radius: 10px;
 }
 
 .card-image {

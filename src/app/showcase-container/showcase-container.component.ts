@@ -64,7 +64,7 @@ export class ShowcaseContainerComponent implements OnInit {
         "description": "My research interests include collaboration software, graphics, and data visualization!",
         "cardData": [
           {
-            "title": "AR Collaboration Study",
+            "title": "Collaboration Patterns in Augmented Reality",
             "content": "Aa3",
             "imageSource": '../../assets/thesis.jpg',
             "link": "https://repository.asu.edu/items/63098"
@@ -87,18 +87,18 @@ export class ShowcaseContainerComponent implements OnInit {
         "title": "Developer",
         "description": "I develop fullstack applications and useful tools for fun, primarily in .NET and UWP.",
         "cardData": [
-          {
-            "title": "GitHub",
-            "content": ("I love exploring how people interact with computers, and how computers can enable people! Also passionate about visual design & storytelling!").substring(0, 100) + "...",
-            "imageSource": 'https://avatars.githubusercontent.com/u/17364071?s=400&u=8fcaf8a5076e6323b71f1b5409b1280a4028a65c&v=4',
-            "link": "https://github.com/MichaelKintscher"
-          },
-          {
-            "title": "Stack Overflow",
-            "content": ("I love data, visual storytelling, and studying how computer systems can enhance our ability to work together.").substring(0, 100) + "...",
-            "imageSource": 'https://i.stack.imgur.com/bYgz3.jpg?s=420&g=1',
-            "link": "https://stackoverflow.com/users/8442938/michael-kintscher-they-them"
-          },
+          //{
+          //  "title": "GitHub",
+          //  "content": ("I love exploring how people interact with computers, and how computers can enable people! Also passionate about visual design & storytelling!").substring(0, 100) + "...",
+          //  "imageSource": 'https://avatars.githubusercontent.com/u/17364071?s=400&u=8fcaf8a5076e6323b71f1b5409b1280a4028a65c&v=4',
+          //  "link": "https://github.com/MichaelKintscher"
+          //},
+          //{
+          //  "title": "Stack Overflow",
+          //  "content": ("I love data, visual storytelling, and studying how computer systems can enhance our ability to work together.").substring(0, 100) + "...",
+          //  "imageSource": 'https://i.stack.imgur.com/bYgz3.jpg?s=420&g=1',
+          //  "link": "https://stackoverflow.com/users/8442938/michael-kintscher-they-them"
+          //},
           //{
           //  "title": "LinkedIn",
           //  "content": ("I've always been an architect and a builder, but I didn't always understand the value of the people in the system.").substring(0, 100) + "...",
