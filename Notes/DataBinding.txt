@@ -5,7 +5,7 @@ To bind data:
         propertyName: dataType;
 
 
-2. Add the appropriate property with the @Input tag on the component in the OnInit method.
+2. Add the appropriate property with the @Input tag on the component in the OnInit method. Note that Input will need to be added to the Import from '@angular/core'.
 
         @Input() propertyName = defaultValue;
 

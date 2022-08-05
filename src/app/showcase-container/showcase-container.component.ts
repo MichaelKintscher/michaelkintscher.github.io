@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 // Custom types
 import { ShowcaseSourceInterface } from '../../types/ShowcaseSource.interface';
@@ -8,6 +8,7 @@ import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { YouTubeDataV3 } from '../../types/YouTubeDataV3.interface';
 import { YoutubeUtil } from '../utilities/youtube-util';
+import { FileGetterService } from '../file-getter.service'
 
 import showcaseData from '../../assets/showcase-content/top-showcase.json';
 
@@ -21,24 +22,50 @@ let content = showcaseData.showcaseData as ShowcaseSourceInterface[];
 export class ShowcaseContainerComponent implements OnInit {
 
   // Properties
+  @Input() dataSource = '';
+
   showcaseData: ShowcaseSourceInterface[] = [];
   videoCardData: any[] = [];
   private unsubscribe$: Subject<any> = new Subject();
 
-  constructor(private youTubeService: YoutubeService) { }
+  constructor(private youTubeService: YoutubeService, private fileGetterService: FileGetterService) { }
 
-  // UNCOMMENT THIS TO USE YOUTUBE API
-  //async ngOnInit(): Promise<void> {
+  
+  async ngOnInit(): Promise<void> {
 
-  //  // Populate the showcase data.
-  //  await this.getYouTubeData();
-  //  console.log(this.videoCardData);
-  //  console.log("hi2");
-  //}
+    // Populate the showcase data.
+    if (this.dataSource != '') {
+      this.getShowcaseData();
+    }
+    else {
+      console.warn("Showcase-Container property 'dataSource' not set!");
+    }
+
+    // UNCOMMENT THIS TO USE YOUTUBE API
+    //await this.getYouTubeData();
+    //console.log(this.videoCardData);
+    //console.log("hi2");
+  }
 
   // UNCOMMENT THIS WHEN NOT USING YOUTUBE API
-  ngOnInit(): void {
-    this.populateShowcaseData();
+  //ngOnInit(): void {
+  //  this.populateShowcaseData();
+  //}
+
+  async getShowcaseData() {
+    const rawShowcaseData: ShowcaseSourceInterface[] = [];
+
+    this.fileGetterService.getFile(this.dataSource)
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(data => {
+        for (let element of data["showcaseData"]) {
+          rawShowcaseData.push(element);
+          //console.log(element);
+        }
+        //console.log(rawShowcaseData);
+
+        this.showcaseData = rawShowcaseData;
+      });
   }
 
   async getYouTubeData() {
