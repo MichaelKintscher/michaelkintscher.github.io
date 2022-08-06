@@ -1,0 +1,28 @@
+{
+  "listdata": [
+    {
+      "position": "Instructor of Record",
+      "course": "Principles of Programming"
+    },
+    {
+      "position": "Graduate Student Assistant",
+      "course": "Foundations of Algorithms"
+    },
+    {
+      "position": "Graduate Student Assistant",
+      "course": "Graphics for Games"
+    },
+    {
+      "position": "Graduate Student Assistant",
+      "course": "Game Engine Development"
+    },
+    {
+      "position": "Graduate Student Assistant",
+      "course": "Principles of Programming"
+    },
+    {
+      "position": "Graduate Student Assistant",
+      "course": "Principles of Programming"
+    }
+  ]
+}

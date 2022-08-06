@@ -1,7 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 // Custom types
+import { takeUntil } from 'rxjs/operators';
+import { Subject } from 'rxjs';
 import { ShowcaseListItemInterface } from '../../types/ShowcaseListItem.interface';
+import { FileGetterService } from '../file-getter.service';
+
 
 @Component({
   selector: 'app-list-showcase',
@@ -13,39 +17,36 @@ export class ListShowcaseComponent implements OnInit {
   // Properties
   @Input() title = 'Title';
   @Input() description = 'A breif description of this showcase!';
+  @Input() dataSource = '';
   listData: ShowcaseListItemInterface[] = [];
+  private unsubscribe$: Subject<any> = new Subject();
 
-  constructor() { }
+  constructor(private fileGetterService: FileGetterService) { }
 
-  ngOnInit(): void {
-    this.listData = [
-      {
-        position: "Instructor of Record",
-        course: "Principles of Programming"
-      },
-      {
-        position: "Graduate Student Assistant",
-        course: "Foundations of Algorithms"
-      },
-      {
-        position: "Graduate Student Assistant",
-        course: "Graphics for Games"
-      },
-      {
-        position: "Graduate Student Assistant",
-        course: "Game Engine Development"
-      },
-      {
-        position: "Graduate Student Assistant",
-        course: "Principles of Programming"
-      },
-      {
-        position: "Graduate Student Assistant",
-        course: "Principles of Programming"
-      }
-    ];
+  async ngOnInit(): Promise<void> {
 
-    console.log(this.listData);
+    // Populate the showcase data.
+    if (this.dataSource != '') {
+      this.getShowcaseData();
+    }
+    else {
+      console.warn("List-Showcase property 'dataSource' not set!");
+    }
   }
 
+  async getShowcaseData() {
+    const rawListData: ShowcaseListItemInterface[] = [];
+
+    this.fileGetterService.getFile(this.dataSource)
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(data => {
+        for (let element of data["listdata"]) {
+          rawListData.push(element);
+          //console.log(element);
+        }
+        //console.log(rawListData);
+
+        this.listData = rawListData;
+      });
+  }
 }

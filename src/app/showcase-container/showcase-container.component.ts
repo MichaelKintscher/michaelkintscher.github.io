@@ -8,11 +8,7 @@ import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { YouTubeDataV3 } from '../../types/YouTubeDataV3.interface';
 import { YoutubeUtil } from '../utilities/youtube-util';
-import { FileGetterService } from '../file-getter.service'
-
-import showcaseData from '../../assets/showcase-content/top-showcase.json';
-
-let content = showcaseData.showcaseData as ShowcaseSourceInterface[];
+import { FileGetterService } from '../file-getter.service';
 
 @Component({
   selector: 'app-showcase-container',
@@ -68,29 +64,29 @@ export class ShowcaseContainerComponent implements OnInit {
       });
   }
 
-  async getYouTubeData() {
-    // Refer to sample here:
-    const videos: YouTubeDataV3[] = [];
+  //async getYouTubeData() {
+  //  // Refer to sample here:
+  //  const videos: YouTubeDataV3[] = [];
 
-    this.youTubeService.getVideosForChanel("UC4gfAPs8PsNyHnPX1cMl-WQ", 3)
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(lista => {
-        for (let element of lista["items"]) {
-          videos.push(element);
-        }
+  //  this.youTubeService.getVideosForChanel("UC4gfAPs8PsNyHnPX1cMl-WQ", 3)
+  //    .pipe(takeUntil(this.unsubscribe$))
+  //    .subscribe(lista => {
+  //      for (let element of lista["items"]) {
+  //        videos.push(element);
+  //      }
 
-        this.videoCardData = YoutubeUtil.extractCardData(videos, 20, 100);
+  //      this.videoCardData = YoutubeUtil.extractCardData(videos, 20, 100);
 
-        console.log(this.videoCardData);
-        this.populateShowcaseData();
-      });
+  //      console.log(this.videoCardData);
+  //      this.populateShowcaseData();
+  //    });
 
-    console.log("hi3");
-  }
+  //  console.log("hi3");
+  //}
 
-  populateShowcaseData() {
+  //populateShowcaseData() {
 
-    this.showcaseData = content;
-  }
+  //  this.showcaseData = content;
+  //}
 
 }
