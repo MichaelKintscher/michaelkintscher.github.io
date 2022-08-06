@@ -158,7 +158,34 @@
         </div>
         <!-- Main right panel -->
         <div class="main-container">
-          <app-showcase-container dataSource="../../assets/showcase-content/top-showcase.json"></app-showcase-container>
+          <div class="showcase-container">
+            <app-showcase-container dataSource="../../assets/showcase-content/top-showcase.json"></app-showcase-container>
+          </div>
+          <div class="education-container">
+            <h1>Education</h1>
+            <div class="education-items">
+              <app-education-tile class="education-tile"
+                                  degreeName="Bachelors"
+                                  year="2017"
+                                  subject="Computer Science (Software Engineering)"
+                                  institution="Arizona State University"></app-education-tile>
+              <mat-divider [vertical]="true"></mat-divider>
+              <app-education-tile class="education-tile"
+                                  degreeName="Masters"
+                                  year="2020"
+                                  subject="Computer Science"
+                                  institution="Arizona State University"></app-education-tile>
+              <mat-divider [vertical]="true"></mat-divider>
+              <app-education-tile class="education-tile"
+                                  degreeName="PhD"
+                                  year="Est. 2026"
+                                  subject="Computer Science"
+                                  institution="Arizona State University"></app-education-tile>
+            </div>
+          </div>
+          <div class="showcase-container">
+            <app-showcase-container dataSource="../../assets/showcase-content/bottom-showcase.json"></app-showcase-container>
+          </div>
         </div>
       </div>
     </mat-sidenav-content>

@@ -1,0 +1,42 @@
+{
+  "showcaseData": [
+    {
+      "title": "Developer",
+      "description": "I develop fullstack applications and useful tools for fun, primarily in .NET and UWP.",
+      "fullWidth": true,
+      "cardData": [
+      ]
+    },
+    {
+      "title": "Writing",
+      "description": "I write to share my thoughts and experiences and to tell my story.",
+      "fullWidth": false,
+      "cardData": [
+        {
+          "title": "Medium",
+          "content": "Entertainer. Storyteller. Thinker. I draw from past experience as an LGBTQ+ person and team leader to explore our world with others through new perspective",
+          "imageSource": "https://miro.medium.com/fit/c/197/197/1*lJBg6kaa3ksF3EnQwDk2qg.png",
+          "link": "https://michael-kintscher.medium.com/"
+        },
+        {
+          "title": "Blog",
+          "content": "For… sometimes I’ll see an old picture of me?. It’s staring at me…. but there’s an emptiness to its eyes – a hole, a void, something incomplete.",
+          "imageSource": "../../assets/test-image2.jpg",
+          "link": "https://michaelkintscher.website/"
+        },
+        {
+          "title": "LinkedIn",
+          "content": "I've always been an architect and a builder, but I didn't always understand the value of the people in the system.",
+          "imageSource": "../../assets/profile-pic-old.jpg",
+          "link": "https://www.linkedin.com/in/michaelkintscher/"
+        }
+      ]
+    },
+    {
+      "title": "YouTube",
+      "description": "Videos are my way of teaching through educational and informative content.",
+      "fullWidth": true,
+      "cardData": []
+    }
+  ]
+}

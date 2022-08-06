@@ -15,6 +15,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { ResearchProjectComponent } from './research-project/research-project.component';
+import { EducationTileComponent } from './education-tile/education-tile.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ResearchProjectComponent } from './research-project/research-project.co
     ProfileSidebarComponent,
     ContentShowcaseComponent,
     ShowcaseContainerComponent,
-    ResearchProjectComponent
+    ResearchProjectComponent,
+    EducationTileComponent
   ],
   imports: [
     BrowserModule,
