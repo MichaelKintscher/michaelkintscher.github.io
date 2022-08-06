@@ -25,9 +25,45 @@ h1 {
     font-size: 48px;
 }
 
+.research-interest-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.research-interest {
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 10px;
+    max-width: 100px;
+    min-width: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.gaming-interest{
+    border-color: lawngreen;
+}
+
+.sim-interest {
+    border-color: palevioletred;
+}
+
+.collab-interest {
+    border-color: deepskyblue;
+}
+
+.graphics-interest {
+    border-color: mediumpurple;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
-    .panel-container {
+  .panel-container {
         display: flex;
         flex-direction: row;
     }
