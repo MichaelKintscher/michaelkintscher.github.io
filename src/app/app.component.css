@@ -46,10 +46,11 @@ mat-sidenav-container {
 }
 
 .education-items {
-    width: 100%;
+    width: stretch;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /*align-items: center;*/
+    padding: 0px 20px 0px 20px;
 }
 
 .education-tile {
@@ -65,8 +66,19 @@ mat-sidenav-container {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
   .main-container {
     padding: 20px;
+  }
+
+  .education-items {
+      width: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .education-tile {
+      width: stretch;
   }
 }

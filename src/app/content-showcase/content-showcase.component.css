@@ -32,6 +32,10 @@ h1 {
     flex-direction: column;
 }
 
+.card-item {
+    flex: 1;
+}
+
 .card-class {
   margin: 20px 10px 20px 10px;
   border-radius: 10px;
@@ -51,7 +55,7 @@ h1 {
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
   .cards-panel {
       flex-direction: column;
       width: 100%;
@@ -60,6 +64,7 @@ h1 {
   .cards-container {
     flex-direction: column;
     width: 100%;
+    padding: 0px;
   }
 
   .card-class {

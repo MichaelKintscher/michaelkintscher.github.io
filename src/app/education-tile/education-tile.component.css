@@ -1,13 +1,10 @@
 .education-card {
     align-content: center;
     text-align: center;
-    border: 1px solid;
-    border-color: darkgray;
-    border-radius: 10px;
 }
 
 .education-card img {
-    width: 70%;
+    width: 50%;
     max-width: 200px;
 }
 
@@ -24,4 +21,12 @@
 .education-subject,
 .education-institution {
     font-size: 16px;
+}
+
+@media screen and (max-width: 730px) {
+  .education-card {
+    border: 1px solid;
+    border-color: darkgray;
+    border-radius: 10px;
+  }
 }
