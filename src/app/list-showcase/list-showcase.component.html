@@ -4,25 +4,19 @@
     <p class="showcase-description">{{ description }}</p>
   </div>
   <div class="cards-container">
-    <!--<mat-grid-list cols="4" rowHeight="120">
-      <mat-grid-tile class="showcase-list-item"
-                     *ngFor="let data of listData"
-                     [colspan]="1"
-                     [rowspan]="1">
-        <mat-card class="listitem-card">
-          <mat-card-header>
-            <mat-card-title>{{ data.position }}</mat-card-title>
-            <mat-card-subtitle>{{ data.course }}</mat-card-subtitle>
-          </mat-card-header>
-        </mat-card>
-      </mat-grid-tile>
-    </mat-grid-list>-->
-    <mat-card class="listitem-card"
-              *ngFor="let data of listData">
-      <mat-card-header>
-        <mat-card-title>{{ data.position }}</mat-card-title>
-        <mat-card-subtitle>{{ data.course }}</mat-card-subtitle>
-      </mat-card-header>
-    </mat-card>
+    <a *ngFor="let data of listData"
+       [href]="data.link == '' ? null : data.link"
+       target="_blank"
+       [class.disabled]="data.link == '' ? true : null"
+       class="listitem-link-card">
+      <mat-card class="listitem-card">
+        <mat-card-header>
+          <div mat-card-avatar class="listitem-header-image"
+               [ngStyle]="{'background-image': 'url(' + data.imageSource + ')'}"></div>
+          <mat-card-title>{{ data.position }}</mat-card-title>
+          <mat-card-subtitle>{{ data.course }}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </a>
   </div>
 </div>

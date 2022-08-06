@@ -1,0 +1,46 @@
+{
+  "listdata": [
+    {
+      "position": "ACM",
+      "course": "Computing and Research",
+      "imageSource": "../../assets/org-logos/acm-logo.png",
+      "link": "https://www.acm.org/"
+    },
+    {
+      "position": "SIGGRAPH",
+      "course": "Graphics and Interactive Techniques",
+      "imageSource": "../../assets/org-logos/siggraph-logo.png",
+      "link": "https://www.siggraph.org/"
+    },
+    {
+      "position": "ISNBS",
+      "course": "International Society for Nonbinary Scientists",
+      "imageSource": "../../assets/org-logos/isnbs-logo.png",
+      "link": "https://isnbs.org/"
+    },
+    {
+      "position": "Mensa",
+      "course": "Gifted Intelligence Society",
+      "imageSource": "../../assets/org-logos/mensa-logo.png",
+      "link": "https://www.mensa.org/"
+    },
+    {
+      "position": "FIRST",
+      "course": "Youth Robotics and Engineering Education",
+      "imageSource": "../../assets/org-logos/first-logo.png",
+      "link": "https://www.firstinspires.org/"
+    },
+    {
+      "position": "Boy Scouts of America",
+      "course": "Youth Character Development",
+      "imageSource": "../../assets/org-logos/bsa-logo.png",
+      "link": "https://www.scouting.org/"
+    },
+    {
+      "position": "Order of the Arrow",
+      "course": "Youth Leadership Development",
+      "imageSource": "../../assets/org-logos/oa-logo.png",
+      "link": "https://oa-bsa.org/"
+    }
+  ]
+}

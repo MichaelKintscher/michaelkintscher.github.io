@@ -2,27 +2,39 @@
   "listdata": [
     {
       "position": "Instructor of Record",
-      "course": "Principles of Programming"
+      "course": "Principles of Programming",
+      "imageSource": "",
+      "link": ""
     },
     {
       "position": "Graduate Student Assistant",
-      "course": "Foundations of Algorithms"
+      "course": "Foundations of Algorithms",
+      "imageSource": "",
+      "link": ""
     },
     {
       "position": "Graduate Student Assistant",
-      "course": "Graphics for Games"
+      "course": "Graphics for Games",
+      "imageSource": "",
+      "link": ""
     },
     {
       "position": "Graduate Student Assistant",
-      "course": "Game Engine Development"
+      "course": "Game Engine Development",
+      "imageSource": "",
+      "link": ""
     },
     {
       "position": "Graduate Student Assistant",
-      "course": "Principles of Programming"
+      "course": "Principles of Programming",
+      "imageSource": "",
+      "link": ""
     },
     {
       "position": "Graduate Student Assistant",
-      "course": "Principles of Programming"
+      "course": "Principles of Programming",
+      "imageSource": "",
+      "link": ""
     }
   ]
 }

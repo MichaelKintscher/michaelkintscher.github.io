@@ -31,13 +31,35 @@ mat-grid-list {
     width: stretch;
 }
 
+.listitem-link-card {
+  width: stretch;
+  max-width: 400px;
+  margin: 10px;
+}
+
+/* Change opacity on hover for active links only. */
+.listitem-link-card:hover:not(.disabled) {
+    opacity: 70%;
+}
+
+/* Disabled (non-active) links. */
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
 .listitem-card {
-    width: stretch;
-    max-width: 400px;
-    margin: 10px;
-    border-radius: 10px;
+  border-radius: 10px;
+}
+
+.listitem-header-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 0px;
 }
 
 @media screen and (max-width: 730px) {
-    
+
 }
