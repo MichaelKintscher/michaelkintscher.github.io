@@ -1,0 +1,28 @@
+<div class="cards-panel">
+  <div class="showcase-intro-panel">
+    <h1>{{ title }}</h1>
+    <p class="showcase-description">{{ description }}</p>
+  </div>
+  <div class="cards-container">
+    <!--<mat-grid-list cols="4" rowHeight="120">
+      <mat-grid-tile class="showcase-list-item"
+                     *ngFor="let data of listData"
+                     [colspan]="1"
+                     [rowspan]="1">
+        <mat-card class="listitem-card">
+          <mat-card-header>
+            <mat-card-title>{{ data.position }}</mat-card-title>
+            <mat-card-subtitle>{{ data.course }}</mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>-->
+    <mat-card class="listitem-card"
+              *ngFor="let data of listData">
+      <mat-card-header>
+        <mat-card-title>{{ data.position }}</mat-card-title>
+        <mat-card-subtitle>{{ data.course }}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </div>
+</div>

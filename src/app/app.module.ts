@@ -14,8 +14,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
+import { MatGridList, MatGridListModule } from '@angular/material/grid-list';
 import { ResearchProjectComponent } from './research-project/research-project.component';
 import { EducationTileComponent } from './education-tile/education-tile.component';
+import { ListShowcaseComponent } from './list-showcase/list-showcase.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { EducationTileComponent } from './education-tile/education-tile.componen
     ContentShowcaseComponent,
     ShowcaseContainerComponent,
     ResearchProjectComponent,
-    EducationTileComponent
+    EducationTileComponent,
+    ListShowcaseComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { EducationTileComponent } from './education-tile/education-tile.componen
     MatToolbarModule,
     MatDividerModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
