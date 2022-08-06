@@ -58,6 +58,24 @@ mat-sidenav-container {
     margin: 10px;
 }
 
+.page-footer {
+  background-color: #212121;
+  width: stretch;
+  height: 200px;
+  text-align: center;
+}
+
+.page-footer span {
+    line-height: 200px;
+}
+
+.page-footer .footer-text {
+    vertical-align: middle;
+    display: inline-block;
+    color: lightgray;
+    margin: 50px;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
   .content-container {
