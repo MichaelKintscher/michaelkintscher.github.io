@@ -26,6 +26,10 @@ h1 {
   padding: 0px 10px 0px 10px;
 }
 
+.content-card-link:hover {
+    opacity: 70%;
+}
+
 /* Applies only to full-width showcases. */
 .cards-container.full-width {
     display: flex;

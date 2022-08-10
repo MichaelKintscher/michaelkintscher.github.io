@@ -5,7 +5,9 @@
   </div>
   <div class="cards-container" [ngClass]="{'full-width' : fullWidth}">
     <div class="card-item" *ngFor="let data of cardData" >
-      <a href="{{ data.link }}">
+      <a href="{{ data.link }}"
+         target="_blank"
+         class="content-card-link">
         <mat-card class="card-class">
           <mat-card-header>
             <mat-card-title>{{ data.title }}</mat-card-title>
