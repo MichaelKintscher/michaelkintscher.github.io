@@ -113,8 +113,9 @@
   <span id="header-name">Welcome</span>
   <span class="header-link" [class.active]="tab == Tabs[0]" rel="home" (click)="tab = Tabs[0]">Home</span>
   <span class="header-link" [class.active]="tab == Tabs[1]" rel="research" (click)="tab = Tabs[1]">Research</span>
-  <span class="header-link" [class.active]="tab == Tabs[2]" rel="teaching" (click)="tab = Tabs[2]">Teaching</span>
-  <span class="header-link" [class.active]="tab == Tabs[3]" rel="service" (click)="tab = Tabs[3]">Service</span>
+  <span class="header-link" [class.active]="tab == Tabs[2]" rel="publications" (click)="tab = Tabs[2]">Publications</span>
+  <span class="header-link" [class.active]="tab == Tabs[3]" rel="teaching" (click)="tab = Tabs[3]">Teaching</span>
+  <span class="header-link" [class.active]="tab == Tabs[4]" rel="service" (click)="tab = Tabs[4]">Service</span>
   <div class="spacer"></div>
   <a aria-label="Michael on LinkedIn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/michaelkintscher/" title="LinkedIn">
     <svg id="linkedin-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 455" fill="#fff">
@@ -204,9 +205,14 @@
           </div>
 
           <div *ngSwitchCase="'research'" id="Research" class="tab-content main-container">
-            <div class="showcase-container">
+            <app-research-page dataSource="../../assets/showcase-content/research-areas.json"></app-research-page>
+            <!--<div class="showcase-container">
               <app-showcase-container dataSource="../../assets/showcase-content/top-showcase.json"></app-showcase-container>
-            </div>
+            </div>-->
+          </div>
+
+          <div *ngSwitchCase="'publications'" id="Publications" class="tab-content main-container">
+            Publications
           </div>
 
           <div *ngSwitchCase="'teaching'" id="Teaching" class="tab-content main-container">

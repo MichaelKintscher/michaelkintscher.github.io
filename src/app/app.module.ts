@@ -19,6 +19,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { ResearchProjectComponent } from './research-project/research-project.component';
 import { EducationTileComponent } from './education-tile/education-tile.component';
 import { ListShowcaseComponent } from './list-showcase/list-showcase.component';
+import { ResearchPageComponent } from './research-page/research-page.component';
+import { ResearchAreaComponent } from './research-area/research-area.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ListShowcaseComponent } from './list-showcase/list-showcase.component';
     ShowcaseContainerComponent,
     ResearchProjectComponent,
     EducationTileComponent,
-    ListShowcaseComponent
+    ListShowcaseComponent,
+    ResearchPageComponent,
+    ResearchAreaComponent
   ],
   imports: [
     BrowserModule,

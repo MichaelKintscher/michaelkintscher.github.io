@@ -10,10 +10,11 @@ export class AppComponent {
   // Properties
   title = 'michaelkintscher-github-io';
   Tabs: any[] = [{ name: 'Home', type: 'home' },
-  { name: 'Research', type: 'research' },
-  { name: 'Teaching', type: 'teaching' },
+    { name: 'Research', type: 'research' },
+    { name: 'Publications', type: 'publications' },
+    { name: 'Teaching', type: 'teaching' },
     { name: 'Service', type: 'service' }];
 
-  tab = this.Tabs[0];
+  tab = this.Tabs[1];
 
 }

@@ -1,0 +1,24 @@
+.research-area-container {
+  display: flex;
+  padding: 20px;
+  background-color: #212121;
+}
+
+.research-area-content {
+    width: 60%;
+}
+
+.research-area-image img {
+    max-width: 500px;
+}
+
+.research-area-description {
+    max-width: 400px;
+    margin: 0px 10px 20px 0px;
+}
+
+.publication-button {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px;
+}

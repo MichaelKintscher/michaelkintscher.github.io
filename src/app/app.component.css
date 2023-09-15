@@ -1,3 +1,17 @@
+a,
+a:link,
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+a:active {
+  color: darkgray;
+}
+
 mat-toolbar {
     position: sticky;
     top: 0;

@@ -1,0 +1,39 @@
+a,
+a:link,
+a:visited {
+  color: white;
+}
+
+  a:hover {
+    color: lightgray;
+  }
+
+  a:active {
+    color: darkgray;
+  }
+
+.research-page-header {
+    padding: 20px 20px 0px 20px;
+}
+
+.research-page-header p {
+    margin: 0px 0px 10px 0px;
+}
+
+.research-area-links-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.horizontal-container {
+  display: flex;
+}
+
+.research-area-link {
+  margin: 0px 20px;
+}
+
+.research-area-block {
+  margin: 20px 0px;
+}
