@@ -1,0 +1,8 @@
+Navigate to the root of the solution.
+
+Run the command:
+
+ ng serve
+
+
+This will spin up a local dev server that automatically refreshes in browser whenever changes to the source code are made.

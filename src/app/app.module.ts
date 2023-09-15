@@ -15,6 +15,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridList, MatGridListModule } from '@angular/material/grid-list';
+import { MatTabsModule } from '@angular/material/tabs';
 import { ResearchProjectComponent } from './research-project/research-project.component';
 import { EducationTileComponent } from './education-tile/education-tile.component';
 import { ListShowcaseComponent } from './list-showcase/list-showcase.component';
@@ -38,7 +39,8 @@ import { ListShowcaseComponent } from './list-showcase/list-showcase.component';
     MatDividerModule,
     MatSidenavModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
