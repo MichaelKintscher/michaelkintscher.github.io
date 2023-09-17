@@ -1,6 +1,12 @@
 {
   "listdata": [
     {
+      "position": "Capstone Mentor",
+      "course": "Computer Science Capstone",
+      "imageSource": "",
+      "link": ""
+    },
+    {
       "position": "Instructor of Record",
       "course": "Principles of Programming",
       "imageSource": "",
