@@ -76,6 +76,11 @@ p {
   margin: 0 20px;
 }
 
+.toolbar #email-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
 .toolbar #linkedin-logo {
   height: 40px;
   margin: 0 16px;
