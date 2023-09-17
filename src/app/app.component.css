@@ -26,50 +26,12 @@ mat-sidenav-container {
     flex-direction: column;
 }
 
-.profile-sidebar-container {
-  flex: 2;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .main-container {
   flex: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
   /*padding: 50px;*/
-}
-
-.showcase-container {
-    width: stretch;
-    padding: 0px 50px;
-}
-
-.education-container {
-  background-color: #212121;
-  display: block;
-  width: 100%;
-  padding: 30px 0px 80px 0px;
-  margin: 40px 0px 40px 0px;
-}
-
-.education-container h1 {
-    margin: 20px 20px 40px 20px;
-    font-size: 42px;
-    text-align: center;
-}
-
-.education-items {
-    width: stretch;
-    display: flex;
-    flex-direction: row;
-    /*align-items: center;*/
-    padding: 0px 20px 0px 20px;
-}
-
-.education-tile {
-    flex: 1;
-    margin: 10px;
 }
 
 .page-footer {

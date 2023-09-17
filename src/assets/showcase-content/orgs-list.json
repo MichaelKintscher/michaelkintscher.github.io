@@ -13,6 +13,18 @@
       "link": "https://www.siggraph.org/"
     },
     {
+      "position": "IEEE",
+      "course": "Computing and Research",
+      "imageSource": "../../assets/org-logos/ieee-logo.png",
+      "link": "https://www.ieee.org/"
+    },
+    {
+      "position": "Eta Kappa Nu",
+      "course": "Professional Engineering Honor Society",
+      "imageSource": "../../assets/org-logos/hkn-logo.png",
+      "link": "https://hkn.ieee.org/"
+    },
+    {
       "position": "ISNBS",
       "course": "International Society for Nonbinary Scientists",
       "imageSource": "../../assets/org-logos/isnbs-logo.png",

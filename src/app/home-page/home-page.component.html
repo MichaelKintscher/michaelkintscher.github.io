@@ -1,0 +1,35 @@
+<!-- Left panel with personal info -->
+<div class="profile-sidebar-container">
+  <app-profile-sidebar></app-profile-sidebar>
+</div>
+
+<!-- Main right panel -->
+<div class="main-container">
+  <div class="education-container">
+    <h1>Education</h1>
+    <div class="education-items">
+      <app-education-tile class="education-tile"
+                          degreeName="Bachelors"
+                          year="2017"
+                          subject="Computer Science (Software Engineering)"
+                          institution="Arizona State University"></app-education-tile>
+      <mat-divider [vertical]="true"></mat-divider>
+      <app-education-tile class="education-tile"
+                          degreeName="Masters"
+                          year="2020"
+                          subject="Computer Science"
+                          institution="Arizona State University"></app-education-tile>
+      <mat-divider [vertical]="true"></mat-divider>
+      <app-education-tile class="education-tile"
+                          degreeName="PhD"
+                          year="Est. 2026"
+                          subject="Computer Science"
+                          institution="Arizona State University"></app-education-tile>
+    </div>
+  </div>
+  <div class="showcase-container">
+    <app-list-showcase title="Affiliations"
+                       description="I seek out volunteering and professional oppportunities with professional and academic research organizations, STEM education groups, and queer and youth advocacy groups."
+                       dataSource="../../assets/showcase-content/orgs-list.json"></app-list-showcase>
+  </div>
+</div>
