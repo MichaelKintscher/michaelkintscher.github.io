@@ -1,124 +1,30 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 <style>
-  :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .spacer {
-    flex: 1;
-  }
-
-  .toolbar img {
-    margin: 0 16px;
-    object-fit: none;
-    object-position: 50% 50%;
-  }
-
-  .toolbar-profile-pic {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    margin: 0px 15px 0px 0px;
-    background-image: url(../assets/profile-pic.jpg);
-    background-position-x: 60%;
-    background-position-y: 30%;
-    background-size: 150%;
-    background-repeat: no-repeat;
-  }
-
-  .toolbar .header-link,
-  .toolbar #header-name {
-    margin: 0 20px;
-  }
-
-  .toolbar #linkedin-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #github-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #stack-overflow-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
-
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-    .toolbar #linkedin-logo:hover,
-    .toolbar #github-logo:hover,
-    .toolbar #stack-overflow-logo:hover,
-    .toolbar #twitter-logo:hover,
-    .toolbar #youtube-logo:hover,
-    .toolbar .header-link:hover {
-      opacity: 0.8;
-    }
-
-  svg.material-icons {
-    height: 24px;
-    width: auto;
-  }
-
-    svg.material-icons:not(:last-child) {
-      margin-right: 8px;
-    }
 </style>
 
 <!-- Toolbar -->
 <mat-toolbar class="toolbar" role="banner">
-  <!--<img width="40"
-       alt="Angular Logo"
-       src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==" />-->
-  <!--<img width="40"
-       alt="Profile picture of Michael"
-       src="../assets/profile-pic.jpg" />-->
+
+  <!-- Header Name -->
   <!--<div class="toolbar-profile-pic"></div>-->
-  <span id="header-name">Welcome</span>
+  <div id="header-name">
+    <span *ngIf="tab.type != 'home'">Michael Kintscher</span>
+  </div>
+
+  <div class="spacer"></div>
+
+  <!-- Page Links -->
   <span class="header-link" [class.active]="tab == Tabs[0]" rel="home" (click)="tab = Tabs[0]">Home</span>
   <span class="header-link" [class.active]="tab == Tabs[1]" rel="research" (click)="tab = Tabs[1]">Research</span>
   <span class="header-link" [class.active]="tab == Tabs[2]" rel="publications" (click)="tab = Tabs[2]">Publications</span>
   <span class="header-link" [class.active]="tab == Tabs[3]" rel="teaching" (click)="tab = Tabs[3]">Teaching</span>
   <span class="header-link" [class.active]="tab == Tabs[4]" rel="service" (click)="tab = Tabs[4]">Service</span>
+
   <div class="spacer"></div>
+
+  <!-- Social Icons -->
   <a aria-label="Michael on LinkedIn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/michaelkintscher/" title="LinkedIn">
-    <svg id="linkedin-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 455" fill="#fff">
+    <svg id="linkedin-logo" class="header-link" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 455" fill="#fff">
       <path d="M0 0h24v24H0V0z" fill="none" />
       <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z" />
       <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
@@ -130,31 +36,32 @@
     </svg>
   </a>
   <a aria-label="Michael on Github" target="_blank" rel="noopener" href="https://github.com/MichaelKintscher" title="Github">
-    <svg id="github-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#fff">
+    <svg id="github-logo" class="header-link" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#fff">
       <path d="M0 0h24v24H0V0z" fill="none" />
       <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
     </svg>
   </a>
   <a aria-label="Michael on Stack Overflow" target="_blank" rel="noopener" href="https://stackoverflow.com/users/8442938/michael-kintscher-they-them" title="Stack Overflow">
-    <svg id="stack-overflow-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+    <svg id="stack-overflow-logo" class="header-link" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
       <path d="M0 0h24v24H0V0z" fill="none" />
       <path d="M18 20.002V14.67h2v7.333H4V14.67h2v5.333h12zM7.599 14.736l.313-1.98 8.837 1.7-.113 1.586-9.037-1.306zm1.2-4.532l.732-1.6 7.998 3.733-.733 1.599-7.998-3.732zm2.265-3.932l1.133-1.333 6.798 5.665-1.133 1.333-6.798-5.665zm4.332-4.132l5.265 7.064-1.4 1.067-5.264-7.065 1.4-1.066zM7.332 18.668v-2h9.33v2h-9.33z" />
     </svg>
   </a>
   <!--<a aria-label="Michael on Twitter" target="_blank" rel="noopener" href="https://twitter.com/M_Kintscher" title="Twitter">
-    <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <svg id="twitter-logo" class="header-link" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
       <rect width="400" height="400" fill="none" />
       <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff" />
     </svg>
   </a>-->
   <a aria-label="Cooking with Them on YouTube" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UC4gfAPs8PsNyHnPX1cMl-WQ" title="YouTube">
-    <svg id="youtube-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+    <svg id="youtube-logo" class="header-link" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
       <path d="M0 0h24v24H0V0z" fill="none" />
       <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z" />
     </svg>
   </a>
 </mat-toolbar>
 
+<!-- Everything below the toolbar. -->
 <div role="main">
   <mat-sidenav-container>
     <mat-sidenav mode="side" fixedInViewport="true" fixedTopGap="65">
@@ -163,35 +70,38 @@
     <mat-sidenav-content>
       <div class="content-container">
         <div [ngSwitch]="tab.type">
+
+          <!-- Home Page -->
           <div *ngSwitchCase="'home'" id="Home" class="tab-content">
             <app-home-page></app-home-page>
           </div>
 
+          <!-- Research Page -->
           <div *ngSwitchCase="'research'" id="Research" class="tab-content main-container">
             <app-research-page dataSource="../../assets/showcase-content/research-areas.json"></app-research-page>
-            <!--<div class="showcase-container">
-              <app-showcase-container dataSource="../../assets/showcase-content/top-showcase.json"></app-showcase-container>
-            </div>-->
           </div>
 
+          <!-- Publications Page -->
           <div *ngSwitchCase="'publications'" id="Publications" class="tab-content main-container">
             <app-publications-page dataSource="../../assets/showcase-content/publications.json"></app-publications-page>
           </div>
 
+          <!-- Teaching Page -->
           <div *ngSwitchCase="'teaching'" id="Teaching" class="tab-content main-container">
             <app-teaching-page></app-teaching-page>
           </div>
 
+          <!-- Service Page -->
           <div *ngSwitchCase="'service'" id="Service" class="tab-content main-container">
             Service
           </div>
-          <!--<div class="showcase-container">
-            <app-showcase-container dataSource="../../assets/showcase-content/bottom-showcase.json"></app-showcase-container>
-          </div>-->
+
         </div>
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
+
+  <!-- Page Footer -->
   <div class="page-footer">
     <span></span>
     <div class="footer-text">
@@ -201,13 +111,5 @@
     </div>
   </div>
 </div>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <router-outlet></router-outlet>
