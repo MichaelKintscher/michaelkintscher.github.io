@@ -2,7 +2,6 @@
   padding: 0px 0px 50px 0px;
   display: flex;
   flex-direction: column;
-  max-width: 1040px;
 }
 
 .showcase-intro-panel {
@@ -23,6 +22,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0px 10px 0px 10px;
+}
+
+.tiled-cards {
+    max-width: 320px;
 }
 
 mat-grid-list {
@@ -50,11 +53,15 @@ a.disabled {
   border-radius: 10px;
 }
 
+.fixed-height-card {
+    height: 80px;
+}
+
 .listitem-header-image {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 730px) {

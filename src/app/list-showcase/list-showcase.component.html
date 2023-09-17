@@ -8,8 +8,10 @@
        [href]="data.link == '' ? null : data.link"
        target="_blank"
        [class.disabled]="data.link == '' ? true : null"
+       [class.tiled-cards]="fullWidth ? null : true"
        class="listitem-link-card">
-      <mat-card class="listitem-card">
+      <mat-card class="listitem-card"
+       [class.fixed-height-card]="fullWidth ? null : true">
         <mat-card-header>
           <div mat-card-avatar class="listitem-header-image"
                [ngStyle]="{'background-image': 'url(' + data.imageSource + ')'}"></div>

@@ -18,6 +18,7 @@ export class ListShowcaseComponent implements OnInit {
   @Input() title = 'Title';
   @Input() description = 'A breif description of this showcase!';
   @Input() dataSource = '';
+  @Input() fullWidth = true;
   listData: ShowcaseListItemInterface[] = [];
   private unsubscribe$: Subject<any> = new Subject();
 

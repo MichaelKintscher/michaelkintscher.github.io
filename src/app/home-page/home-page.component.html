@@ -1,12 +1,13 @@
-<!-- Left panel with personal info -->
-<div class="profile-sidebar-container">
-  <app-profile-sidebar></app-profile-sidebar>
-</div>
-
 <!-- Main right panel -->
 <div class="main-container">
 
-  <div class="showcase-container">
+  <!-- Left panel with personal info -->
+  <div class="centered-content-container">
+    <app-profile-sidebar></app-profile-sidebar>
+  </div>
+
+  <!-- News Section -->
+  <div id="news-content-block" class="centered-content-container">
     <app-newsfeed dataSource="../../assets/showcase-content/news.json"></app-newsfeed>
   </div>
 
@@ -35,9 +36,10 @@
   </div>
 
   <!-- Affiliations Section -->
-  <div class="showcase-container">
+  <div class="centered-content-container">
     <app-list-showcase title="Affiliations"
                        description="I seek out volunteering and professional oppportunities with professional and academic research organizations, STEM education groups, and queer and youth advocacy groups."
-                       dataSource="../../assets/showcase-content/orgs-list.json"></app-list-showcase>
+                       dataSource="../../assets/showcase-content/orgs-list.json"
+                       [fullWidth]="false"></app-list-showcase>
   </div>
 </div>
