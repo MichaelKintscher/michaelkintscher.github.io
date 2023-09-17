@@ -1,0 +1,40 @@
+<div>
+  <!-- Header content -->
+  <div class="publication-page-header">
+    <h1>Publications</h1>
+  </div>
+
+  <!-- Full Papers -->
+  <div class="publication-section">
+    <h2>Full Papers</h2>
+    <div *ngFor="let publication of fullPapers" class="publication-block">
+      <app-publication [title]="publication.title"
+                       [authors]="publication.authors"
+                       [publisher]="publication.publisher"
+                       [description]="publication.description"
+                       [imageSource]="publication.image_source"
+                       [doi]="publication.doi"
+                       [altLink]="publication.alt_link"
+                       [paperSource]="publication.paper_source"
+                       [supplementalMaterials]="publication.supplemental_materials"
+                       [category]="publication.category"></app-publication>
+    </div>
+  </div>
+
+  <!-- Other Publications -->
+  <div class="publication-section">
+    <h2>Other</h2>
+    <div *ngFor="let publication of otherPublications" class="publication-block">
+      <app-publication [title]="publication.title"
+                       [authors]="publication.authors"
+                       [publisher]="publication.publisher"
+                       [description]="publication.description"
+                       [imageSource]="publication.image_source"
+                       [doi]="publication.doi"
+                       [altLink]="publication.alt_link"
+                       [paperSource]="publication.paper_source"
+                       [supplementalMaterials]="publication.supplemental_materials"
+                       [category]="publication.category"></app-publication>
+    </div>
+  </div>
+</div>

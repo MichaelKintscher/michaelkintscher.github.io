@@ -2,18 +2,18 @@
   "items": [
     {
       "title": "Collaboration",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "image_source": "../../assets/thesis.jpg"
+      "description": "Collaboration is when multiple agents work together to produce a common change in their environment. I study human collaboration and how computer-mediated systems can augment it. From collaborative analysis to knowledge management, computer supported collaborative work (CSCW) systems can remove constraints on time, space, and our limited capacity to capture and surface information in our ongoing pursuit to better work together.",
+      "image_source": "../../assets/research-areas/PositionalEncodingExample_V3.png"
     },
     {
-      "title": "Data Visualization",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "title": "Collaborative Visualization",
+      "description": "Data visualization is a powerful tool for visual analysis and sensemaking of increasingly large and complex datasets. I research different tools and techniques, particularly in immersive multimedia and augmented reality (AR) environments, for supporting multiple people collaboratively visualizing data across time (synchronously and asynchronously) and space (together and remote).",
       "image_source": "../../assets/thesis.jpg"
     },
     {
       "title": "Immersive Visualization",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "image_source": "../../assets/thesis.jpg"
+      "description": "Inherently 3D data, such as geographic data or data from engineering and scientific models is often better understood when presented in 3D. I study methods of visually representing such data, as well as the user interfaces for interacting with and manipulating such data in extended reality (XR) and other immersive environments.",
+      "image_source": "../../assets/research-areas/HoloLensBarChart.jpg"
     }
   ]
 }

@@ -1,0 +1,59 @@
+a,
+a:link,
+a:visited {
+  color: white;
+}
+
+  a:hover {
+    color: lightgray;
+  }
+
+  a:active {
+    color: darkgray;
+  }
+
+.publication-container {
+  display: flex;
+}
+
+.publication-content {
+  margin: 0px 20px 20px 20px;
+  max-width: 700px;
+}
+
+.publication-image img {
+  max-width: 300px;
+  margin: auto;
+}
+
+.publication-description {
+  margin: 0px 10px 20px 0px;
+}
+
+.publication-link {
+  display: inline-block;
+  margin: 0px 10px 0px 0px;
+  border: 1px solid white;
+  padding: 10px;
+  width: 65px;
+  text-align: center;
+}
+
+.publication-link:hover {
+    color: white;
+    background-color: #212121;
+}
+
+.publication-tag-separator {
+    margin: 0px 20px;
+    font-size: 24pt;
+}
+
+.publication-tag {
+  display: inline-block;
+  margin: 0px 0px 0px 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: darkgoldenrod;
+  font-style: italic;
+}

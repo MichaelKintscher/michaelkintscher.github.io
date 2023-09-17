@@ -1,0 +1,29 @@
+a,
+a:link,
+a:visited {
+  color: white;
+}
+
+  a:hover {
+    color: lightgray;
+  }
+
+  a:active {
+    color: darkgray;
+  }
+
+.publication-page-header {
+  padding: 20px 20px 0px 20px;
+}
+
+.horizontal-container {
+  display: flex;
+}
+
+.publication-section {
+    margin: 0px 20px;
+}
+
+.publication-block {
+  margin: 20px 0px;
+}

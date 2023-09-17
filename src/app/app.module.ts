@@ -21,6 +21,8 @@ import { EducationTileComponent } from './education-tile/education-tile.componen
 import { ListShowcaseComponent } from './list-showcase/list-showcase.component';
 import { ResearchPageComponent } from './research-page/research-page.component';
 import { ResearchAreaComponent } from './research-area/research-area.component';
+import { PublicationsPageComponent } from './publications-page/publications-page.component';
+import { PublicationComponent } from './publication/publication.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ResearchAreaComponent } from './research-area/research-area.component';
     EducationTileComponent,
     ListShowcaseComponent,
     ResearchPageComponent,
-    ResearchAreaComponent
+    ResearchAreaComponent,
+    PublicationsPageComponent,
+    PublicationComponent
   ],
   imports: [
     BrowserModule,

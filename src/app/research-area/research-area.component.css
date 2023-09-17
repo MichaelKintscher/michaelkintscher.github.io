@@ -1,10 +1,10 @@
 .research-area-container {
   display: flex;
-  padding: 20px;
   background-color: #212121;
 }
 
 .research-area-content {
+    margin: 20px;
     width: 60%;
 }
 
