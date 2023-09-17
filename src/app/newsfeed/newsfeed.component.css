@@ -1,0 +1,19 @@
+#newsfeed-viewport {
+    height: 300px;
+    overflow-y: auto;
+    background-color: #212121;
+}
+
+.news-item {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.news-item-date {
+    width: 100px;
+}
+
+.news-item-content {
+    flex: 1;
+    padding: 0px 0px 0px 30px;
+}

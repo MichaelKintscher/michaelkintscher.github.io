@@ -1,0 +1,9 @@
+<div>
+  <h1>News</h1>
+  <div id="newsfeed-viewport">
+    <div *ngFor="let item of newsItems" class="news-item">
+      <div class="news-item-date">{{ item.date }}</div>
+      <div class="news-item-content">{{ item.content }}</div>
+    </div>
+  </div>
+</div>
