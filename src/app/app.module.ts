@@ -23,6 +23,7 @@ import { ResearchPageComponent } from './research-page/research-page.component';
 import { ResearchAreaComponent } from './research-area/research-area.component';
 import { PublicationsPageComponent } from './publications-page/publications-page.component';
 import { PublicationComponent } from './publication/publication.component';
+import { TeachingPageComponent } from './teaching-page/teaching-page.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { PublicationComponent } from './publication/publication.component';
     ResearchPageComponent,
     ResearchAreaComponent,
     PublicationsPageComponent,
-    PublicationComponent
+    PublicationComponent,
+    TeachingPageComponent
   ],
   imports: [
     BrowserModule,

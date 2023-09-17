@@ -15,6 +15,6 @@ export class AppComponent {
     { name: 'Teaching', type: 'teaching' },
     { name: 'Service', type: 'service' }];
 
-  tab = this.Tabs[2];
+  tab = this.Tabs[3];
 
 }
