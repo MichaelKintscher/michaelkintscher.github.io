@@ -26,6 +26,7 @@ import { PublicationComponent } from './publication/publication.component';
 import { TeachingPageComponent } from './teaching-page/teaching-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NewsfeedComponent } from './newsfeed/newsfeed.component';
+import { ServicePageComponent } from './service-page/service-page.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { NewsfeedComponent } from './newsfeed/newsfeed.component';
     PublicationComponent,
     TeachingPageComponent,
     HomePageComponent,
-    NewsfeedComponent
+    NewsfeedComponent,
+    ServicePageComponent
   ],
   imports: [
     BrowserModule,
