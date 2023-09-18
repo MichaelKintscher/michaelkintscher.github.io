@@ -13,3 +13,21 @@ body {
 .centered-content-container {
     max-width: 1080px;
 }
+
+.mobile-only {
+  display: none;
+}
+
+.non-mobile {
+  display: initial;
+}
+
+@media screen and (max-width: 750px) {
+  .mobile-only {
+      display: initial;
+  }
+
+  .non-mobile {
+      display: none;
+  }
+}

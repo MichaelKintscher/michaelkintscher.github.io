@@ -16,6 +16,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridList, MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 import { ResearchProjectComponent } from './research-project/research-project.component';
 import { EducationTileComponent } from './education-tile/education-tile.component';
 import { ListShowcaseComponent } from './list-showcase/list-showcase.component';
@@ -56,7 +58,9 @@ import { ServicePageComponent } from './service-page/service-page.component';
     MatSidenavModule,
     MatCardModule,
     MatGridListModule,
-    MatTabsModule
+    MatTabsModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

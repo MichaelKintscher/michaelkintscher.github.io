@@ -1,6 +1,20 @@
 <!-- Toolbar -->
 <mat-toolbar class="toolbar" role="banner">
 
+  <!-- Hamburger Menu -->
+  <button mat-icon-button [matMenuTriggerFor]="appMenu" class="mobile-only">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+
+  <mat-menu #appMenu="matMenu" yPosition="below">
+    <button mat-menu-item (click)="tab = Tabs[0]">Home</button>
+    <button mat-menu-item (click)="tab = Tabs[1]">Research</button>
+    <button mat-menu-item (click)="tab = Tabs[2]">Publications</button>
+    <button mat-menu-item (click)="tab = Tabs[3]">Teaching</button>
+    <button mat-menu-item (click)="tab = Tabs[4]">Service</button>
+  </mat-menu>
+
+
   <!-- Header Name -->
   <!--<div class="toolbar-profile-pic"></div>-->
   <div id="header-name">
@@ -10,11 +24,11 @@
   <div class="spacer"></div>
 
   <!-- Page Links -->
-  <span class="header-link" [class.active]="tab == Tabs[0]" rel="home" (click)="tab = Tabs[0]">Home</span>
-  <span class="header-link" [class.active]="tab == Tabs[1]" rel="research" (click)="tab = Tabs[1]">Research</span>
-  <span class="header-link" [class.active]="tab == Tabs[2]" rel="publications" (click)="tab = Tabs[2]">Publications</span>
-  <span class="header-link" [class.active]="tab == Tabs[3]" rel="teaching" (click)="tab = Tabs[3]">Teaching</span>
-  <span class="header-link" [class.active]="tab == Tabs[4]" rel="service" (click)="tab = Tabs[4]">Service</span>
+  <span class="header-link non-mobile" [class.active]="tab == Tabs[0]" rel="home" (click)="tab = Tabs[0]">Home</span>
+  <span class="header-link non-mobile" [class.active]="tab == Tabs[1]" rel="research" (click)="tab = Tabs[1]">Research</span>
+  <span class="header-link non-mobile" [class.active]="tab == Tabs[2]" rel="publications" (click)="tab = Tabs[2]">Publications</span>
+  <span class="header-link non-mobile" [class.active]="tab == Tabs[3]" rel="teaching" (click)="tab = Tabs[3]">Teaching</span>
+  <span class="header-link non-mobile" [class.active]="tab == Tabs[4]" rel="service" (click)="tab = Tabs[4]">Service</span>
 
   <div class="spacer"></div>
 
@@ -22,8 +36,8 @@
   <a aria-label="Email Michael" target="_blank" rel="noopener" href="mailto:michael.kintscher@asu.edu" title="Email">
     <svg version="1.1" id="email-logo" class="header-link" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff"
          viewBox="64 64 128 128" xml:space="preserve">
-      <path opacity="1.000000" stroke="none"
-            d="
+    <path opacity="1.000000" stroke="none"
+          d="
       M91.487534,149.482697
 	      C97.767609,140.701477 103.819824,132.198700 110.069481,123.418564
 	      C115.472420,126.265182 120.457176,129.206207 125.724075,131.499146
@@ -33,8 +47,8 @@
 	      C147.973099,177.823456 110.124016,177.823456 71.418594,177.823456
 	      C78.182114,168.257446 84.720894,159.009293 91.487534,149.482697
       z" />
-      <path opacity="1.000000" stroke="none"
-            d="
+    <path opacity="1.000000" stroke="none"
+          d="
       M160.226166,109.152420
 	      C150.657257,114.217667 141.475403,119.224136 132.132172,123.908707
 	      C130.529800,124.712120 127.853539,124.888245 126.324577,124.096527
@@ -46,8 +60,8 @@
 	      C197.081345,79.852707 200.713623,81.478821 202.445679,86.986923
 	      C188.407990,94.359169 174.483353,101.672050 160.226166,109.152420
       z" />
-      <path opacity="1.000000" stroke="none"
-            d="
+    <path opacity="1.000000" stroke="none"
+          d="
       M189.485657,101.518379
 	      C194.002563,99.133705 198.214005,96.959846 203.002808,94.487976
 	      C203.002808,105.634758 203.002808,116.064880 203.002808,126.495010
@@ -56,8 +70,8 @@
 	      C181.510300,158.975449 167.837433,139.803406 153.903915,120.265900
 	      C165.762421,114.034584 177.471313,107.881889 189.485657,101.518379
       z" />
-      <path opacity="1.000000" stroke="none"
-            d="
+    <path opacity="1.000000" stroke="none"
+          d="
       M54.997177,158.980896
 	      C54.997177,137.395523 54.997177,116.306480 54.997177,94.396431
 	      C71.642136,103.164200 87.693680,111.619392 103.989876,120.203453

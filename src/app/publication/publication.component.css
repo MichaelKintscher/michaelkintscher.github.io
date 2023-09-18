@@ -57,3 +57,19 @@ a:visited {
   background-color: darkgoldenrod;
   font-style: italic;
 }
+
+@media screen and (max-width: 750px) {
+  .publication-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .publication-image img {
+    max-width: 100%;
+  }
+
+  .publication-content {
+    margin: 20px 0px 20px 0px;
+    max-width: 700px;
+  }
+}

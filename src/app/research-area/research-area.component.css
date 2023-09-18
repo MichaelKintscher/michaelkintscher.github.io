@@ -22,3 +22,14 @@
   border: 1px solid white;
   padding: 10px;
 }
+
+@media screen and (max-width: 750px) {
+  .research-area-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .research-area-content {
+    width: 100%;
+  }
+}
