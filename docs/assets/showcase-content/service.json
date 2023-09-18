@@ -1,0 +1,46 @@
+{
+  "listdata": [
+    {
+      "position": "Parliamentarian",
+      "course": "Graduate and Professional Students Association",
+      "imageSource": "",
+      "link": ""
+    },
+    {
+      "position": "President",
+      "course": "GRADient",
+      "imageSource": "",
+      "link": ""
+    },
+    {
+      "position": "Second Adviser",
+      "course": "oSTEM",
+      "imageSource": "",
+      "link": ""
+    },
+    {
+      "position": "Second Adviser",
+      "course": "YDSA",
+      "imageSource": "",
+      "link": ""
+    },
+    {
+      "position": "Executive Board",
+      "course": "Rainbow Coalition",
+      "imageSource": "",
+      "link": ""
+    },
+    {
+      "position": "National DEI Committee",
+      "course": "American Mensa",
+      "imageSource": "",
+      "link": ""
+    },
+    {
+      "position": "National Communications Committee",
+      "course": "Order of the Arrow, BSA",
+      "imageSource": "",
+      "link": ""
+    }
+  ]
+}
