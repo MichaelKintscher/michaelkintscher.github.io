@@ -97,6 +97,18 @@ p {
   margin: 0 16px;
 }
 
+.toolbar #google-scholar-logo,
+.toolbar #google-scholar-logo-mobile {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #orcid-logo,
+.toolbar #orcid-logo-mobile {
+  height: 40px;
+  margin: 0 16px;
+}
+
 .toolbar #github-logo,
 .toolbar #github-logo-mobile {
   height: 40px;
