@@ -44,6 +44,10 @@ p {
   flex: 1;
 }
 
+.toolbar {
+    display:flex;
+}
+
 .toolbar img {
   margin: 0 16px;
   object-fit: none;
@@ -76,22 +80,31 @@ p {
   margin: 0 20px;
 }
 
-.toolbar #email-logo {
+.social-icon-mobile {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.toolbar #email-logo,
+.toolbar #email-logo-mobile {
   height: 40px;
   margin: 0 16px;
 }
 
-.toolbar #linkedin-logo {
+.toolbar #linkedin-logo,
+.toolbar #linkedin-logo-mobile {
   height: 40px;
   margin: 0 16px;
 }
 
-.toolbar #github-logo {
+.toolbar #github-logo,
+.toolbar #github-logo-mobile {
   height: 40px;
   margin: 0 16px;
 }
 
-.toolbar #stack-overflow-logo {
+.toolbar #stack-overflow-logo,
+.toolbar #stack-overflow-logo-mobile {
   height: 40px;
   margin: 0 16px;
 }
@@ -120,9 +133,13 @@ svg.material-icons {
     margin-right: 8px;
   }
 
+.social-icon-label {
+    margin: 0px 0px 0px 20px;
+}
+
 .content-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-container {

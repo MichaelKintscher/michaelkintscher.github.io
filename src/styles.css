@@ -22,6 +22,16 @@ body {
   display: initial;
 }
 
+@media screen and (max-width: 1000px) {
+  .menu-hide-mid-width {
+    display: none;
+  }
+
+  .menu-show-mid-width {
+    display: initial;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .mobile-only {
       display: initial;
@@ -29,5 +39,9 @@ body {
 
   .non-mobile {
       display: none;
+  }
+
+  .toolbar {
+      display: flex;
   }
 }
