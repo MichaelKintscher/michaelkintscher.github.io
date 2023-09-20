@@ -21,24 +21,26 @@
     </p>
     <p><i>{{ publisher }}</i></p>
     <p class="publication-description">{{ description }}</p>
-    <!-- If there is a DOI, render the DOI link. -->
-    <a *ngIf="doi != ''; else alternateLink" href="{{ doi }}" target="_blank">
-      <div class="publication-link">DOI</div>
-    </a>
-    <!-- Else render the alternate link. -->
-    <ng-template #alternateLink>
-      <a href="{{ altLink }}" target="_blank">
-        <div class="publication-link">Link</div>
+    <div class="publication-links-container">
+      <!-- If there is a DOI, render the DOI link. -->
+      <a *ngIf="doi != ''; else alternateLink" href="{{ doi }}" target="_blank">
+        <div class="publication-link">DOI</div>
       </a>
-    </ng-template>
-    <a href="{{ paperSource }}" target="_blank">
-      <div class="publication-link">Paper</div>
-    </a>
-    <!-- Add a Supplemental Materials button if there is a supplemental materials link. -->
-    <a *ngIf="supplementalMaterials != ''" href="{{ supplementalMaterials }}" target="_blank">
-      <div class="publication-link">Materials</div>
-    </a>
-    <span class="publication-tag-separator">|</span>
-    <div class="publication-tag">{{ category }} </div>
+      <!-- Else render the alternate link. -->
+      <ng-template #alternateLink>
+        <a href="{{ altLink }}" target="_blank">
+          <div class="publication-link">Link</div>
+        </a>
+      </ng-template>
+      <a href="{{ paperSource }}" target="_blank">
+        <div class="publication-link">Paper</div>
+      </a>
+      <!-- Add a Supplemental Materials button if there is a supplemental materials link. -->
+      <a *ngIf="supplementalMaterials != ''" href="{{ supplementalMaterials }}" target="_blank">
+        <div class="publication-link">Materials</div>
+      </a>
+      <span class="publication-tag-separator">|</span>
+      <div class="publication-tag">{{ category }} </div>
+    </div>
   </div>
 </div>
