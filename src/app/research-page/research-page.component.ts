@@ -13,7 +13,7 @@ import { FileGetterService } from '../file-getter.service';
 })
 export class ResearchPageComponent implements OnInit {
 
-  @Input() dataSource = '';
+  @Input() dataSource = '../../assets/showcase-content/research-areas.json';
   researchAreas: ResearchAreaInterface[] = [];
   private unsubscribe$: Subject<any> = new Subject();
 

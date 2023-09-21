@@ -149,11 +149,6 @@ svg.material-icons {
     margin: 0px 0px 0px 20px;
 }
 
-.content-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .main-container {
   flex: 3;
   display: flex;
@@ -180,14 +175,6 @@ svg.material-icons {
     display: inline-block;
     color: lightgray;
     margin: 50px;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 767px) {
-  .content-container {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media screen and (max-width: 730px) {

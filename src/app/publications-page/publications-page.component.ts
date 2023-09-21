@@ -13,7 +13,7 @@ import { FileGetterService } from '../file-getter.service';
 })
 export class PublicationsPageComponent implements OnInit {
 
-  @Input() dataSource = '';
+  @Input() dataSource = '../../assets/showcase-content/publications.json';
   fullPapers: PublicationInterface[] = [];
   otherPublications: PublicationInterface[] = [];
   private unsubscribe$: Subject<any> = new Subject();

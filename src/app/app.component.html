@@ -7,11 +7,11 @@
     </button>
 
     <mat-menu #appMenu="matMenu" yPosition="below">
-      <button mat-menu-item (click)="tab = Tabs[0]">Home</button>
-      <button mat-menu-item (click)="tab = Tabs[1]">Research</button>
-      <button mat-menu-item (click)="tab = Tabs[2]">Publications</button>
-      <button mat-menu-item (click)="tab = Tabs[3]">Teaching</button>
-      <button mat-menu-item (click)="tab = Tabs[4]">Service</button>
+      <button mat-menu-item routerLink="/home" (click)="tab = Tabs[0]">Home</button>
+      <button mat-menu-item routerLink="/research" (click)="tab = Tabs[1]">Research</button>
+      <button mat-menu-item routerLink="/publications" (click)="tab = Tabs[2]">Publications</button>
+      <button mat-menu-item routerLink="/teaching" (click)="tab = Tabs[3]">Teaching</button>
+      <button mat-menu-item routerLink="/service" (click)="tab = Tabs[4]">Service</button>
     </mat-menu>
 
 
@@ -25,11 +25,11 @@
 
     <!-- Page Links -->
     <div id="menu-page-links">
-      <span class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[0]" rel="home" (click)="tab = Tabs[0]">Home</span>
-      <span class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[1]" rel="research" (click)="tab = Tabs[1]">Research</span>
-      <span class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[2]" rel="publications" (click)="tab = Tabs[2]">Publications</span>
-      <span class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[3]" rel="teaching" (click)="tab = Tabs[3]">Teaching</span>
-      <span class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[4]" rel="service" (click)="tab = Tabs[4]">Service</span>
+      <span routerLink="/home" class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[0]" rel="home" (click)="tab = Tabs[0]">Home</span>
+      <span routerLink="/research" class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[1]" rel="research" (click)="tab = Tabs[1]">Research</span>
+      <span routerLink="/publications" class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[2]" rel="publications" (click)="tab = Tabs[2]">Publications</span>
+      <span routerLink="/teaching" class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[3]" rel="teaching" (click)="tab = Tabs[3]">Teaching</span>
+      <span routerLink="/service" class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[4]" rel="service" (click)="tab = Tabs[4]">Service</span>
     </div>
 
     <div class="spacer" non-mobile></div>
@@ -440,35 +440,8 @@ z" />
 
     </mat-sidenav>
     <mat-sidenav-content>
-      <div class="content-container">
-        <div [ngSwitch]="tab.type">
-
-          <!-- Home Page -->
-          <div *ngSwitchCase="'home'" id="Home" class="tab-content">
-            <app-home-page></app-home-page>
-          </div>
-
-          <!-- Research Page -->
-          <div *ngSwitchCase="'research'" id="Research" class="tab-content main-container">
-            <app-research-page dataSource="../../assets/showcase-content/research-areas.json"></app-research-page>
-          </div>
-
-          <!-- Publications Page -->
-          <div *ngSwitchCase="'publications'" id="Publications" class="tab-content main-container">
-            <app-publications-page dataSource="../../assets/showcase-content/publications.json"></app-publications-page>
-          </div>
-
-          <!-- Teaching Page -->
-          <div *ngSwitchCase="'teaching'" id="Teaching" class="tab-content main-container">
-            <app-teaching-page></app-teaching-page>
-          </div>
-
-          <!-- Service Page -->
-          <div *ngSwitchCase="'service'" id="Service" class="tab-content main-container">
-            <app-service-page></app-service-page>
-          </div>
-
-        </div>
+      <div class="main-container">
+        <router-outlet></router-outlet>
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
@@ -483,5 +456,3 @@ z" />
     </div>
   </div>
 </div>
-
-<router-outlet></router-outlet>
