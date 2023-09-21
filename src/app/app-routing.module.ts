@@ -9,10 +9,6 @@ import { TeachingPageComponent } from './teaching-page/teaching-page.component';
 
 const routes: Routes = [
   {
-    path: 'home',
-    component: HomePageComponent
-  },
-  {
     path: 'research',
     component: ResearchPageComponent
   },
@@ -34,8 +30,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: "/home",
-    pathMatch: 'full'
+    component: HomePageComponent
   }
 ];
 

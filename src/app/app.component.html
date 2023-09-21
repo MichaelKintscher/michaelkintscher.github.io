@@ -7,7 +7,7 @@
     </button>
 
     <mat-menu #appMenu="matMenu" yPosition="below">
-      <button mat-menu-item routerLink="/home" (click)="tab = Tabs[0]">Home</button>
+      <button mat-menu-item routerLink="/" (click)="tab = Tabs[0]">Home</button>
       <button mat-menu-item routerLink="/research" (click)="tab = Tabs[1]">Research</button>
       <button mat-menu-item routerLink="/publications" (click)="tab = Tabs[2]">Publications</button>
       <button mat-menu-item routerLink="/teaching" (click)="tab = Tabs[3]">Teaching</button>
@@ -25,7 +25,7 @@
 
     <!-- Page Links -->
     <div id="menu-page-links">
-      <span routerLink="/home" class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[0]" rel="home" (click)="tab = Tabs[0]">Home</span>
+      <span routerLink="/" class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[0]" rel="home" (click)="tab = Tabs[0]">Home</span>
       <span routerLink="/research" class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[1]" rel="research" (click)="tab = Tabs[1]">Research</span>
       <span routerLink="/publications" class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[2]" rel="publications" (click)="tab = Tabs[2]">Publications</span>
       <span routerLink="/teaching" class="header-link non-mobile menu-hide-mid-width" [class.active]="tab == Tabs[3]" rel="teaching" (click)="tab = Tabs[3]">Teaching</span>
