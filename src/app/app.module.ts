@@ -29,6 +29,7 @@ import { TeachingPageComponent } from './teaching-page/teaching-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NewsfeedComponent } from './newsfeed/newsfeed.component';
 import { ServicePageComponent } from './service-page/service-page.component';
+import { ContactCardComponent } from './contact-card/contact-card.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ServicePageComponent } from './service-page/service-page.component';
     TeachingPageComponent,
     HomePageComponent,
     NewsfeedComponent,
-    ServicePageComponent
+    ServicePageComponent,
+    ContactCardComponent
   ],
   imports: [
     BrowserModule,
