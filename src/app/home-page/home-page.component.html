@@ -1,14 +1,15 @@
 <!-- Main right panel -->
-<div class="main-container">
-
-  <!-- Left panel with personal info -->
+<div>
   <div class="centered-content-container">
-    <app-profile-sidebar></app-profile-sidebar>
-  </div>
+    <!-- Left panel with personal info -->
+    <div>
+      <app-profile-sidebar></app-profile-sidebar>
+    </div>
 
-  <!-- News Section -->
-  <div id="news-content-block" class="centered-content-container">
-    <app-newsfeed dataSource="../../assets/showcase-content/news.json"></app-newsfeed>
+    <!-- News Section -->
+    <div id="news-content-block">
+      <app-newsfeed dataSource="../../assets/showcase-content/news.json"></app-newsfeed>
+    </div>
   </div>
 
   <!-- Education Section -->

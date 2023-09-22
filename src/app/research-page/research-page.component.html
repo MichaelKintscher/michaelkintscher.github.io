@@ -1,17 +1,19 @@
-<div>
+<div id="research-page-container">
   <!-- Header content -->
-  <div class="research-page-header">
-    <h1>Research</h1>
-    <p>I work in the Sonoran Visualization Lab at Arizona State University with <a href="https://chrisbryan.github.io/" target="_blank">Dr. Chris Bryan</a>. My research interests span collaboration, visualization, and immersive experiences.</p>
+  <div class="centered-content-container">
+    <div class="research-page-header">
+      <h1>Research</h1>
+      <p>I work in the Sonoran Visualization Lab at Arizona State University with <a href="https://chrisbryan.github.io/" target="_blank">Dr. Chris Bryan</a>. My research interests span collaboration, visualization, and immersive experiences.</p>
 
-    <!-- Research area links bar -->
-    <div class="research-area-links-container">
-      <div>|</div>
-      <div *ngFor="let area of researchAreas" class="horizontal-container">
-        <a href="#{{ area.title }}-research-area">
-          <div class="research-area-link">{{ area.title }}</div>
-        </a>
+      <!-- Research area links bar -->
+      <div class="research-area-links-container">
         <div>|</div>
+        <div *ngFor="let area of researchAreas" class="horizontal-container">
+          <a href="#{{ area.title }}-research-area">
+            <div class="research-area-link">{{ area.title }}</div>
+          </a>
+          <div>|</div>
+        </div>
       </div>
     </div>
   </div>

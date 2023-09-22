@@ -12,6 +12,11 @@ body {
 
 .centered-content-container {
     max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
 }
 
 .mobile-only {

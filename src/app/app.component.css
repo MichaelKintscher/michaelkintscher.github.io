@@ -149,12 +149,13 @@ svg.material-icons {
     margin: 0px 0px 0px 20px;
 }
 
-.main-container {
-  flex: 3;
+.main-container {/*
+  flex: 100%;*//*
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  align-items: center;*/
+  /*padding: 20px;*//*
+  width: 100%;*/
 }
 
 /* FOOTER STYLES */

@@ -10,6 +10,7 @@
 
 .research-area-image img {
     max-width: 500px;
+    width: stretch;
 }
 
 .research-area-description {
