@@ -1,46 +1,44 @@
 {
-  "listdata": [
+  "items": [
     {
       "position": "Parliamentarian",
-      "course": "Graduate and Professional Students Association",
-      "imageSource": "",
-      "link": ""
+      "organization": "Graduate and Professional Students Association",
+      "service_type": "Internal"
     },
     {
       "position": "President",
-      "course": "GRADient",
-      "imageSource": "",
-      "link": ""
+      "organization": "GRADient",
+      "service_type": "Internal"
+    },
+    {
+      "position": "Treasurer",
+      "organization": "GRADient",
+      "service_type": "Internal"
     },
     {
       "position": "Second Adviser",
-      "course": "oSTEM",
-      "imageSource": "",
-      "link": ""
+      "organization": "oSTEM",
+      "service_type": "Internal"
     },
     {
       "position": "Second Adviser",
-      "course": "YDSA",
-      "imageSource": "",
-      "link": ""
+      "organization": "YDSA",
+      "service_type": "Internal"
     },
     {
       "position": "Executive Board",
-      "course": "Rainbow Coalition",
-      "imageSource": "",
-      "link": ""
+      "organization": "Rainbow Coalition",
+      "service_type": "Internal"
     },
     {
       "position": "National DEI Committee",
-      "course": "American Mensa",
-      "imageSource": "",
-      "link": ""
+      "organization": "American Mensa",
+      "service_type": "External"
     },
     {
       "position": "National Communications Committee",
-      "course": "Order of the Arrow, BSA",
-      "imageSource": "",
-      "link": ""
+      "organization": "Order of the Arrow, BSA",
+      "service_type": "External"
     }
   ]
 }

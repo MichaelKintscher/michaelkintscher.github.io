@@ -30,6 +30,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NewsfeedComponent } from './newsfeed/newsfeed.component';
 import { ServicePageComponent } from './service-page/service-page.component';
 import { ContactCardComponent } from './contact-card/contact-card.component';
+import { ServiceCollectionComponent } from './service-collection/service-collection.component';
+import { ServiceTileComponent } from './service-tile/service-tile.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { ContactCardComponent } from './contact-card/contact-card.component';
     HomePageComponent,
     NewsfeedComponent,
     ServicePageComponent,
-    ContactCardComponent
+    ContactCardComponent,
+    ServiceCollectionComponent,
+    ServiceTileComponent
   ],
   imports: [
     BrowserModule,

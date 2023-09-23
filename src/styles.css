@@ -27,6 +27,17 @@ body {
   display: initial;
 }
 
+.page-header,
+.section-header {
+  margin: 20px;
+}
+
+.dark-block {
+  background-color: #212121;
+  display: block;
+  width: 100%;
+}
+
 @media screen and (max-width: 1050px) {
   .menu-hide-mid-width {
     display: none;
