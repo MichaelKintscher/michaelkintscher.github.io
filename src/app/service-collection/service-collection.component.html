@@ -1,6 +1,8 @@
 <div>
-  <div>{{ name }}</div>
-  <div *ngFor="let experience of serviceExperiences">
-    {{ experience.position }}
+  <h2>{{ name }}</h2>
+  <div class="service-list-container">
+    <div *ngFor="let experience of serviceExperiences" class="service-tile-container">
+      <app-service-tile [experience]="experience"></app-service-tile>
+    </div>
   </div>
 </div>

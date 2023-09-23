@@ -3,42 +3,195 @@
     {
       "position": "Parliamentarian",
       "organization": "Graduate and Professional Students Association",
-      "service_type": "Internal"
+      "parent_organization": "Student Government",
+      "service_type": "Internal",
+      "start_date": "MAY 2023",
+      "end_date": "Present"
     },
     {
       "position": "President",
       "organization": "GRADient",
-      "service_type": "Internal"
+      "parent_organization": "Student Orgs",
+      "service_type": "Internal",
+      "start_date": "JAN 2019",
+      "end_date": "MAY 2019"
+    },
+    {
+      "position": "President",
+      "organization": "GRADient",
+      "parent_organization": "Student Orgs",
+      "service_type": "Internal",
+      "start_date": "JAN 2022",
+      "end_date": "MAY 2022"
+    },
+    {
+      "position": "President",
+      "organization": "GRADient",
+      "parent_organization": "Student Orgs",
+      "service_type": "Internal",
+      "start_date": "JUN 2022",
+      "end_date": "MAY 2023"
+    },
+    {
+      "position": "President",
+      "organization": "GRADient",
+      "parent_organization": "Student Orgs",
+      "service_type": "Internal",
+      "start_date": "JUN 2023",
+      "end_date": "Present"
     },
     {
       "position": "Treasurer",
       "organization": "GRADient",
-      "service_type": "Internal"
+      "parent_organization": "Student Orgs",
+      "service_type": "Internal",
+      "start_date": "JUN 2021",
+      "end_date": "DEC 2021"
     },
     {
-      "position": "Second Adviser",
-      "organization": "oSTEM",
-      "service_type": "Internal"
-    },
-    {
-      "position": "Second Adviser",
-      "organization": "YDSA",
-      "service_type": "Internal"
-    },
-    {
-      "position": "Executive Board",
+      "position": "Director of Community Coordination",
       "organization": "Rainbow Coalition",
-      "service_type": "Internal"
+      "parent_organization": "Student Government",
+      "service_type": "Internal",
+      "start_date": "JUN 2019",
+      "end_date": "MAY 2020"
+    },
+    {
+      "position": "Student Adviser",
+      "organization": "oSTEM",
+      "parent_organization": "Student Orgs",
+      "service_type": "Internal",
+      "start_date": "OCT 2022",
+      "end_date": "DEC 2022"
+    },
+    {
+      "position": "Student Adviser",
+      "organization": "YDSA",
+      "parent_organization": "Student Orgs",
+      "service_type": "Internal",
+      "start_date": "SEP 2023",
+      "end_date": "Present"
     },
     {
       "position": "National DEI Committee",
       "organization": "American Mensa",
-      "service_type": "External"
+      "parent_organization": "American Mensa",
+      "service_type": "External",
+      "start_date": "OCT 2022",
+      "end_date": "Present"
+    },
+    {
+      "position": "Chapter Delegate",
+      "organization": "oSTEM",
+      "parent_organization": "Student Orgs",
+      "service_type": "Internal",
+      "start_date": "NOV 2016",
+      "end_date": "NOV 2016"
+    },
+    {
+      "position": "Pathfinders Deputy Adviser",
+      "organization": "Order of the Arrow, BSA",
+      "parent_organization": "Boy Scouts of America",
+      "service_type": "External",
+      "start_date": "JAN 2017",
+      "end_date": "AUG 2019"
+    },
+    {
+      "position": "Trek Guides Associate Deputy Adviser",
+      "organization": "Order of the Arrow, BSA",
+      "parent_organization": "Boy Scouts of America",
+      "service_type": "External",
+      "start_date": "JUN 2017",
+      "end_date": "HUL 2017"
+    },
+    {
+      "position": "Region Committee",
+      "organization": "Order of the Arrow, BSA",
+      "parent_organization": "Boy Scouts of America",
+      "service_type": "External",
+      "start_date": "JAN 2018",
+      "end_date": "DEC 2021"
+    },
+    {
+      "position": "Associate Lodge Adviser",
+      "organization": "Order of the Arrow, BSA",
+      "parent_organization": "Boy Scouts of America",
+      "service_type": "External",
+      "start_date": "JAN 2017",
+      "end_date": "DEC 2019"
     },
     {
       "position": "National Communications Committee",
       "organization": "Order of the Arrow, BSA",
-      "service_type": "External"
+      "parent_organization": "Boy Scouts of America",
+      "service_type": "External",
+      "start_date": "SEP 2021",
+      "end_date": "SEP 2023"
+    },
+    {
+      "position": "National Communications Task Force",
+      "organization": "BSA National",
+      "parent_organization": "Boy Scouts of America",
+      "service_type": "External",
+      "start_date": "MAY 2022",
+      "end_date": "MAY 2023"
+    },
+    {
+      "position": "Training Coordinator",
+      "organization": "Grand Canyon Council, BSA",
+      "parent_organization": "Boy Scouts of America",
+      "service_type": "External",
+      "start_date": "JUL 2017",
+      "end_date": "NOV 2017"
+    },
+    {
+      "position": "Core Values Judge",
+      "organization": "FIRST",
+      "parent_organization": "FIRST",
+      "service_type": "External",
+      "start_date": "JAN 2017",
+      "end_date": "JAN 2017"
+    },
+    {
+      "position": "Judge",
+      "organization": "FIRST",
+      "parent_organization": "FIRST",
+      "service_type": "External",
+      "start_date": "FEB 2017",
+      "end_date": "FEB 2017"
+    },
+    {
+      "position": "Judge",
+      "organization": "FIRST",
+      "parent_organization": "FIRST",
+      "service_type": "External",
+      "start_date": "FEB 2018",
+      "end_date": "FEB 2018"
+    },
+    {
+      "position": "Field Repair/Reset",
+      "organization": "FIRST",
+      "parent_organization": "FIRST",
+      "service_type": "External",
+      "start_date": "APR 2018",
+      "end_date": "APR 2018"
+    },
+    {
+      "position": "Robot Inspector",
+      "organization": "FIRST",
+      "parent_organization": "FIRST",
+      "service_type": "External",
+      "start_date": "MAR 2018",
+      "end_date": "MAR 2018"
+    },
+    {
+      "position": "University Committee on Campus Inclusion",
+      "organization": "ASU",
+      "parent_organization": "University Boards and Committees",
+      "service_type": "Internal",
+      "start_date": "SEP 2023",
+      "end_date": "Present"
     }
+
   ]
 }

@@ -15,6 +15,7 @@ import { ServiceExperienceInterface } from '../../types/ServiceExperience.interf
 export class ServicePageComponent implements OnInit {
 
   // Properties
+  groupBy: string = 'parent_organization';
   dataSource = '../../assets/showcase-content/service.json';
   internalServiceCollections: ServiceCollectionInterface[] = [];
   externalServiceCollections: ServiceCollectionInterface[] = [];
@@ -38,6 +39,9 @@ export class ServicePageComponent implements OnInit {
     // Declare the list of data.
     const rawData: ServiceExperienceInterface[] = [];
 
+    // Declare the constant for grouping by.
+    let groupByPropertyName = this.groupBy as keyof ServiceExperienceInterface;
+
     // Get the data from the specified data source.
     this.fileGetterService.getFile(this.dataSource)
       .pipe(takeUntil(this.unsubscribe$))
@@ -48,31 +52,31 @@ export class ServicePageComponent implements OnInit {
 
         let internalExperiences = rawData.filter((s) => s.service_type === 'Internal');
         // Get the list of orgs with internal service.
-        let internalOrgs: string[] = internalExperiences.filter((value, index, self) => 
+        let internalGroups: string[] = internalExperiences.filter((value, index, self) => 
           index === self.findIndex((t) => (
-            t.organization === value.organization
+            t[groupByPropertyName] === value[groupByPropertyName]
           ))
-        ).map(item => item.organization);
+        ).map(item => item[groupByPropertyName]);
 
-        internalOrgs.forEach(org => {
+        internalGroups.forEach(group => {
           this.internalServiceCollections.push({
-            name: org,
-            serviceExperiences: internalExperiences.filter((e) => e.organization == org)
+            name: group,
+            serviceExperiences: internalExperiences.filter((e) => e[groupByPropertyName] == group)
           });
         });
 
         let externalExperiences = rawData.filter((s) => s.service_type === 'External');
         // Get the list of orgs with external service.
-        let externalOrgs: string[] = externalExperiences.filter((value, index, self) =>
+        let externalGroups: string[] = externalExperiences.filter((value, index, self) =>
           index === self.findIndex((t) => (
-            t.organization === value.organization
+            t[groupByPropertyName] === value[groupByPropertyName]
           ))
-        ).map(item => item.organization);
+        ).map(item => item[groupByPropertyName]);
 
-        externalOrgs.forEach(org => {
+        externalGroups.forEach(group => {
           this.externalServiceCollections.push({
-            name: org,
-            serviceExperiences: externalExperiences.filter((e) => e.organization == org)
+            name: group,
+            serviceExperiences: externalExperiences.filter((e) => e[groupByPropertyName] == group)
           });
         });
       });

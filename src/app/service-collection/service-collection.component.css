@@ -1,0 +1,10 @@
+.service-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.service-tile-container {
+  max-width: 320px;
+  margin: 10px;
+}
