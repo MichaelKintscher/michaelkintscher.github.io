@@ -1,0 +1,12 @@
+.experience-tags-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.experience-tag {
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: goldenrod;
+}

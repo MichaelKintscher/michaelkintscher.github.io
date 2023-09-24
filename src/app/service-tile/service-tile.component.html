@@ -1,6 +1,13 @@
 <mat-card>
   <mat-card-header>
     <mat-card-title>{{ experience.position }}</mat-card-title>
-    <mat-card-subtitle>{{ experience.start_date }} - {{experience.end_date}}<br />{{ experience.organization }}</mat-card-subtitle>
+    <mat-card-subtitle>{{ experience.start_date }}<span *ngIf="experience.start_date != experience.end_date"> - {{experience.end_date}}</span><br />{{ experience.organization }}</mat-card-subtitle>
   </mat-card-header>
+  <mat-card-footer>
+    <div class="experience-tags-container">
+      <div *ngFor="let tag of experience.tags" class="experience-tag">
+        <i>{{ tag }}</i>
+      </div>
+    </div>
+  </mat-card-footer>
 </mat-card>

@@ -14,7 +14,8 @@ export class ServiceTileComponent implements OnInit {
     parent_organization: 'Parent Organization',
     service_type: "Service Type",
     start_date: "Start Date",
-    end_date: "End Date"
+    end_date: "End Date",
+    tags: ["Tag"]
   };
 
   constructor() { }

@@ -5,4 +5,5 @@ export interface ServiceExperienceInterface {
   service_type: string;
   start_date: string;
   end_date: string;
+  tags: string[];
 }
