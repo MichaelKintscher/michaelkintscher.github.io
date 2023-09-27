@@ -1,7 +1,11 @@
+.section-header {
+
+}
+
 .service-collection-block {
   margin: 20px;
 }
 
 .service-collection-container {
-
+    padding: 0px 0px 20px 0px;
 }

@@ -1,7 +1,11 @@
-.experience-tags-container{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
+.service-card {
+    width: stretch;
+}
+
+.experience-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
 }
 
 .experience-tag {

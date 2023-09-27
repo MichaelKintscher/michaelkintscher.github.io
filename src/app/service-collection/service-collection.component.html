@@ -1,8 +1,6 @@
 <div>
   <h2>{{ name }}</h2>
   <div class="service-list-container">
-    <div *ngFor="let experience of serviceExperiences" class="service-tile-container">
-      <app-service-tile [experience]="experience"></app-service-tile>
-    </div>
+    <app-service-tile *ngFor="let experience of serviceExperiences" [experience]="experience" class="service-tile"></app-service-tile>
   </div>
 </div>

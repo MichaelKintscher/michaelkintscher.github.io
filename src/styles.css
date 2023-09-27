@@ -34,7 +34,7 @@ body {
 
 .dark-block {
   background-color: #212121;
-  display: block;
+  display: inline-block;
   width: 100%;
 }
 
