@@ -13,26 +13,28 @@
   </div>
 
   <!-- Education Section -->
-  <div class="education-container">
-    <h1>Education</h1>
-    <div class="education-items">
-      <app-education-tile class="education-tile"
-                          degreeName="Bachelors"
-                          year="2017"
-                          subject="Computer Science (Software Engineering)"
-                          institution="Arizona State University"></app-education-tile>
-      <mat-divider [vertical]="true"></mat-divider>
-      <app-education-tile class="education-tile"
-                          degreeName="Masters"
-                          year="2020"
-                          subject="Computer Science"
-                          institution="Arizona State University"></app-education-tile>
-      <mat-divider [vertical]="true"></mat-divider>
-      <app-education-tile class="education-tile"
-                          degreeName="PhD"
-                          year="Est. 2026"
-                          subject="Computer Science"
-                          institution="Arizona State University"></app-education-tile>
+  <div class="education-container dark-block">
+    <div class="centered-content-container">
+      <h1>Education</h1>
+      <div class="education-items">
+        <app-education-tile class="education-tile"
+                            degreeName="Bachelors"
+                            year="2017"
+                            subject="Computer Science (Software Engineering)"
+                            institution="Arizona State University"></app-education-tile>
+        <span class="non-mobile"><mat-divider [vertical]="true"></mat-divider></span>
+        <app-education-tile class="education-tile"
+                            degreeName="Masters"
+                            year="2020"
+                            subject="Computer Science"
+                            institution="Arizona State University"></app-education-tile>
+        <span class="non-mobile"><mat-divider [vertical]="true"></mat-divider></span>
+        <app-education-tile class="education-tile"
+                            degreeName="PhD"
+                            year="Est. 2026"
+                            subject="Computer Science"
+                            institution="Arizona State University"></app-education-tile>
+      </div>
     </div>
   </div>
 

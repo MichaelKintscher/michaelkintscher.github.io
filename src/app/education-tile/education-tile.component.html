@@ -1,7 +1,22 @@
-<div class="education-card">
-  <p class="education-degree">{{ degreeName }}</p>
-  <img src="../assets/education-svgrepo-com.svg" />
-  <p class="education-year">{{ year }}</p>
-  <p class="education-subject">{{ subject }}</p>
-  <p class="education-institution"> {{ institution }}</p>
-</div>
+<span class="non-mobile">
+  <div class="education-card">
+    <p class="education-degree">{{ degreeName }}</p>
+    <img src="../assets/education-svgrepo-com.svg" />
+    <p class="education-year">{{ year }}</p>
+    <p class="education-subject">{{ subject }}</p>
+    <p class="education-institution"> {{ institution }}</p>
+  </div>
+</span>
+<span class="mobile-only">
+  <mat-card>
+    <mat-card-header>
+      <!--<div mat-card-avatar class="education-card-image"></div>-->
+      <img mat-card-avatar src="../assets/education-svgrepo-com.svg" />
+      <mat-card-title>{{ degreeName }}</mat-card-title>
+      <mat-card-subtitle>
+        <div><i>{{ subject }}</i></div>
+        <div><i>{{ year }} - {{ institution }}</i></div>
+      </mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</span>
