@@ -19,9 +19,11 @@
   </div>
 
   <!-- Research area blocks -->
-  <div *ngFor="let area of researchAreas" class="research-area-block">
-    <app-research-area [title]="area.title"
-                       [description]="area.description"
-                       [imageSource]="area.image_source"></app-research-area>
+  <div *ngFor="let area of researchAreas" class="research-area-block dark-block">
+    <div class="centered-content-container">
+      <app-research-area [title]="area.title"
+                         [description]="area.description"
+                         [imageSource]="area.image_source"></app-research-area>
+    </div>
   </div>
 </div>
