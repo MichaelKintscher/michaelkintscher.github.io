@@ -1,6 +1,12 @@
 {
   "listdata": [
     {
+      "position": "Project Mentor",
+      "course": "Data Visualization",
+      "imageSource": "",
+      "link": ""
+    },
+    {
       "position": "Capstone Mentor",
       "course": "Computer Science Capstone",
       "imageSource": "",
