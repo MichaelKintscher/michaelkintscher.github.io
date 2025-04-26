@@ -10,6 +10,7 @@ export class ResearchAreaComponent implements OnInit {
   // Properties
   @Input() title = 'Title';
   @Input() description = 'A brief description of this research area!';
+  @Input() question = 'A research question?';
   @Input() imageSource = '';
 
   constructor() { }

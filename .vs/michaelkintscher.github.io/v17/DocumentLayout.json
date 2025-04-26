@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E11287D-75C7-4A5A-8AE2-36863E0D2812}|C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io|c:\\users\\micha\\source\\repos\\michaelkintscher.github.io\\src\\assets\\showcase-content\\research-areas.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3E11287D-75C7-4A5A-8AE2-36863E0D2812}|C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io|solutionrelative:src\\assets\\showcase-content\\research-areas.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E11287D-75C7-4A5A-8AE2-36863E0D2812}|C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io|c:\\users\\micha\\source\\repos\\michaelkintscher.github.io\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{3E11287D-75C7-4A5A-8AE2-36863E0D2812}|C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E11287D-75C7-4A5A-8AE2-36863E0D2812}|C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io|c:\\users\\micha\\source\\repos\\michaelkintscher.github.io\\src\\app\\research-page\\research-page.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E11287D-75C7-4A5A-8AE2-36863E0D2812}|C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io|solutionrelative:src\\app\\research-page\\research-page.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E11287D-75C7-4A5A-8AE2-36863E0D2812}|C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io|c:\\users\\micha\\source\\repos\\michaelkintscher.github.io\\src\\app\\research-area\\research-area.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3E11287D-75C7-4A5A-8AE2-36863E0D2812}|C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io|solutionrelative:src\\app\\research-area\\research-area.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -20,8 +37,56 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "research-areas.json",
+              "DocumentMoniker": "C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io\\src\\assets\\showcase-content\\research-areas.json",
+              "RelativeDocumentMoniker": "src\\assets\\showcase-content\\research-areas.json",
+              "ToolTip": "C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io\\src\\assets\\showcase-content\\research-areas.json",
+              "RelativeToolTip": "src\\assets\\showcase-content\\research-areas.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-26T06:07:31.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "research-area.component.html",
+              "DocumentMoniker": "C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io\\src\\app\\research-area\\research-area.component.html",
+              "RelativeDocumentMoniker": "src\\app\\research-area\\research-area.component.html",
+              "ToolTip": "C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io\\src\\app\\research-area\\research-area.component.html",
+              "RelativeToolTip": "src\\app\\research-area\\research-area.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-26T06:06:09.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "research-page.component.html",
+              "DocumentMoniker": "C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io\\src\\app\\research-page\\research-page.component.html",
+              "RelativeDocumentMoniker": "src\\app\\research-page\\research-page.component.html",
+              "ToolTip": "C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io\\src\\app\\research-page\\research-page.component.html",
+              "RelativeToolTip": "src\\app\\research-page\\research-page.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-26T06:03:19.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\micha\\source\\repos\\michaelkintscher.github.io\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-04-26T05:51:22.144Z",
+              "EditorCaption": ""
             }
           ]
         }
