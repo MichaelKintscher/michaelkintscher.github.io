@@ -3,26 +3,19 @@
 }
 
 .education-container {
-  padding: 30px 0px 80px 0px;
-}
-
-.education-container h1 {
-  margin: 20px 20px 40px 20px;
-  font-size: 42px;
-  text-align: center;
+  padding: 0px 20px 0px 20px;
 }
 
 .education-items {
   width: stretch;
   display: flex;
   flex-direction: row;
-  /*align-items: center;*/
-  padding: 0px 20px 0px 20px;
+  gap: 10px;
 }
 
 .education-tile {
   flex: 1;
-  margin: 10px;
+  margin: 0px;
 }
 
 @media screen and (max-width: 750px) {
