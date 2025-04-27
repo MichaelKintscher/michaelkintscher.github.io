@@ -5,36 +5,33 @@
 }
 
 .showcase-intro-panel {
-  margin: 20px 20px 20px 20px;
+  margin: 0px 0px 20px 0px;
 }
 
-/*h1 {
-  font-size: 40px;
-  margin: 20px 10px 20px 10px;
-}*/
-
 .showcase-description {
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+/*.cards-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0px 10px 0px 10px;
-}
+  gap: 10px;
+  justify-content: space-between;
+}*/
 
-.tiled-cards {
+/*.tiled-cards {
     max-width: 320px;
-}
-
-mat-grid-list {
-    width: stretch;
-}
+}*/
 
 .listitem-link-card {
   width: stretch;
-  margin: 10px;
 }
 
 /* Change opacity on hover for active links only. */

@@ -9,7 +9,7 @@
 
   <!-- Education Section -->
   <div class="centered-content-container">
-    <div class="education-container">
+    <div class="content-container">
       <h1>Education</h1>
       <div class="education-items">
         <app-education-tile class="education-tile"
@@ -17,13 +17,11 @@
                             year="2017"
                             subject="Computer Science (Software Engineering)"
                             institution="Arizona State University"></app-education-tile>
-        <span class="non-mobile"><mat-divider [vertical]="true"></mat-divider></span>
         <app-education-tile class="education-tile"
                             degreeName="Masters"
                             year="2020"
                             subject="Computer Science"
                             institution="Arizona State University"></app-education-tile>
-        <span class="non-mobile"><mat-divider [vertical]="true"></mat-divider></span>
         <app-education-tile class="education-tile"
                             degreeName="PhD"
                             year="Est. 2028"
@@ -35,10 +33,12 @@
 
   <!-- Affiliations Section -->
   <div class="centered-content-container">
-    <app-list-showcase title="Affiliations"
-                       description="I seek out volunteering and professional oppportunities with professional and academic research organizations, STEM education groups, and queer and youth advocacy groups."
-                       dataSource="../../assets/showcase-content/orgs-list.json"
-                       [fullWidth]="false"></app-list-showcase>
+    <div class="content-container">
+      <app-list-showcase title="Affiliations"
+                         description="I seek out volunteering and professional oppportunities with professional and academic research organizations, STEM education groups, and queer and youth advocacy groups."
+                         dataSource="../../assets/showcase-content/orgs-list.json"
+                         [fullWidth]="false"></app-list-showcase>
+    </div>
   </div>
 
   <!-- News Section -->
