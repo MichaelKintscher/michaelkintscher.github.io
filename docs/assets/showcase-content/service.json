@@ -1,12 +1,26 @@
 {
   "items": [
     {
+      "position": "Assembly President",
+      "organization": "Graduate Student Government",
+      "parent_organization": "Student Government",
+      "service_type": "Internal",
+      "start_date": "MAY 2024",
+      "end_date": "Present",
+      "tags": [
+        "Executive Board",
+        "Officer",
+        "Advocacy",
+        "Policy"
+      ]
+    },
+    {
       "position": "Parliamentarian",
       "organization": "Graduate and Professional Students Association",
       "parent_organization": "Student Government",
       "service_type": "Internal",
       "start_date": "MAY 2023",
-      "end_date": "Present",
+      "end_date": "MAY 2024",
       "tags": [
         "Policy",
         "Advocacy"
@@ -60,7 +74,7 @@
       "parent_organization": "Student Orgs",
       "service_type": "Internal",
       "start_date": "JUN 2023",
-      "end_date": "Present",
+      "end_date": "JUN 2024",
       "tags": [
         "DEI",
         "Officer",
@@ -307,7 +321,7 @@
       "parent_organization": "University Boards and Committees",
       "service_type": "Internal",
       "start_date": "SEP 2023",
-      "end_date": "Present",
+      "end_date": "MAY 2024",
       "tags": [
         "DEI",
         "Advocacy",
