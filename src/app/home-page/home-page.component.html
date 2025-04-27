@@ -5,11 +5,6 @@
     <div>
       <app-profile-sidebar></app-profile-sidebar>
     </div>
-
-    <!-- News Section -->
-    <div id="news-content-block">
-      <app-newsfeed dataSource="../../assets/showcase-content/news.json"></app-newsfeed>
-    </div>
   </div>
 
   <!-- Education Section -->
@@ -44,5 +39,12 @@
                        description="I seek out volunteering and professional oppportunities with professional and academic research organizations, STEM education groups, and queer and youth advocacy groups."
                        dataSource="../../assets/showcase-content/orgs-list.json"
                        [fullWidth]="false"></app-list-showcase>
+  </div>
+
+  <!-- News Section -->
+  <div class="centered-content-container">
+    <div id="news-content-block">
+      <app-newsfeed dataSource="../../assets/showcase-content/news.json"></app-newsfeed>
+    </div>
   </div>
 </div>
