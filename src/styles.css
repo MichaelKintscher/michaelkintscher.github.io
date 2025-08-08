@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/html-template/css/fontawesome-all.min.css";
+@import "./assets/html-template/css/main.css";
+@import "./assets/html-template/css/noscript.css";
 
 html, body {
   height: 100%;
