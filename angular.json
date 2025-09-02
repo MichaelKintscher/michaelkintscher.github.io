@@ -32,8 +32,7 @@
             ],
             "scripts": [
               "src/assets/html-template/js/jquery.min.js",
-              "src/assets/html-template/js/jquery.scrollex.min.js",
-              "src/assets/html-template/js/jquery.scrolly.min.js",
+              "src/assets/html-template/js/jquery.poptrox.min.js",
               "src/assets/html-template/js/browser.min.js",
               "src/assets/html-template/js/breakpoints.min.js",
               "src/assets/html-template/js/util.js",

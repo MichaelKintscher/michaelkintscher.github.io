@@ -1,6 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
 
-declare function setupSideBar(): void;
+declare function finishJsSetup(): void;
 
 @Component({
   selector: 'app-root',
@@ -21,7 +21,7 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     // Run the function from the js code AFTER the app component content is loaded.
-    setupSideBar();
+    finishJsSetup();
   }
 
 }
