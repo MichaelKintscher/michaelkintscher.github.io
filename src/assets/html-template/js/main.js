@@ -7,8 +7,7 @@
 (function($) {
 
 	var	$window = $(window),
-		$body = $('body'),
-		$sidebar = $('#sidebar');
+		$body = $('body');
 
 	// Breakpoints.
 		breakpoints({
@@ -44,6 +43,15 @@
 
 			});
 
+	
+
+})(jQuery);
+
+function setupSideBar() {
+	
+	$sidebar = $('#sidebar');
+	console.log("wow!");
+	console.log($sidebar.length);
 	// Sidebar.
 		if ($sidebar.length > 0) {
 
@@ -186,5 +194,4 @@
 
 				}
 			});
-
-})(jQuery);
+}
