@@ -2699,7 +2699,7 @@ input, select, textarea {
 		width: calc(100% - 35%);
 	}
 
-		#main > section {
+		#main section {
 			border-top: solid 2px #efefef;
 			margin: 4em 0 0 0;
 			padding: 4em 0 0 0;
@@ -3187,7 +3187,7 @@ input, select, textarea {
 				padding: 2.25em 1.5em 0.25em 1.5em;
 			}
 
-				#main > section {
+				#main section {
 					margin: 2.25em 0 0 0;
 					padding: 2.25em 0 0 0;
 				}

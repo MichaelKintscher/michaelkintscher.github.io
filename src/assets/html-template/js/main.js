@@ -4,10 +4,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+var $window, $body;
+
 (function($) {
 
-	var $window = $(window),
-		$body = $('body');
+	$window = $(window),
+	$body = $('body');
 
 	// Breakpoints.
 		breakpoints({
