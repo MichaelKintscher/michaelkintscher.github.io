@@ -2,8 +2,9 @@
     <h2>{{ title }}</h2>
     <p>{{ description }}</p>
     <div class="row">
-        <ul>
-            <li *ngFor="let data of listData">
+        <div *ngFor="let data of listData"
+            class="col-6 col-12-xsmall work-item">
+            <div class="list-item">
                 <a [href]="data.link == '' ? null : data.link"
                     target="_blank"
                     [class.disabled]="data.link == '' ? true : null">
@@ -16,7 +17,7 @@
                         </div>
                     </div>
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </section>
