@@ -7,11 +7,11 @@ import { ListItemInterface } from 'src/types/ListItem.interface';
 import { FileGetterService } from '../file-getter.service';
 
 @Component({
-  selector: 'app-list-section',
-  templateUrl: './list-section.component.html',
-  styleUrls: ['./list-section.component.css']
+  selector: 'app-gallery-section',
+  templateUrl: './gallery-section.component.html',
+  styleUrls: ['./gallery-section.component.css']
 })
-export class ListSectionComponent implements OnInit {
+export class GallerySectionComponent implements OnInit {
 
   // Properties
   @Input() title = 'Title';
@@ -29,7 +29,7 @@ export class ListSectionComponent implements OnInit {
       this.getListData();
     }
     else {
-      console.warn("List-Section property 'dataSource' not set!");
+      console.warn("Gallery-Section property 'dataSource' not set!");
     }
   }
 

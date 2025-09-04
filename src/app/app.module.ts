@@ -33,6 +33,7 @@ import { ContactCardComponent } from './contact-card/contact-card.component';
 import { ServiceCollectionComponent } from './service-collection/service-collection.component';
 import { ServiceTileComponent } from './service-tile/service-tile.component';
 import { ListSectionComponent } from './list-section/list-section.component';
+import { GallerySectionComponent } from './gallery-section/gallery-section.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { ListSectionComponent } from './list-section/list-section.component';
     ContactCardComponent,
     ServiceCollectionComponent,
     ServiceTileComponent,
-    ListSectionComponent
+    ListSectionComponent,
+    GallerySectionComponent
   ],
   imports: [
     BrowserModule,

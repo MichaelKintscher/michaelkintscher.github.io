@@ -1,0 +1,28 @@
+{
+  "listdata": [
+    {
+      "title": "Collaborative Visualization Survey",
+      "description": "A meta-analysis of collaborative data visualization.",
+      "imageSource": "../../assets/images/fulls/01.jpg",
+      "link": "https://www.acm.org/"
+    },
+    {
+      "title": "Theory of Collaboration",
+      "description": "A new way of looking at CSCW systems.",
+      "imageSource": "../../assets/images/fulls/02.jpg",
+      "link": "https://www.acm.org/"
+    },
+    {
+      "title": "Orchestrating Data Visualization",
+      "description": "A system for orchestrating visualization classroom activities.",
+      "imageSource": "../../assets/images/fulls/03.jpg",
+      "link": "https://www.acm.org/"
+    },
+    {
+      "title": "Measuring Collaborative AR Behaviors",
+      "description": "A novel technique for measuring collaborative behaviors in AR.",
+      "imageSource": "../../assets/images/fulls/04.jpg",
+      "link": "https://www.acm.org/"
+    }
+  ]
+}
