@@ -34,6 +34,7 @@ import { ServiceCollectionComponent } from './service-collection/service-collect
 import { ServiceTileComponent } from './service-tile/service-tile.component';
 import { ListSectionComponent } from './list-section/list-section.component';
 import { GallerySectionComponent } from './gallery-section/gallery-section.component';
+import { CvPageComponent } from './cv-page/cv-page.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { GallerySectionComponent } from './gallery-section/gallery-section.compo
     ServiceCollectionComponent,
     ServiceTileComponent,
     ListSectionComponent,
-    GallerySectionComponent
+    GallerySectionComponent,
+    CvPageComponent
   ],
   imports: [
     BrowserModule,
