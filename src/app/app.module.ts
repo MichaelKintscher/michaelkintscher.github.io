@@ -35,6 +35,7 @@ import { ServiceTileComponent } from './service-tile/service-tile.component';
 import { ListSectionComponent } from './list-section/list-section.component';
 import { GallerySectionComponent } from './gallery-section/gallery-section.component';
 import { CvPageComponent } from './cv-page/cv-page.component';
+import { SectionedListComponent } from './sectioned-list/sectioned-list.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { CvPageComponent } from './cv-page/cv-page.component';
     ServiceTileComponent,
     ListSectionComponent,
     GallerySectionComponent,
-    CvPageComponent
+    CvPageComponent,
+    SectionedListComponent
   ],
   imports: [
     BrowserModule,

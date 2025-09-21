@@ -1,0 +1,16 @@
+ul {
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+
+li {
+    display: flex;
+}
+
+li div:first-child {
+    margin: 0px 20px 0px 0px;
+}
+
+.work-item:last-child {
+    margin-bottom: 0px;
+}

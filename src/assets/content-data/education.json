@@ -1,0 +1,22 @@
+{
+  "listdata": [
+    {
+      "title": "Ph.D. in Computer Science",
+      "description": "Arizona State University, est. 2027",
+      "imageSource": "../../assets/org-logos/acm-logo.png",
+      "link": ""
+    },
+    {
+      "title": "M.S. in Computer Science",
+      "description": "Arizona State University, 2020",
+      "imageSource": "../../assets/org-logos/siggraph-logo.png",
+      "link": ""
+    },
+    {
+      "title": "B.S. in Computer Science (Software Engineering)",
+      "description": "Arizona State University, 2017",
+      "imageSource": "../../assets/org-logos/ieee-logo.png",
+      "link": ""
+    }
+  ]
+}
