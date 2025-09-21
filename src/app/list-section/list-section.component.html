@@ -1,6 +1,6 @@
 <section id="three">
     <h2>{{ title }}</h2>
-    <p>{{ description }}</p>
+    <p [hidden]="description == ''">{{ description }}</p>
     <div class="row">
         <div *ngFor="let data of listData"
             class="col-6 col-12-xsmall work-item">
