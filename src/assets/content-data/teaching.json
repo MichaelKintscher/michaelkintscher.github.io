@@ -1,0 +1,33 @@
+{
+    "sections": [
+        {
+            "title": "",
+            "items": [
+                {
+                    "bullet": "Spring 2022",
+                    "text": "CSE 110 Principles of Programming"
+                },
+                {
+                    "bullet": "Fall 2021",
+                    "text": "CSE 110 Principles of Programming"
+                },
+                {
+                    "bullet": "Fall 2021",
+                    "text": "CSE 551 Foundations of Algorithms"
+                },
+                {
+                    "bullet": "Summer 2021",
+                    "text": "CSE 110 Principles of Programming"
+                },
+                {
+                    "bullet": "Spring 2020",
+                    "text": "CPI 411 Graphics for Games"
+                },
+                {
+                    "bullet": "Fall 2019",
+                    "text": "CPI 311 Game Engine Development"
+                }
+            ]
+        }
+    ]
+}

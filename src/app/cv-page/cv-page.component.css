@@ -1,3 +1,36 @@
+/* These local styles override CSS for just this component. */
+
+header.major h2 {
+    margin-bottom: 0px;
+}
+
+#position-text {
+    margin-bottom: 20px;
+}
+
+#cv-header ul {
+    list-style-type: none;
+}
+
+#cv-header li {
+    margin: 6px 0px;
+}
+
+#cv-header ul, li {
+    padding-left: 0px;
+}
+
+#cv-header ul a {
+    display: flex;
+    align-items: center;
+}
+
+#cv-header .icon p {
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: 0.85em;
+}
+
 #research-section > :last-child {
     margin-bottom: 0px;
 }

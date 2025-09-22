@@ -8,7 +8,7 @@
             <ul>
                 <li *ngFor="let item of data.items"
                     class="">
-                    <div [innerHTML]="item.bullet"></div>
+                    <div [ngClass]="{'long-bullet' : item.bullet.length > 8}" [innerHTML]="item.bullet"></div>
                     <div [innerHTML]="item.text"></div>
                 </li>
             </ul>
