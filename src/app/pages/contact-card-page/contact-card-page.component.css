@@ -1,18 +1,11 @@
-#contact-card-container {
-  margin: 50px 0px 0px 0px;
-  text-align: center;
+/* These local styles override CSS for just this component. */
+
+header.major h2 {
+    margin-bottom: 0px;
 }
 
-h1 {
-    font-size: 36px;
-}
-
-#contact-card-container p {
-    font-style: italic;
-}
-
-.contact-qr-code-container {
-    margin: 50px;
+#position-text {
+    margin-bottom: 20px;
 }
 
 #contact-qr-code {
