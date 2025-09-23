@@ -3,10 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProfileSidebarComponent } from './profile-sidebar/profile-sidebar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ContentShowcaseComponent } from './content-showcase/content-showcase.component';
-import { ShowcaseContainerComponent } from './showcase-container/showcase-container.component';
 import { HttpClientModule } from '@angular/common/http';
 
 // Material Design
@@ -19,44 +16,27 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { ResearchProjectComponent } from './research-project/research-project.component';
-import { EducationTileComponent } from './education-tile/education-tile.component';
-import { ListShowcaseComponent } from './list-showcase/list-showcase.component';
-import { ResearchPageComponent } from './research-page/research-page.component';
+import { ResearchPageComponent } from './pages/research-page/research-page.component';
 import { ResearchAreaComponent } from './research-area/research-area.component';
-import { PublicationsPageComponent } from './publications-page/publications-page.component';
+import { PublicationsPageComponent } from './pages/publications-page/publications-page.component';
 import { PublicationComponent } from './publication/publication.component';
-import { TeachingPageComponent } from './teaching-page/teaching-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { NewsfeedComponent } from './newsfeed/newsfeed.component';
-import { ServicePageComponent } from './service-page/service-page.component';
-import { ContactCardComponent } from './contact-card/contact-card.component';
-import { ServiceCollectionComponent } from './service-collection/service-collection.component';
-import { ServiceTileComponent } from './service-tile/service-tile.component';
-import { ListSectionComponent } from './list-section/list-section.component';
-import { GallerySectionComponent } from './gallery-section/gallery-section.component';
-import { CvPageComponent } from './cv-page/cv-page.component';
-import { SectionedListComponent } from './sectioned-list/sectioned-list.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ContactCardComponent } from './pages/contact-card-page/contact-card-page.component';
+import { ListSectionComponent } from './components/list-section/list-section.component';
+import { GallerySectionComponent } from './components/gallery-section/gallery-section.component';
+import { CvPageComponent } from './pages/cv-page/cv-page.component';
+import { SectionedListComponent } from './components/sectioned-list/sectioned-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileSidebarComponent,
-    ContentShowcaseComponent,
-    ShowcaseContainerComponent,
     ResearchProjectComponent,
-    EducationTileComponent,
-    ListShowcaseComponent,
     ResearchPageComponent,
     ResearchAreaComponent,
     PublicationsPageComponent,
     PublicationComponent,
-    TeachingPageComponent,
     HomePageComponent,
-    NewsfeedComponent,
-    ServicePageComponent,
     ContactCardComponent,
-    ServiceCollectionComponent,
-    ServiceTileComponent,
     ListSectionComponent,
     GallerySectionComponent,
     CvPageComponent,

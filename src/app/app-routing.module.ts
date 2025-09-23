@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactCardComponent } from './contact-card/contact-card.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { PublicationsPageComponent } from './publications-page/publications-page.component';
-import { ResearchPageComponent } from './research-page/research-page.component';
-import { CvPageComponent } from './cv-page/cv-page.component';
+import { ContactCardComponent } from './pages/contact-card-page/contact-card-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { PublicationsPageComponent } from './pages/publications-page/publications-page.component';
+import { ResearchPageComponent } from './pages/research-page/research-page.component';
+import { CvPageComponent } from './pages/cv-page/cv-page.component';
 
 const routes: Routes = [
   {
