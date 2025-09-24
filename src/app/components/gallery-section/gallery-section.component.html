@@ -3,7 +3,7 @@
     <div class="row">
         <article *ngFor="let data of listData"
             class="col-6 col-12-xsmall work-item">
-            <a href="./assets/images/fulls/01.jpg" class="image fit thumb"><img src="{{ data.imageSource }}" alt="" /></a>
+            <a href="{{ data.imageSource }}" class="image fit thumb"><img src="{{ data.imageSource }}" alt="" /></a>
             <h3>{{ data.title }}</h3>
             <p>{{ data.description }}</p>
         </article>
