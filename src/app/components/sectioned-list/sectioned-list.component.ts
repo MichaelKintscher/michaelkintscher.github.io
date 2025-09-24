@@ -14,6 +14,7 @@ import { SectionedStringItemsInterface } from 'src/types/SectionedStringItems.in
 export class SectionedListComponent implements OnInit {
 
   // Properties.
+  @Input() sectionId = '';
   @Input() title = 'Title';
   @Input() description = 'A breif description of this showcase!';
   @Input() dataSource = '';

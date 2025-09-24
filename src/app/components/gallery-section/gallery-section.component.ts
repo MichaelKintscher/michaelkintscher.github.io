@@ -14,6 +14,7 @@ import { FileGetterService } from '../../services/file-getter.service';
 export class GallerySectionComponent implements OnInit {
 
   // Properties
+  @Input() sectionId = '';
   @Input() title = 'Title';
   @Input() description = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.";
   @Input() dataSource = '';
