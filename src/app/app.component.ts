@@ -1,4 +1,5 @@
 import { AfterViewInit, Component } from '@angular/core';
+import { Event, Router } from '@angular/router';
 
 declare function finishJsSetup(): void;
 
@@ -18,6 +19,13 @@ export class AppComponent implements AfterViewInit {
     { name: 'Service', type: 'service' }];
 
   tab = this.Tabs[0];
+
+  constructor(private readonly router: Router) {
+
+    // this.router.events.pipe(takeUntilDestroyed()).subscribe((event: Event) => {
+
+    // });
+  }
 
   ngAfterViewInit(): void {
     // Run the function from the js code AFTER the app component content is loaded.
