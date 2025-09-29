@@ -1,14 +1,16 @@
 <section id="{{ sectionId }}">
-    <h2>{{ title }}</h2>
-    <div class="row">
-        <article *ngFor="let data of listData"
-            class="col-6 col-12-xsmall work-item">
-            <a href="{{ data.imageSource }}" class="image fit thumb"><img src="{{ data.imageSource }}" alt="" /></a>
-            <h3>{{ data.title }}</h3>
-            <p>{{ data.description }}</p>
-        </article>
-    </div>
-    <ul class="actions">
-        <li><a href="#" class="button">Full Portfolio</a></li>
-    </ul>
+  <h2>{{ title }}</h2>
+  <div class="row">
+    @for (data of listData; track data) {
+      <article
+        class="col-6 col-12-xsmall work-item">
+        <a href="{{ data.imageSource }}" class="image fit thumb"><img src="{{ data.imageSource }}" alt="" /></a>
+        <h3>{{ data.title }}</h3>
+        <p>{{ data.description }}</p>
+      </article>
+    }
+  </div>
+  <ul class="actions">
+    <li><a href="#" class="button">Full Portfolio</a></li>
+  </ul>
 </section>

@@ -1,18 +1,22 @@
 <section id="{{ sectionId }}">
-    <h2>{{ title }}</h2>
-    <p [hidden]="description == ''">{{ description }}</p>
-    <div class="row">
-        <div *ngFor="let data of listData"
-                class="work-item">
-            <h3 [hidden]="data.title == ''" >{{ data.title }}</h3>
-            <ul>
-                <li *ngFor="let item of data.items"
-                    class="">
-                    <div [ngClass]="{'long-bullet' : item.bullet.length > 8}" [innerHTML]="item.bullet"></div>
-                    <div [innerHTML]="item.text"></div>
-                </li>
-            </ul>
-        </div>
-        
-    </div>
+  <h2>{{ title }}</h2>
+  <p [hidden]="description == ''">{{ description }}</p>
+  <div class="row">
+    @for (data of listData; track data) {
+      <div
+        class="work-item">
+        <h3 [hidden]="data.title == ''" >{{ data.title }}</h3>
+        <ul>
+          @for (item of data.items; track item) {
+            <li
+              class="">
+              <div [ngClass]="{'long-bullet' : item.bullet.length > 8}" [innerHTML]="item.bullet"></div>
+              <div [innerHTML]="item.text"></div>
+            </li>
+          }
+        </ul>
+      </div>
+    }
+
+  </div>
 </section>

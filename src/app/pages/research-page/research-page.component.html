@@ -8,23 +8,27 @@
       <!-- Research area links bar -->
       <div class="research-area-links-container">
         <div>|</div>
-        <div *ngFor="let area of researchAreas" class="horizontal-container">
-          <a href="#{{ area.title }}-research-area">
-            <div class="research-area-link">{{ area.title }}</div>
-          </a>
-          <div>|</div>
-        </div>
+        @for (area of researchAreas; track area) {
+          <div class="horizontal-container">
+            <a href="#{{ area.title }}-research-area">
+              <div class="research-area-link">{{ area.title }}</div>
+            </a>
+            <div>|</div>
+          </div>
+        }
       </div>
     </div>
   </div>
 
   <!-- Research area blocks -->
-  <div *ngFor="let area of researchAreas" class="research-area-block dark-block">
-    <div class="centered-content-container">
-      <app-research-area [title]="area.title"
-                         [description]="area.description"
-                         [question]="area.question"
-                         [imageSource]="area.image_source"></app-research-area>
+  @for (area of researchAreas; track area) {
+    <div class="research-area-block dark-block">
+      <div class="centered-content-container">
+        <app-research-area [title]="area.title"
+          [description]="area.description"
+          [question]="area.question"
+        [imageSource]="area.image_source"></app-research-area>
+      </div>
     </div>
-  </div>
+  }
 </div>
