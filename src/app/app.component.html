@@ -13,8 +13,8 @@
 
 	<!-- Navigation -->
 	<div id="nav-div">
-		<a href="#" class="">Back</a>
-		<p id="page-title">Home</p>
+		<a routerLink="/" [hidden]="navDisplayTitle == 'Home'" class="">Back</a>
+		<p id="page-title">{{ navDisplayTitle }}</p>
 	</div>
 
 	<!-- Footer -->

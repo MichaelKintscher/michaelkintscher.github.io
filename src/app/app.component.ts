@@ -1,5 +1,6 @@
-import { AfterViewInit, Component } from '@angular/core';
-import { Event, Router } from '@angular/router';
+import { AfterViewInit, Component, inject } from '@angular/core';
+import { Event, Router, NavigationEnd } from '@angular/router';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 declare function finishJsSetup(): void;
 
@@ -12,6 +13,10 @@ declare function finishJsSetup(): void;
 export class AppComponent implements AfterViewInit {
 
   // Properties
+  private readonly router = inject(Router);
+  // @ViewChild('pageTitle') navTitle!: ElementRef;
+  navDisplayTitle: string = "Hello";
+
   title = 'michaelkintscher-github-io';
   Tabs: any[] = [{ name: 'Home', type: 'home' },
     { name: 'Research', type: 'research' },
@@ -21,11 +26,16 @@ export class AppComponent implements AfterViewInit {
 
   tab = this.Tabs[0];
 
-  constructor(private readonly router: Router) {
+  constructor() {
 
-    // this.router.events.pipe(takeUntilDestroyed()).subscribe((event: Event) => {
-
-    // });
+    this.router.events.pipe(takeUntilDestroyed()).subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        // Get the title property of the route that was navigated to.
+        var routePath = event.url.substring(1);
+        var route = this.router.config.filter(r => r.path == routePath)[0];
+        this.navDisplayTitle = routePath != "" ? route.title as string : "Home";
+      }
+    });
   }
 
   ngAfterViewInit(): void {

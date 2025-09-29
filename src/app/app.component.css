@@ -1,4 +1,4 @@
-#nav-div {
+/* #nav-div {
     display: flex;
     align-items: center;
     position: fixed;
@@ -8,9 +8,85 @@
     padding: 1em 4em;
     width: 100%;
     background-color: #1f1815;
+} */
+
+#nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+    margin-right: 65%;
+    padding: 1em 4em;
+    width: stretch;
+    background-color: #1f1815;
+}
+
+#nav-div :first-child {
+    margin-right: 20px;
 }
 
 #nav-div p {
     margin-bottom: 0px;
-    margin-left: 20px;
+}
+
+/* XLarge */
+@media screen and (max-width: 1800px) {
+    
+    #nav-div {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 0px;
+        z-index: 1;
+        margin-left: 35%;
+        padding: 1em 4em;
+        width: 100%;
+        background-color: #1f1815;
+    }
+}
+
+/* Large */
+@media screen and (max-width: 1280px) {
+    
+    #nav-div {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 0px;
+        z-index: 1;
+        margin-left: 30%;
+        padding: 1em 4em;
+        width: 100%;
+        background-color: #1f1815;
+    }
+}
+
+/* Medium */
+@media screen and (max-width: 980px) {
+    
+    #nav-div {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 0px;
+        z-index: 1;
+        margin: 0px;
+        padding: 1em 4em;
+        width: 100%;
+        background-color: #1f1815;
+    }
+}
+
+/* Small */
+@media screen and (max-width: 736px) {
+    
+    
+}
+
+/* XSmall */
+@media screen and (max-width: 480px) {
+    
+    
 }
