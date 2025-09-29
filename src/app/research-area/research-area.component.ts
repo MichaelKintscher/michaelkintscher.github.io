@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-research-area',
-  templateUrl: './research-area.component.html',
-  styleUrls: ['./research-area.component.css']
+    selector: 'app-research-area',
+    templateUrl: './research-area.component.html',
+    styleUrls: ['./research-area.component.css'],
+    standalone: false
 })
 export class ResearchAreaComponent implements OnInit {
 

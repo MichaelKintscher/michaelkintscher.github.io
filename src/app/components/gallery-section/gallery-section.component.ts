@@ -7,9 +7,10 @@ import { ListItemInterface } from 'src/types/ListItem.interface';
 import { FileGetterService } from '../../services/file-getter.service';
 
 @Component({
-  selector: 'app-gallery-section',
-  templateUrl: './gallery-section.component.html',
-  styleUrls: ['./gallery-section.component.css']
+    selector: 'app-gallery-section',
+    templateUrl: './gallery-section.component.html',
+    styleUrls: ['./gallery-section.component.css'],
+    standalone: false
 })
 export class GallerySectionComponent implements OnInit {
 

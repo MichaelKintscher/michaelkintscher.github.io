@@ -7,9 +7,10 @@ import { ListItemInterface } from 'src/types/ListItem.interface';
 import { FileGetterService } from '../../services/file-getter.service';
 
 @Component({
-  selector: 'app-list-section',
-  templateUrl: './list-section.component.html',
-  styleUrls: ['./list-section.component.css']
+    selector: 'app-list-section',
+    templateUrl: './list-section.component.html',
+    styleUrls: ['./list-section.component.css'],
+    standalone: false
 })
 export class ListSectionComponent implements OnInit {
 

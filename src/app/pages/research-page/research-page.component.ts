@@ -7,9 +7,10 @@ import { ResearchAreaInterface } from '../../../types/ResearchArea.interface';
 import { FileGetterService } from '../../services/file-getter.service';
 
 @Component({
-  selector: 'app-research-page',
-  templateUrl: './research-page.component.html',
-  styleUrls: ['./research-page.component.css']
+    selector: 'app-research-page',
+    templateUrl: './research-page.component.html',
+    styleUrls: ['./research-page.component.css'],
+    standalone: false
 })
 export class ResearchPageComponent implements OnInit {
 

@@ -7,9 +7,10 @@ import { FileGetterService } from '../../services/file-getter.service';
 import { SectionedStringItemsInterface } from 'src/types/SectionedStringItems.interface';
 
 @Component({
-  selector: 'app-sectioned-list',
-  templateUrl: './sectioned-list.component.html',
-  styleUrls: ['./sectioned-list.component.css']
+    selector: 'app-sectioned-list',
+    templateUrl: './sectioned-list.component.html',
+    styleUrls: ['./sectioned-list.component.css'],
+    standalone: false
 })
 export class SectionedListComponent implements OnInit {
 

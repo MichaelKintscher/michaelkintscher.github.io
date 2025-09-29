@@ -4,9 +4,10 @@ import { Event, Router } from '@angular/router';
 declare function finishJsSetup(): void;
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
+    standalone: false
 })
 export class AppComponent implements AfterViewInit {
 

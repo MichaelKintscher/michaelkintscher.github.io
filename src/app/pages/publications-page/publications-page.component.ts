@@ -7,9 +7,10 @@ import { PublicationInterface } from '../../../types/Publication.interface';
 import { FileGetterService } from '../../services/file-getter.service';
 
 @Component({
-  selector: 'app-publications-page',
-  templateUrl: './publications-page.component.html',
-  styleUrls: ['./publications-page.component.css']
+    selector: 'app-publications-page',
+    templateUrl: './publications-page.component.html',
+    styleUrls: ['./publications-page.component.css'],
+    standalone: false
 })
 export class PublicationsPageComponent implements OnInit {
 
