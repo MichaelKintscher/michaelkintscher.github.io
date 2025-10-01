@@ -1,4 +1,10 @@
 <div>
+	<!-- Navigation -->
+	<!-- <div id="nav-div">
+		<a routerLink="/" [hidden]="navDisplayTitle == 'Home'" class="">Back</a>
+		<p id="page-title">{{ navDisplayTitle }}</p>
+	</div> -->
+
 	<!-- Header -->
 		<header id="header">
 			<div class="inner">
@@ -10,12 +16,6 @@
 
 	<!-- Main -->
 	<router-outlet></router-outlet>
-
-	<!-- Navigation -->
-	<div id="nav-div">
-		<a routerLink="/" [hidden]="navDisplayTitle == 'Home'" class="">Back</a>
-		<p id="page-title">{{ navDisplayTitle }}</p>
-	</div>
 
 	<!-- Footer -->
 		<footer id="footer">

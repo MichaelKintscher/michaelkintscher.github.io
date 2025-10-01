@@ -15,12 +15,12 @@
     align-items: center;
     justify-content: right;
     position: fixed;
-    bottom: 0px;
+    top: 0px;
     z-index: 1;
-    margin-right: 65%;
-    padding: 1em 4em;
+    margin-left: 35%;
+    padding: 0.5em 4em;
     width: stretch;
-    background-color: #1f1815;
+    background-color: #353d51;
 }
 
 #nav-div :first-child {
@@ -34,33 +34,13 @@
 /* XLarge */
 @media screen and (max-width: 1800px) {
     
-    #nav-div {
-        display: flex;
-        align-items: center;
-        position: fixed;
-        bottom: 0px;
-        z-index: 1;
-        margin-left: 35%;
-        padding: 1em 4em;
-        width: 100%;
-        background-color: #1f1815;
-    }
+
 }
 
 /* Large */
 @media screen and (max-width: 1280px) {
     
-    #nav-div {
-        display: flex;
-        align-items: center;
-        position: fixed;
-        bottom: 0px;
-        z-index: 1;
-        margin-left: 30%;
-        padding: 1em 4em;
-        width: 100%;
-        background-color: #1f1815;
-    }
+
 }
 
 /* Medium */
@@ -70,7 +50,7 @@
         display: flex;
         align-items: center;
         position: fixed;
-        bottom: 0px;
+        top: 0px;
         z-index: 1;
         margin: 0px;
         padding: 1em 4em;

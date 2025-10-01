@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
     standalone: false
 })
 export class CvPageComponent implements OnInit {
+  
+  navDisplayTitle: string = "CV";
 
   constructor() { }
 

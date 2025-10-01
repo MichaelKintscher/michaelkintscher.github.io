@@ -1,4 +1,10 @@
 <div id="main">
+    <!-- Navigation -->
+    <div id="nav-div">
+		<a routerLink="/" [hidden]="navDisplayTitle == 'Home'" class="">Back</a>
+		<p id="page-title">{{ navDisplayTitle }}</p>
+	</div>
+    
     <section id="cv-header">
         <header class="major">
             <h2>Michael Kintscher</h2>
