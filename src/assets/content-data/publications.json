@@ -5,10 +5,14 @@
             "items": [
                 {
                     "bullet": "[C1]",
-                    "text": "Shubham Chawla, Anjana Arunkumar, Michael Kintscher, Ashish Amresh, Jai Narula, and Chris Bryan. \"VizCoach: Designing an Orchestration-Based Tool for Data Visualization Education\" In The Hawaii International Conference on System Sciences (HICSS). 2026."
+                    "text": "Caro Williams-Pierce, Michael Kintscher, Elizabeth Bonsignore, and Sean Munson. \"Identifying Productive Communication with the Public for Scientific Communities in a Fraught Fiscal Time\" In Communications of the ACM. 2026."
                 },
                 {
                     "bullet": "[C2]",
+                    "text": "Shubham Chawla, Anjana Arunkumar, Michael Kintscher, Ashish Amresh, Jai Narula, and Chris Bryan. \"VizCoach: Designing an Orchestration-Based Tool for Data Visualization Education\" In The Hawaii International Conference on System Sciences (HICSS). 2026."
+                },
+                {
+                    "bullet": "[C3]",
                     "text": "Michael Kintscher, Jinbin Huang, Anjana Arunkumar, Ashish Amresh, and Chris Bryan. \"Measuring and Comparing Collaborative Visualization Behaviors in Desktop and Augmented Reality Environments.\" In Proceedings of the 29th ACM Symposium on Virtual Reality Software and Technology (VRST '23). 2023."
                 }
             ]
