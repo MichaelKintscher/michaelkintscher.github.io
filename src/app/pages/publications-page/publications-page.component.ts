@@ -14,6 +14,7 @@ import { FileGetterService } from '../../services/file-getter.service';
 })
 export class PublicationsPageComponent implements OnInit {
 
+  navDisplayTitle: string = "Publications";
   @Input() dataSource = '../../assets/showcase-content/publications.json';
   fullPapers: PublicationInterface[] = [];
   otherPublications: PublicationInterface[] = [];

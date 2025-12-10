@@ -1,12 +1,22 @@
-<div class="centered-content-container">
+<div id="main">
+  <!-- Navigation -->
+  <div id="nav-div">
+		<a routerLink="/" [hidden]="navDisplayTitle == 'Home'" class="">Home</a>
+    <p>></p>
+		<p id="page-title">{{ navDisplayTitle }}</p>
+	</div>
+
   <!-- Header content -->
-  <div class="publication-page-header">
-    <h1>Publications</h1>
-  </div>
+  <section id="publications-header">
+    <header class="major">
+      <h2>Publications</h2>
+    </header>
+  </section>
 
   <!-- Full Papers -->
-  <div class="publication-section">
+  <section id="full-papers-section">
     <h2>Full Papers</h2>
+
     @for (publication of fullPapers; track publication) {
       <div class="publication-block">
         <app-publication [title]="publication.title"
@@ -21,11 +31,16 @@
         [category]="publication.category"></app-publication>
       </div>
     }
-  </div>
+  </section>
+
+  <section id="contest-entries-section">
+    <h2>Peer-Reviewed Contest Entries</h2>
+  </section>
 
   <!-- Other Publications -->
-  <div class="publication-section">
-    <h2>Other</h2>
+  <section id="theses-section">
+    <h2>Thesis</h2>
+
     @for (publication of otherPublications; track publication) {
       <div class="publication-block">
         <app-publication [title]="publication.title"
@@ -40,5 +55,5 @@
         [category]="publication.category"></app-publication>
       </div>
     }
-  </div>
+  </section>
 </div>
