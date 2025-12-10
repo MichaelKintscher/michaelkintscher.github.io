@@ -5,6 +5,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PublicationsPageComponent } from './pages/publications-page/publications-page.component';
 import { ResearchPageComponent } from './pages/research-page/research-page.component';
 import { CvPageComponent } from './pages/cv-page/cv-page.component';
+import { ElementsReferencePageComponent } from './pages/elements-reference-page/elements-reference-page.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,11 @@ const routes: Routes = [
     path: 'contact',
     component: ContactCardComponent,
     title: 'Contact'
+  },
+  {
+    path: 'elements',
+    component: ElementsReferencePageComponent,
+    title: 'Elements'
   },
   {
     path: '',

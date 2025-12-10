@@ -11,17 +11,9 @@
 }
 
 #nav-div :first-child {
-    margin-right: 10px;
-}
-
-#nav-div p:first-of-type {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 #nav-div p {
-    margin-bottom: 0px;
-}
-
-header.major h2 {
     margin-bottom: 0px;
 }

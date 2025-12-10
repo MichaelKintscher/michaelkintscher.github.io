@@ -14,38 +14,11 @@ import { FileGetterService } from '../../services/file-getter.service';
 })
 export class ResearchPageComponent implements OnInit {
 
-  @Input() dataSource = '../../assets/showcase-content/research-areas.json';
-  researchAreas: ResearchAreaInterface[] = [];
-  private unsubscribe$: Subject<any> = new Subject();
+  navDisplayTitle: string = "Research";
 
-  constructor(private fileGetterService: FileGetterService) { }
+  constructor() { }
 
-  async ngOnInit(): Promise<void> {
-
-    // Populate the showcase data.
-    if (this.dataSource != '') {
-      this.getResearchAreas();
-    }
-    else {
-      console.warn("Research-Page property 'dataSource' not set!");
-    }
+  ngOnInit(): void {
   }
 
-  async getResearchAreas() {
-
-    // Declare the list of data.
-    const rawData: ResearchAreaInterface[] = [];
-
-    // Get the data from the specified data source.
-    this.fileGetterService.getFile(this.dataSource)
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(data => {
-        for (let element of data["items"]) {
-          rawData.push(element);
-        }
-
-        // Assign the resulting list to the research areas property.
-        this.researchAreas = rawData;
-      });
-  }
 }

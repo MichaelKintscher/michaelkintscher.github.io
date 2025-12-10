@@ -11,7 +11,11 @@
 }
 
 #nav-div :first-child {
-    margin-right: 20px;
+    margin-right: 10px;
+}
+
+#nav-div p:first-of-type {
+    margin-right: 10px;
 }
 
 #nav-div p {
