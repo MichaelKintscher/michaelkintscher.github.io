@@ -1,10 +1,10 @@
-<div class="publication-container">
-  <div class="publication-content">
-    <div class="col-12">
+<div class="row">
+    <div class="col-4">
       <span class="image fit"><img src="{{ imageSource }}" /></span>
     </div>
-    <h3>{{ title }}</h3>
-    <div>
+  <div class="col-8">
+    <header>
+      <h4>{{ title }}</h4>
       <p class="authors-p">
         <!-- For each author... -->
         @for (author of authors; track author; let isLast = $last) {
@@ -27,8 +27,9 @@
           </i>
         }
       </p>
-      <p><i>{{ publisher }}</i></p>
-      <p class="publication-description">{{ description }}</p>
+    </header>
+    <div>
+      <p class="publisher-p"><i>{{ publisher }}</i></p>
       <ul class="actions">
         <!-- If there is a DOI, render the DOI link. -->
         @if (doi != '') {
@@ -37,19 +38,22 @@
               <div class="publication-link">DOI</div>
             </a>
           </li>
-        } @else {
+        } @else if (altLink != '') {
+          <!-- Else render the alternate link. -->
           <li>
             <a href="{{ altLink }}" target="_blank">
               <div class="publication-link">Link</div>
             </a>
           </li>
         }
-        <!-- Else render the alternate link. -->
-         <li>
-          <a href="{{ paperSource }}" target="_blank">
-            <div class="publication-link">Paper</div>
-          </a>
-        </li>
+        <!-- If there is a paper source, render the paper link. -->
+        @if (paperSource != '') {
+          <li>
+            <a href="{{ paperSource }}" target="_blank">
+              <div class="publication-link">Paper</div>
+            </a>
+          </li>
+        }
         <!-- Add a Supplemental Materials button if there is a supplemental materials link. -->
         @if (supplementalMaterials != '') {
           <li>

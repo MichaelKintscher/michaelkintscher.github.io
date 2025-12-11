@@ -17,6 +17,7 @@ export class PublicationsPageComponent implements OnInit {
   navDisplayTitle: string = "Publications";
   @Input() dataSource = './assets/content-data/publications-details.json';
   fullPapers: PublicationInterface[] = [];
+  contestEntries: PublicationInterface[] = [];
   otherPublications: PublicationInterface[] = [];
   private unsubscribe$: Subject<any> = new Subject();
 
@@ -48,7 +49,8 @@ export class PublicationsPageComponent implements OnInit {
 
         // Assign the resulting list to the respective publications properties.
         this.fullPapers = rawData.filter((pub) => pub.category === 'Full Paper');
-        this.otherPublications = rawData.filter((pub) => pub.category != 'Full Paper');
+        this.contestEntries = rawData.filter((pub) => pub.category === 'Contest Entry');
+        this.otherPublications = rawData.filter((pub) => pub.category === 'Thesis');
       });
   }
 

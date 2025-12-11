@@ -13,7 +13,7 @@
       "image_source": "../../assets/publications/kintscher2023comparing.png",
       "doi": "",
       "alt_link": "",
-      "paper_source": "",
+      "paper_source": "../../assets/publications/williams-pierce2026identifying.pdf",
       "supplemental_materials": "",
       "category": "Full Paper"
     },
@@ -32,9 +32,29 @@
       "image_source": "../../assets/images/fulls/viz-coach-2025.jpg",
       "doi": "",
       "alt_link": "",
-      "paper_source": "",
+      "paper_source": "../../assets/publications/chawla2026vizcoach.pdf",
       "supplemental_materials": "",
       "category": "Full Paper"
+    },
+    {
+      "title": "The Story of Wagyu: Bringing Charm of Japan's Pride to the World",
+      "authors": [
+        "Yuki Ueno",
+        "Zhuojun Jiang",
+        "Bretho Danzy III",
+        "Michael Kintscher",
+        "Nianwen Dan",
+        "Utkarsh Singh",
+        "Chris Bryan"
+      ],
+      "publisher": "IEEE PacificVis 2025 Visual Data Storytelling Contest. 2025.",
+      "description": "",
+      "image_source": "../../assets/images/fulls/viz-coach-2025.jpg",
+      "doi": "",
+      "alt_link": "https://y0uk1.github.io/PacificVis2025/",
+      "paper_source": "",
+      "supplemental_materials": "",
+      "category": "Contest Entry"
     },
     {
       "title": "Comparing Collaborative Visualization Behaviors in Desktop and Augmented Reality Environments",
@@ -45,7 +65,7 @@
         "Ashish Amresh",
         "Chris Bryan"
       ],
-      "publisher": "VRST 2023",
+      "publisher": "ACM VRST. 2023.",
       "description": "A novel method for quantitatively measuring communication and task space overlap with AR HDMs, and demonstration in accompanying user study.",
       "image_source": "../../assets/publications/kintscher2023comparing.png",
       "doi": "https://doi.org/10.1145/3611659.3615691",
@@ -59,7 +79,7 @@
       "authors": [
         "Michael Kintscher"
       ],
-      "publisher": "Arizona State University",
+      "publisher": "Arizona State University. 2020.",
       "description": "A Master's Thesis presenting a user study exploring how dyads (two-person pairs) collaborate differently in AR vs using a traditional desktop.",
       "image_source": "../../assets/publications/kintscher2020exploring.jpg",
       "doi": "",
