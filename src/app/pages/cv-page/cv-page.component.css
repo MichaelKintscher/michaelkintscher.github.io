@@ -30,19 +30,19 @@ header.major h2 {
     margin-bottom: 20px;
 }
 
-#cv-header ul {
+#cv-header ul:first-of-type {
     list-style-type: none;
 }
 
-#cv-header li {
+#cv-header ul:first-of-type li {
     margin: 6px 0px;
 }
 
-#cv-header ul, li {
+#cv-header ul:first-of-type, li {
     padding-left: 0px;
 }
 
-#cv-header ul a {
+#cv-header ul:first-of-type a {
     display: flex;
     align-items: center;
 }
