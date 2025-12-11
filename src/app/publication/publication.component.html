@@ -1,56 +1,64 @@
 <div class="publication-container">
-  <div class="publication-image">
-    <img src="{{ imageSource }}" />
-  </div>
   <div class="publication-content">
+    <div class="col-12">
+      <span class="image fit"><img src="{{ imageSource }}" /></span>
+    </div>
     <h3>{{ title }}</h3>
-    <p>
-      <!-- For each author... -->
-      @for (author of authors; track author; let isLast = $last) {
-        <i>
-          <!-- Render bold if the author is Michael Kintscher. -->
-          @if (author === 'Michael Kintscher') {
-            <b>
+    <div>
+      <p class="authors-p">
+        <!-- For each author... -->
+        @for (author of authors; track author; let isLast = $last) {
+          <i>
+            <!-- Render bold if the author is Michael Kintscher. -->
+            @if (author === 'Michael Kintscher') {
+              <b>
+                <!-- Include a trailing comma and space for each author except the last. -->
+                {{ author }}@if (!isLast) {
+                <span>, </span>
+                }
+              </b>
+            } @else {
               <!-- Include a trailing comma and space for each author except the last. -->
               {{ author }}@if (!isLast) {
-              <span>, </span>
+                <span>, </span>
+              }
             }
-          </b>
-        } @else {
-          <!-- Include a trailing comma and space for each author except the last. -->
-          {{ author }}@if (!isLast) {
-          <span>, </span>
+            <!-- Render without bold for all other authors. -->
+          </i>
         }
-      }
-      <!-- Render without bold for all other authors. -->
-    </i>
-  }
-</p>
-<p><i>{{ publisher }}</i></p>
-<p class="publication-description">{{ description }}</p>
-<div class="publication-links-container">
-  <!-- If there is a DOI, render the DOI link. -->
-  @if (doi != '') {
-    <a href="{{ doi }}" target="_blank">
-      <div class="publication-link">DOI</div>
-    </a>
-  } @else {
-    <a href="{{ altLink }}" target="_blank">
-      <div class="publication-link">Link</div>
-    </a>
-  }
-  <!-- Else render the alternate link. -->
-  <a href="{{ paperSource }}" target="_blank">
-    <div class="publication-link">Paper</div>
-  </a>
-  <!-- Add a Supplemental Materials button if there is a supplemental materials link. -->
-  @if (supplementalMaterials != '') {
-    <a href="{{ supplementalMaterials }}" target="_blank">
-      <div class="publication-link">Materials</div>
-    </a>
-  }
-  <span class="publication-tag-separator">|</span>
-  <div class="publication-tag">{{ category }} </div>
-</div>
-</div>
+      </p>
+      <p><i>{{ publisher }}</i></p>
+      <p class="publication-description">{{ description }}</p>
+      <ul class="actions">
+        <!-- If there is a DOI, render the DOI link. -->
+        @if (doi != '') {
+          <li>
+            <a href="{{ doi }}" target="_blank">
+              <div class="publication-link">DOI</div>
+            </a>
+          </li>
+        } @else {
+          <li>
+            <a href="{{ altLink }}" target="_blank">
+              <div class="publication-link">Link</div>
+            </a>
+          </li>
+        }
+        <!-- Else render the alternate link. -->
+         <li>
+          <a href="{{ paperSource }}" target="_blank">
+            <div class="publication-link">Paper</div>
+          </a>
+        </li>
+        <!-- Add a Supplemental Materials button if there is a supplemental materials link. -->
+        @if (supplementalMaterials != '') {
+          <li>
+            <a href="{{ supplementalMaterials }}" target="_blank">
+              <div class="publication-link">Materials</div>
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
 </div>

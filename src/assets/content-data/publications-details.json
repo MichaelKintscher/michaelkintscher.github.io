@@ -1,0 +1,72 @@
+{
+  "items": [
+    {
+      "title": "Identifying Productive Communication with the Public for Scientific Communities in a Fraught Fiscal Time",
+      "authors": [
+        "Caro Williams-Pierce",
+        "Michael Kintscher",
+        "Elizabeth Bonsignore",
+        "Sean Munson"
+      ],
+      "publisher": "Communications of the ACM. 2026.",
+      "description": "stuff",
+      "image_source": "../../assets/publications/kintscher2023comparing.png",
+      "doi": "",
+      "alt_link": "",
+      "paper_source": "",
+      "supplemental_materials": "",
+      "category": "Full Paper"
+    },
+    {
+      "title": "VizCoach: Designing an Orchestration-Based Tool for Data Visualization Education",
+      "authors": [
+        "Shubham Chawla",
+        "Michael Kintscher",
+        "Jai Narula",
+        "Anjana Arunkumar",
+        "Ashish Amresh",
+        "Chris Bryan"
+      ],
+      "publisher": "The Hawaii International Conference on System Sciences (HICSS). 2026.",
+      "description": "A system for supporting orchestration for classroom activities in data visualization courses.",
+      "image_source": "../../assets/images/fulls/viz-coach-2025.jpg",
+      "doi": "",
+      "alt_link": "",
+      "paper_source": "",
+      "supplemental_materials": "",
+      "category": "Full Paper"
+    },
+    {
+      "title": "Comparing Collaborative Visualization Behaviors in Desktop and Augmented Reality Environments",
+      "authors": [
+        "Michael Kintscher",
+        "Jinbin Huang",
+        "Anjana Arunkumar",
+        "Ashish Amresh",
+        "Chris Bryan"
+      ],
+      "publisher": "VRST 2023",
+      "description": "A novel method for quantitatively measuring communication and task space overlap with AR HDMs, and demonstration in accompanying user study.",
+      "image_source": "../../assets/publications/kintscher2023comparing.png",
+      "doi": "https://doi.org/10.1145/3611659.3615691",
+      "alt_link": "",
+      "paper_source": "../../assets/publications/kintscher2023comparing.pdf",
+      "supplemental_materials": "https://github.com/svl-at-asu/Exploring-AR-Impact-Paper-Scripts",
+      "category": "Full Paper"
+    },
+    {
+      "title": "Exploring the Impact of Augmented Reality on Collaborative Decision-Making in Small Teams",
+      "authors": [
+        "Michael Kintscher"
+      ],
+      "publisher": "Arizona State University",
+      "description": "A Master's Thesis presenting a user study exploring how dyads (two-person pairs) collaborate differently in AR vs using a traditional desktop.",
+      "image_source": "../../assets/publications/kintscher2020exploring.jpg",
+      "doi": "",
+      "alt_link": "https://www.proquest.com/openview/d3af407315f6986f55799090ad7af536/1",
+      "paper_source": "../../assets/publications/kintscher2020exploring.pdf",
+      "supplemental_materials": "",
+      "category": "Thesis"
+    }
+  ]
+}
