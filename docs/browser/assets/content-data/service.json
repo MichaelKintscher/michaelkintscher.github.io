@@ -1,0 +1,63 @@
+{
+    "sections": [
+        {
+            "title": "University Boards and Committees",
+            "items": [
+                {
+                    "bullet": "2023 - 2024",
+                    "text": "University Committee on Campus Inclusion"
+                }
+            ]
+        },
+        {
+            "title": "Student Organizations",
+            "items": [
+                {
+                    "bullet": "2024 - 2025",
+                    "text": "Assembly President, Graduate Student Government"
+                },
+                {
+                    "bullet": "2023 - 2024",
+                    "text": "Parliamentarian, Graduate Student Government"
+                },
+                {
+                    "bullet": "2022 - 2024",
+                    "text": "President, GRADient"
+                },
+                {
+                    "bullet": "2022 - 2023",
+                    "text": "Student Advisor, Out in STEM"
+                },
+                {
+                    "bullet": "2019 - 2020",
+                    "text": "Director of Community Coordination, Rainbow Coalition"
+                }
+            ]
+        },
+        {
+            "title": "External Volunteering",
+            "items": [
+                {
+                    "bullet": "2022 - Pres",
+                    "text": "National DEI Committee, American Mensa"
+                },
+                {
+                    "bullet": "2022 - 2023",
+                    "text": "National Communications Task Force, Boy Scouts of America"
+                },
+                {
+                    "bullet": "2021 - 2023",
+                    "text": "National Communications Committee, Boy Scouts of America"
+                },
+                {
+                    "bullet": "2018 - 2021",
+                    "text": "Region Committee, Boy Scouts of America"
+                },
+                {
+                    "bullet": "2017 - 2018",
+                    "text": "Robotics Competition Judge, For Inspiration and Recognition of Science and Technology"
+                }
+            ]
+        }
+    ]
+}

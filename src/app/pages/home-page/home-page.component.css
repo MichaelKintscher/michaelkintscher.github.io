@@ -13,6 +13,10 @@
   gap: 10px;
 }
 
+#contact-form-container {
+  height: 900px;
+}
+
 @media screen and (max-width: 750px) {
     .education-items {
         flex-direction: column;

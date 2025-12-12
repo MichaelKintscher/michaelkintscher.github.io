@@ -1,0 +1,46 @@
+{
+    "sections": [
+        {
+            "title": "Academic",
+            "items": [
+                {
+                    "bullet": "2025 - Pres",
+                    "text": "Graduate Research Associate. Sonoran Visualization Lab. Arizona State University. (Tempe, AZ)"
+                },
+                {
+                    "bullet": "2022 - 2022",
+                    "text": "Graduate Student Assistant. School of Computing and Augmented Intelligence. Arizona State University. (Tempe, AZ)"
+                },
+                {
+                    "bullet": "2021 - 2021",
+                    "text": "Instructor of Record. School of Computing and Augmented Intelligence. Arizona State University. (Tempe, AZ)"
+                },
+                {
+                    "bullet": "2019 - 2021",
+                    "text": "Graduate Student Assistant. School of Computing and Augmented Intelligence. Arizona State University. (Tempe, AZ)"
+                },
+                {
+                    "bullet": "2017 - 2018",
+                    "text": "Undergraduate Student Researcher. BIRTH Lab. Arizona State University. (Tempe, AZ)"
+                }
+            ]
+        },
+        {
+            "title": "Industry Experience",
+            "items": [
+                {
+                    "bullet": "2018 - 2025",
+                    "text": "Cybersecurity Engineer, ISEC, US Department of Defense. (Sierra Vista, AZ)"
+                },
+                {
+                    "bullet": "2015 - 2017",
+                    "text": "Engineering Intern, ISEC, US Department of Defense. (Sierra Vista, AZ)"
+                },
+                {
+                    "bullet": "2014 - 2014",
+                    "text": "STEM Outreach Intern, NAVAIR, US Department of Defense. (Patuxent River, MD)"
+                }
+            ]
+        }
+    ]
+}
