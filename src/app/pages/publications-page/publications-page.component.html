@@ -19,7 +19,8 @@
 
     @for (publication of fullPapers; track publication) {
       <div class="publication-block">
-        <app-publication [title]="publication.title"
+        <app-publication [sectionId]="publication.cite_key"
+          [title]="publication.title"
           [authors]="publication.authors"
           [publisher]="publication.publisher"
           [description]="publication.description"

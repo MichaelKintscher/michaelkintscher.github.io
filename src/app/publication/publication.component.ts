@@ -9,6 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PublicationComponent implements OnInit {
 
   // Properties
+  @Input() sectionId = '';
   @Input() title = 'Title';
   @Input() authors:string[] = [];
   @Input() publisher = 'Publisher';

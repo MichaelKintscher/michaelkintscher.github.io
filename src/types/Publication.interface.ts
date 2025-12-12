@@ -9,4 +9,5 @@ export interface PublicationInterface {
   paper_source: string;
   supplemental_materials: string;
   category: string;
+  cite_key: string;
 }

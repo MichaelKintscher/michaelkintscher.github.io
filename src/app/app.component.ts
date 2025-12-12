@@ -3,6 +3,7 @@ import { Event, Router, NavigationEnd } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 declare function finishJsSetup(): void;
+declare function closeJSPopups(): void;
 
 @Component({
     selector: 'app-root',
@@ -16,6 +17,7 @@ export class AppComponent implements AfterViewInit {
   private readonly router = inject(Router);
   // @ViewChild('pageTitle') navTitle!: ElementRef;
   navDisplayTitle: string = "Hello";
+  private fragmentToScrollTo: string = "";
 
   title = 'michaelkintscher-github-io';
   Tabs: any[] = [{ name: 'Home', type: 'home' },
@@ -31,9 +33,17 @@ export class AppComponent implements AfterViewInit {
     this.router.events.pipe(takeUntilDestroyed()).subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
         // Get the title property of the route that was navigated to.
-        var routePath = event.url.substring(1);
+        var routeUrl = event.url.substring(1);
+        var routePieces = routeUrl.split("#");
+
+        // Strip any fragments.
+        var routePath = routePieces[0];
+
         var route = this.router.config.filter(r => r.path == routePath)[0];
         this.navDisplayTitle = routePath != "" ? route.title as string : "Home";
+
+        // Close any popups.
+        closeJSPopups();
       }
     });
   }

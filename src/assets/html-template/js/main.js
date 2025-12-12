@@ -43,11 +43,11 @@ var settings = {
 		});
 
 		new ResizeObserver(() => {
-			console.log("changed!!!");
-			console.log("outerHeight: " + $body.outerHeight(true));
-			console.log("innerHeight: " + $body.innerHeight());
-			console.log("Height: " + $body.height());
-			console.log("window: " + $window.height());
+			// console.log("changed!!!");
+			// console.log("outerHeight: " + $body.outerHeight(true));
+			// console.log("innerHeight: " + $body.innerHeight());
+			// console.log("Height: " + $body.height());
+			// console.log("window: " + $window.height());
 			settings.parallaxFactor = ($body.height() - $window.height()) / (0.1 * $window.height());
 			console.log("New parallax factor: " + settings.parallaxFactor);
 
@@ -59,23 +59,28 @@ var settings = {
 			// }
 
 			// Lightbox gallery.
-			$window.on('load', function() {
-
-				$('#two').poptrox({
-					caption: function($a) { return $a.next('h3').text(); },
-					overlayColor: '#2c2c2c',
-					overlayOpacity: 0.85,
-					popupCloserText: '',
-					popupLoaderText: '',
-					selector: '.work-item a.image',
-					usePopupCaption: true,
-					usePopupDefaultStyling: false,
-					usePopupEasyClose: false,
-					usePopupNav: true,
-					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-				});
-
+			// The popup-caption is defined on the gallery section component.
+			$('#two').poptrox({
+				caption: function($a) { return $a.siblings('.popup-caption')[0]; }, //$a.next('h3').text(); },
+				overlayColor: '#2c2c2c',
+				overlayOpacity: 0.85,
+				popupCloserText: '',
+				popupLoaderText: '',
+				selector: '.work-item a.image',
+				usePopupCaption: true,
+				usePopupDefaultStyling: false,
+				usePopupEasyClose: false,
+				usePopupNav: true,
+				windowMargin: (breakpoints.active('<=small') ? 0 : 50)
 			});
+			$('.popup-caption').remove();
+
+			// Scroll to the indicated anchor, if there is one.
+			var parts = window.location.href.split("#");
+			if (parts.length > 1) {
+				document.querySelector(`#${parts[1]}`).scrollIntoView();
+			}
+
 		}).observe($body[0]);
 
 })(jQuery);
@@ -132,7 +137,7 @@ function finishJsSetup() {
 
 					$window.on('scroll.strata_parallax', function() {
 						$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
-						console.log(Math.floor($window.scrollTop()) + " - " + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)));
+						// console.log(Math.floor($window.scrollTop()) + " - " + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)));
 					});
 
 				});
@@ -146,28 +151,33 @@ function finishJsSetup() {
 	// Main Sections: Two.
 
 		// Lightbox gallery.
-			$window.on('load', function() {
+			// $window.on('load', function() {
 
-				$('#two').poptrox({
-					caption: function($a) { return $a.next('h3').text(); },
-					overlayColor: '#2c2c2c',
-					overlayOpacity: 0.85,
-					popupCloserText: '',
-					popupLoaderText: '',
-					selector: '.work-item a.image',
-					usePopupCaption: true,
-					usePopupDefaultStyling: false,
-					usePopupEasyClose: false,
-					usePopupNav: true,
-					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-				});
+			// 	$('#two').poptrox({
+			// 		caption: function($a) { return $a.next('h3').text(); },
+			// 		overlayColor: '#2c2c2c',
+			// 		overlayOpacity: 0.85,
+			// 		popupCloserText: '',
+			// 		popupLoaderText: '',
+			// 		selector: '.work-item a.image',
+			// 		usePopupCaption: true,
+			// 		usePopupDefaultStyling: false,
+			// 		usePopupEasyClose: false,
+			// 		usePopupNav: true,
+			// 		windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+			// 	});
 
-			});
-			console.log("outerHeight: " + $main.outerHeight(true));
-			console.log("innerHeight: " + $main.innerHeight());
-			console.log("Height: " + $main.height());
-			console.log("window: " + $window.height());
-			console.log("outerHeight: " + $body.outerHeight(true));
-			console.log("innerHeight: " + $body.innerHeight());
-			console.log("Height: " + $body.height());
+			// });
+			// console.log("outerHeight: " + $main.outerHeight(true));
+			// console.log("innerHeight: " + $main.innerHeight());
+			// console.log("Height: " + $main.height());
+			// console.log("window: " + $window.height());
+			// console.log("outerHeight: " + $body.outerHeight(true));
+			// console.log("innerHeight: " + $body.innerHeight());
+			// console.log("Height: " + $body.height());
+}
+
+function closeJSPopups() {
+	$(".poptrox-popup").trigger("poptrox_close");
+	console.log("closing popup.");
 }
