@@ -15,12 +15,15 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/michaelkintscher-github-io",
+            "outputPath": {
+              "base": "dist/michaelkintscher-github-io"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": [
+              "src/polyfills.ts"
+            ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -30,7 +33,15 @@
               "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/html-template/js/jquery.min.js",
+              "src/assets/html-template/js/jquery.poptrox.min.js",
+              "src/assets/html-template/js/browser.min.js",
+              "src/assets/html-template/js/breakpoints.min.js",
+              "src/assets/html-template/js/util.js",
+              "src/assets/html-template/js/main.js"
+            ],
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
@@ -55,9 +66,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
@@ -66,25 +75,25 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "michaelkintscher-github-io:build:production"
+              "buildTarget": "michaelkintscher-github-io:build:production"
             },
             "development": {
-              "browserTarget": "michaelkintscher-github-io:build:development"
+              "buildTarget": "michaelkintscher-github-io:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "builder": "@angular/build:extract-i18n",
           "options": {
-            "browserTarget": "michaelkintscher-github-io:build"
+            "buildTarget": "michaelkintscher-github-io:build"
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular/build:karma",
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
@@ -98,14 +107,47 @@
               "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/html-template/js/jquery.min.js",
+              "src/assets/html-template/js/jquery.scrollex.min.js",
+              "src/assets/html-template/js/jquery.scrolly.min.js",
+              "src/assets/html-template/js/browser.min.js",
+              "src/assets/html-template/js/breakpoints.min.js",
+              "src/assets/html-template/js/util.js",
+              "src/assets/html-template/js/main.js"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "michaelkintscher-github-io",
   "cli": {
     "analytics": false
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "type": "component"
+    },
+    "@schematics/angular:directive": {
+      "type": "directive"
+    },
+    "@schematics/angular:service": {
+      "type": "service"
+    },
+    "@schematics/angular:guard": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:interceptor": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:module": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:pipe": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:resolver": {
+      "typeSeparator": "."
+    }
   }
 }

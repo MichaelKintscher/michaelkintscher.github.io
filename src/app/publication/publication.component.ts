@@ -1,13 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-publication',
-  templateUrl: './publication.component.html',
-  styleUrls: ['./publication.component.css']
+    selector: 'app-publication',
+    templateUrl: './publication.component.html',
+    styleUrls: ['./publication.component.css'],
+    standalone: false
 })
 export class PublicationComponent implements OnInit {
 
   // Properties
+  @Input() sectionId = '';
   @Input() title = 'Title';
   @Input() authors:string[] = [];
   @Input() publisher = 'Publisher';

@@ -1,46 +1,68 @@
-<div class="publication-container">
-  <div class="publication-image">
-    <img src="{{ imageSource }}" />
-  </div>
-  <div class="publication-content">
-    <h3>{{ title }}</h3>
-    <p>
-      <!-- For each author... -->
-      <i *ngFor="let author of authors; last as isLast">
-        <!-- Render bold if the author is Michael Kintscher. -->
-        <b *ngIf="author === 'Michael Kintscher'; else otherAuthor">
-          <!-- Include a trailing comma and space for each author except the last. -->
-          {{ author }}<span *ngIf="!isLast">, </span>
-        </b>
-        <!-- Render without bold for all other authors. -->
-        <ng-template #otherAuthor>
-          <!-- Include a trailing comma and space for each author except the last. -->
-          {{ author }}<span *ngIf="!isLast">, </span>
-        </ng-template>
-      </i>
-    </p>
-    <p><i>{{ publisher }}</i></p>
-    <p class="publication-description">{{ description }}</p>
-    <div class="publication-links-container">
-      <!-- If there is a DOI, render the DOI link. -->
-      <a *ngIf="doi != ''; else alternateLink" href="{{ doi }}" target="_blank">
-        <div class="publication-link">DOI</div>
-      </a>
-      <!-- Else render the alternate link. -->
-      <ng-template #alternateLink>
-        <a href="{{ altLink }}" target="_blank">
-          <div class="publication-link">Link</div>
-        </a>
-      </ng-template>
-      <a href="{{ paperSource }}" target="_blank">
-        <div class="publication-link">Paper</div>
-      </a>
-      <!-- Add a Supplemental Materials button if there is a supplemental materials link. -->
-      <a *ngIf="supplementalMaterials != ''" href="{{ supplementalMaterials }}" target="_blank">
-        <div class="publication-link">Materials</div>
-      </a>
-      <span class="publication-tag-separator">|</span>
-      <div class="publication-tag">{{ category }} </div>
+<div id="{{ sectionId }}" class="row">
+    <div class="col-4">
+      <span class="image fit"><img src="{{ imageSource }}" /></span>
+    </div>
+  <div class="col-8">
+    <header>
+      <h4>{{ title }}</h4>
+      <p class="authors-p">
+        <!-- For each author... -->
+        @for (author of authors; track author; let isLast = $last) {
+          <i>
+            <!-- Render bold if the author is Michael Kintscher. -->
+            @if (author === 'Michael Kintscher') {
+              <b>
+                <!-- Include a trailing comma and space for each author except the last. -->
+                {{ author }}@if (!isLast) {
+                <span>, </span>
+                }
+              </b>
+            } @else {
+              <!-- Include a trailing comma and space for each author except the last. -->
+              {{ author }}@if (!isLast) {
+                <span>, </span>
+              }
+            }
+            <!-- Render without bold for all other authors. -->
+          </i>
+        }
+      </p>
+    </header>
+    <div>
+      <p class="publisher-p"><i>{{ publisher }}</i></p>
+      <ul class="actions">
+        <!-- If there is a DOI, render the DOI link. -->
+        @if (doi != '') {
+          <li>
+            <a href="{{ doi }}" target="_blank">
+              <div class="publication-link">DOI</div>
+            </a>
+          </li>
+        } @else if (altLink != '') {
+          <!-- Else render the alternate link. -->
+          <li>
+            <a href="{{ altLink }}" target="_blank">
+              <div class="publication-link">Link</div>
+            </a>
+          </li>
+        }
+        <!-- If there is a paper source, render the paper link. -->
+        @if (paperSource != '') {
+          <li>
+            <a href="{{ paperSource }}" target="_blank">
+              <div class="publication-link">Paper</div>
+            </a>
+          </li>
+        }
+        <!-- Add a Supplemental Materials button if there is a supplemental materials link. -->
+        @if (supplementalMaterials != '') {
+          <li>
+            <a href="{{ supplementalMaterials }}" target="_blank">
+              <div class="publication-link">Materials</div>
+            </a>
+          </li>
+        }
+      </ul>
     </div>
   </div>
 </div>

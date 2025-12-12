@@ -1,0 +1,192 @@
+a,
+a:link,
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+a:active {
+  color: darkgray;
+}
+
+mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+    display:flex;
+}
+
+.toolbar img {
+  margin: 0 16px;
+  object-fit: none;
+  object-position: 50% 50%;
+}
+
+.toolbar-profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 0px 15px 0px 0px;
+  background-image: url(../assets/profile-pic.jpg);
+  background-position-x: 60%;
+  background-position-y: 30%;
+  background-size: 150%;
+  background-repeat: no-repeat;
+}
+
+#header-name {
+    width: 160px;
+    margin: 0px 40px 0px 20px;
+}
+
+.toolbar .header-link,
+.toolbar #header-name {
+}
+
+.toolbar .header-link {
+  font-size: 14px;
+  margin: 0 20px;
+}
+
+.social-icon-mobile {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.toolbar #email-logo,
+.toolbar #email-logo-mobile {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #linkedin-logo,
+.toolbar #linkedin-logo-mobile {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #google-scholar-logo,
+.toolbar #google-scholar-logo-mobile {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #orcid-logo,
+.toolbar #orcid-logo-mobile {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #github-logo,
+.toolbar #github-logo-mobile {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #stack-overflow-logo,
+.toolbar #stack-overflow-logo-mobile {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 8px;
+}
+
+.toolbar #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+
+.toolbar .header-link:hover {
+  opacity: 0.8;
+}
+
+svg.material-icons {
+  height: 24px;
+  width: auto;
+}
+
+  svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+  }
+
+.social-icon-label {
+    margin: 0px 0px 0px 20px;
+}
+
+.main-container {/*
+  flex: 100%;*//*
+  display: flex;
+  flex-direction: column;
+  align-items: center;*/
+  /*padding: 20px;*//*
+  width: 100%;*/
+}
+
+/* FOOTER STYLES */
+
+.page-footer {
+  background-color: #212121;
+  width: stretch;
+  height: 200px;
+  text-align: center;
+}
+
+.page-footer span {
+    line-height: 200px;
+}
+
+.page-footer .footer-text {
+    vertical-align: middle;
+    display: inline-block;
+    color: lightgray;
+    margin: 50px;
+}
+
+@media screen and (max-width: 730px) {
+  .education-items {
+      width: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .education-tile {
+      width: stretch;
+  }
+}

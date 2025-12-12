@@ -1,0 +1,28 @@
+<section id="{{ sectionId }}">
+  <h2>{{ title }}</h2>
+  <div class="row">
+    @for (data of listData; track data) {
+      <article
+        class="col-6 col-12-xsmall work-item">
+        <a href="{{ data.imageSource }}" class="image fit thumb"><img src="{{ data.imageSource }}" alt="" /></a>
+        <h3>{{ data.title }}</h3>
+        <p>{{ data.description }}</p>
+        <div class="popup-caption">
+          @if (data.link.includes("http")) {
+            <a href="{{ data.link }}" target="_blank">{{ data.title }}</a>
+          } @else {
+            @if (data.link.split("#").length > 1) {
+              <a routerLink="{{ data.link.split('#')[0] }}" fragment="{{ data.link.split('#')[1] }}">{{ data.title }}</a>
+            }
+            @else {
+              <a routerLink="{{ data.link }}">{{ data.title }}</a>
+            }
+          }
+        </div>
+      </article>
+    }
+  </div>
+  <!-- <ul class="actions">
+    <li><a href="#" class="button">Full Portfolio</a></li>
+  </ul> -->
+</section>

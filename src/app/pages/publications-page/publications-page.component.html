@@ -1,0 +1,76 @@
+<div id="main">
+  <!-- Navigation -->
+  <div id="nav-div">
+		<a routerLink="/" [hidden]="navDisplayTitle == 'Home'" class="">Home</a>
+    <p>></p>
+		<p id="page-title">{{ navDisplayTitle }}</p>
+	</div>
+
+  <!-- Header content -->
+  <section id="publications-header">
+    <header class="major">
+      <h2>Publications</h2>
+    </header>
+  </section>
+
+  <!-- Full Papers -->
+  <section id="full-papers-section">
+    <h2>Full Papers</h2>
+
+    @for (publication of fullPapers; track publication) {
+      <div class="publication-block">
+        <app-publication [sectionId]="publication.cite_key"
+          [title]="publication.title"
+          [authors]="publication.authors"
+          [publisher]="publication.publisher"
+          [description]="publication.description"
+          [imageSource]="publication.image_source"
+          [doi]="publication.doi"
+          [altLink]="publication.alt_link"
+          [paperSource]="publication.paper_source"
+          [supplementalMaterials]="publication.supplemental_materials"
+        [category]="publication.category"></app-publication>
+      </div>
+    }
+  </section>
+
+  <!-- Contest Entries -->
+  <section id="contest-entries-section">
+    <h2>Peer-Reviewed Contest Entries</h2>
+
+    @for (publication of contestEntries; track publication) {
+      <div class="publication-block">
+        <app-publication [title]="publication.title"
+          [authors]="publication.authors"
+          [publisher]="publication.publisher"
+          [description]="publication.description"
+          [imageSource]="publication.image_source"
+          [doi]="publication.doi"
+          [altLink]="publication.alt_link"
+          [paperSource]="publication.paper_source"
+          [supplementalMaterials]="publication.supplemental_materials"
+        [category]="publication.category"></app-publication>
+      </div>
+    }
+  </section>
+
+  <!-- Other Publications -->
+  <section id="theses-section">
+    <h2>Thesis</h2>
+
+    @for (publication of otherPublications; track publication) {
+      <div class="publication-block">
+        <app-publication [title]="publication.title"
+          [authors]="publication.authors"
+          [publisher]="publication.publisher"
+          [description]="publication.description"
+          [imageSource]="publication.image_source"
+          [doi]="publication.doi"
+          [altLink]="publication.alt_link"
+          [paperSource]="publication.paper_source"
+          [supplementalMaterials]="publication.supplemental_materials"
+        [category]="publication.category"></app-publication>
+      </div>
+    }
+  </section>
+</div>
