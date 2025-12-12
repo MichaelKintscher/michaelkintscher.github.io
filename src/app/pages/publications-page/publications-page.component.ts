@@ -1,7 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 // Custom types
-import { takeUntil } from 'rxjs/operators';
+import { finalize, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { PublicationInterface } from '../../../types/Publication.interface';
 import { FileGetterService } from '../../services/file-getter.service';
@@ -16,6 +16,7 @@ export class PublicationsPageComponent implements OnInit {
 
   navDisplayTitle: string = "Publications";
   @Input() dataSource = './assets/content-data/publications-details.json';
+  @Output() contentLoaded = new EventEmitter();
   fullPapers: PublicationInterface[] = [];
   contestEntries: PublicationInterface[] = [];
   otherPublications: PublicationInterface[] = [];
@@ -41,7 +42,13 @@ export class PublicationsPageComponent implements OnInit {
 
     // Get the data from the specified data source.
     this.fileGetterService.getFile(this.dataSource)
-      .pipe(takeUntil(this.unsubscribe$))
+      .pipe(
+        takeUntil(this.unsubscribe$),
+        finalize(() => {
+          console.log("Publications Page loaded!");
+          this.contentLoaded.emit();
+        })
+      )
       .subscribe(data => {
         for (let element of data["items"]) {
           rawData.push(element);

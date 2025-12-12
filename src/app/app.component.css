@@ -10,6 +10,11 @@
     background-color: #1f1815;
 } */
 
+#sidebar-image-div {
+    width: 100%;
+    height: 200%;
+}
+
 #nav-div {
     display: flex;
     align-items: center;

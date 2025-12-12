@@ -55,12 +55,14 @@
 
   <app-gallery-section sectionId="two"
                        title="Recent Work"
-                       dataSource="./assets/content-data/recent-work.json"></app-gallery-section>
+                       dataSource="./assets/content-data/recent-work.json"
+                       (contentLoaded)="onComponentContentLoaded($event)"></app-gallery-section>
 
   <app-list-section sectionId="three"
                     title="Affiliations"
                     description="I seek out volunteering and professional oppportunities with professional and academic research organizations, STEM education groups, and queer and youth advocacy groups."
-                    dataSource="./assets/content-data/affiliations-list.json"></app-list-section>
+                    dataSource="./assets/content-data/affiliations-list.json"
+                    (contentLoaded)="onComponentContentLoaded($event)"></app-list-section>
 
   <!-- <section id="three">
     <h2>Affiliations</h2>

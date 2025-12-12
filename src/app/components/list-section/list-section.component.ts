@@ -1,7 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 // Custom types
-import { takeUntil } from 'rxjs/operators';
+import { finalize, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { ListItemInterface } from 'src/types/ListItem.interface';
 import { FileGetterService } from '../../services/file-getter.service';
@@ -19,6 +19,7 @@ export class ListSectionComponent implements OnInit {
   @Input() title = 'Title';
   @Input() description = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.";
   @Input() dataSource = '';
+  @Output() contentLoaded = new EventEmitter();
   listData: ListItemInterface[] = [];
   private unsubscribe$: Subject<any> = new Subject();
 
@@ -39,7 +40,13 @@ export class ListSectionComponent implements OnInit {
       const rawListData: ListItemInterface[] = [];
   
       this.fileGetterService.getFile(this.dataSource)
-        .pipe(takeUntil(this.unsubscribe$))
+        .pipe(
+          takeUntil(this.unsubscribe$),
+          finalize(() => {
+            console.log("list-section loaded!");
+            this.contentLoaded.emit(this.sectionId);
+          })
+        )
         .subscribe(data => {
           for (let element of data["listdata"]) {
             rawListData.push(element);

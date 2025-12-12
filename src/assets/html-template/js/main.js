@@ -4,7 +4,17 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-var $window, $body;
+var $window, $body, $header;
+
+var settings = {
+
+		// Parallax background effect?
+			parallax: true,
+
+		// Parallax factor (lower = more intense, higher = less intense).
+			parallaxFactor: 20
+
+	};
 
 (function($) {
 
@@ -27,22 +37,35 @@ var $window, $body;
 			}, 100);
 		});
 
+	// Call the finish JS Setup on Window resize.
+		$window.resize(function() {
+			finishJsSetup();
+		});
+
+		new ResizeObserver(() => {
+			console.log("changed!!!");
+			console.log("outerHeight: " + $body.outerHeight(true));
+			console.log("innerHeight: " + $body.innerHeight());
+			console.log("Height: " + $body.height());
+			console.log("window: " + $window.height());
+			settings.parallaxFactor = ($body.height() - $window.height()) / (0.1 * $window.height());
+			console.log("New parallax factor: " + settings.parallaxFactor);
+
+			// if ($header.outerWidth() / $header.outerHeight() > 1.5) {
+			// 	$header.css("background-size", "40vw auto");
+			// 	console.log("oops " + ($header.outerWidth() / $header.outerHeight()));
+			// } else {
+			// 	$header.css("background-size", "auto 140vh");
+			// }
+		}).observe($body[0]);
+
 })(jQuery);
 
 function finishJsSetup() {
 	
-	var $header = $('#header'),
-		$footer = $('#footer'),
-		$main = $('#main'),
-		settings = {
-
-			// Parallax background effect?
-				parallax: true,
-
-			// Parallax factor (lower = more intense, higher = less intense).
-				parallaxFactor: 20
-
-		};
+	$header = $('#header');
+	var $footer = $('#footer'),
+		$main = $('#main');
 
 	// Touch?
 		if (browser.mobile) {
@@ -90,6 +113,7 @@ function finishJsSetup() {
 
 					$window.on('scroll.strata_parallax', function() {
 						$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+						console.log(Math.floor($window.scrollTop()) + " - " + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)));
 					});
 
 				});
@@ -120,4 +144,11 @@ function finishJsSetup() {
 				});
 
 			});
+			console.log("outerHeight: " + $main.outerHeight(true));
+			console.log("innerHeight: " + $main.innerHeight());
+			console.log("Height: " + $main.height());
+			console.log("window: " + $window.height());
+			console.log("outerHeight: " + $body.outerHeight(true));
+			console.log("innerHeight: " + $body.innerHeight());
+			console.log("Height: " + $body.height());
 }

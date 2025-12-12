@@ -185,23 +185,35 @@
         <h2>Research Interests</h2>
         <p>Collaboration, Computer Supported Cooperative Work, Human-Computer Interaction, Data Visualization, Physically-Based Rendering, Modeling and Simulation, Game Engines, Distributed Cognition, Augmented and Mixed Reality</p>
     </section>
-    <app-sectioned-list title="Education"
+    <app-sectioned-list sectionId="education"
+                        title="Education"
                         description=""
-                        dataSource="./assets/content-data/education.json"></app-sectioned-list>
-    <app-sectioned-list title="Appointments and Prior Employment"
+                        dataSource="./assets/content-data/education.json"
+                        (contentLoaded)="onComponentContentLoaded($event)"></app-sectioned-list>
+    <app-sectioned-list sectionId="appointments"
+                        title="Appointments and Prior Employment"
                         description=""
-                        dataSource="./assets/content-data/appointments.json"></app-sectioned-list>
-    <app-sectioned-list title="Research Publications"
+                        dataSource="./assets/content-data/appointments.json"
+                        (contentLoaded)="onComponentContentLoaded($event)"></app-sectioned-list>
+    <app-sectioned-list sectionId="publications"
+                        title="Research Publications"
                         description=""
                         dataSource="./assets/content-data/publications.json"
-                        boldText="Michael Kintscher"></app-sectioned-list>
-    <app-sectioned-list title="Service"
+                        boldText="Michael Kintscher"
+                        (contentLoaded)="onComponentContentLoaded($event)"></app-sectioned-list>
+    <app-sectioned-list sectionId="service"
+                        title="Service"
                         description=""
-                        dataSource="./assets/content-data/service.json"></app-sectioned-list>
-    <app-sectioned-list title="Teaching"
+                        dataSource="./assets/content-data/service.json"
+                        (contentLoaded)="onComponentContentLoaded($event)"></app-sectioned-list>
+    <app-sectioned-list sectionId="teaching"
+                        title="Teaching"
                         description=""
-                        dataSource="./assets/content-data/teaching.json"></app-sectioned-list>
-    <app-sectioned-list title="Honors"
+                        dataSource="./assets/content-data/teaching.json"
+                        (contentLoaded)="onComponentContentLoaded($event)"></app-sectioned-list>
+    <app-sectioned-list sectionId="honors"
+                        title="Honors"
                         description=""
-                        dataSource="./assets/content-data/honors.json"></app-sectioned-list>
+                        dataSource="./assets/content-data/honors.json"
+                        (contentLoaded)="onComponentContentLoaded($event)"></app-sectioned-list>
 </div>

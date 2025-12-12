@@ -1,7 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 // Custom types
-import { takeUntil } from 'rxjs/operators';
+import { finalize, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { FileGetterService } from '../../services/file-getter.service';
 import { SectionedStringItemsInterface } from 'src/types/SectionedStringItems.interface';
@@ -20,6 +20,7 @@ export class SectionedListComponent implements OnInit {
   @Input() description = 'A breif description of this showcase!';
   @Input() dataSource = '';
   @Input() boldText = '';
+  @Output() contentLoaded = new EventEmitter();
   listData: SectionedStringItemsInterface[] = [];
   private unsubscribe$: Subject<any> = new Subject();
 
@@ -40,7 +41,13 @@ export class SectionedListComponent implements OnInit {
     const rawListData: SectionedStringItemsInterface[] = [];
 
     this.fileGetterService.getFile(this.dataSource)
-      .pipe(takeUntil(this.unsubscribe$))
+      .pipe(
+        takeUntil(this.unsubscribe$),
+        finalize(() => {
+          console.log("sectioned-list loaded!");
+          this.contentLoaded.emit(this.sectionId);
+        })
+      )
       .subscribe(data => {
         for (let element of data["sections"]) {
           rawListData.push(element);

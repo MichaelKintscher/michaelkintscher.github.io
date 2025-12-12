@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, inject } from '@angular/core';
+import { AfterViewInit, Component, inject, EventEmitter } from '@angular/core';
 import { Event, Router, NavigationEnd } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
@@ -39,7 +39,19 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    // Run the function from the js code AFTER the app component content is loaded.
+
+  }
+
+  // Fires when the router outlet is activated.
+  public onRouterOutletActivate(event : any) {
+    console.log(event);
+
+    // Subscribe to the components loaded event.
+    event.contentLoaded.subscribe(this.onPageComponentsLoaded);
+  }
+
+  private onPageComponentsLoaded() {
+    console.log("we done!");
     finishJsSetup();
   }
 
