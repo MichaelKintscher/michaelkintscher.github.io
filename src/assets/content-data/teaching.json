@@ -47,6 +47,10 @@
             "title": "Project Mentor",
             "items": [
                 {
+                    "bullet": "Spring 2026",
+                    "text": "CSE 578 Data Visualization"
+                },
+                {
                     "bullet": "Fall 2025",
                     "text": "CSE 578 Data Visualization"
                 },
@@ -71,6 +75,14 @@
         {
             "title": "Guest Lectures",
             "items": [
+                {
+                    "bullet": "Spring 2026",
+                    "text": "\"Collaborative Data Visualization\". In CSE 578."
+                },
+                {
+                    "bullet": "Spring 2026",
+                    "text": "\"Laboratory and Field Experiments\". In ASB 500."
+                },
                 {
                     "bullet": "Fall 2025",
                     "text": "\"Collaborative Data Visualization\". In CSE 578 and CSE 478."
