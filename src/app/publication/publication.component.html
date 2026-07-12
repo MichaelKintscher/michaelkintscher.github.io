@@ -31,18 +31,19 @@
     <div>
       <p class="publisher-p"><i>{{ publisher }}</i></p>
       <ul class="actions">
+        <!-- If there is an alternate link, render it. -->
+        @if (altLink != '') {
+          <li>
+            <a href="{{ altLink }}" target="_blank">
+              <div class="publication-link">Link</div>
+            </a>
+          </li>
+        }
         <!-- If there is a DOI, render the DOI link. -->
         @if (doi != '') {
           <li>
             <a href="{{ doi }}" target="_blank">
               <div class="publication-link">DOI</div>
-            </a>
-          </li>
-        } @else if (altLink != '') {
-          <!-- Else render the alternate link. -->
-          <li>
-            <a href="{{ altLink }}" target="_blank">
-              <div class="publication-link">Link</div>
             </a>
           </li>
         }

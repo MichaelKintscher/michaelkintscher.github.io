@@ -1,16 +1,22 @@
 {
   "listdata": [
     {
+      "title": "Communicating the Value of Publicly Funded Science",
+      "description": "Ideas on how to communicate the value of publicly funded science.",
+      "imageSource": "../../assets/images/fulls/cacm-article-2026.png",
+      "link": "/publications#williams-pierce2026communicating"
+    },
+    {
       "title": "Collaborative Visualization Survey",
       "description": "A meta-analysis of collaborative data visualization.",
       "imageSource": "../../assets/images/fulls/collab-vis-survey.jpg",
-      "link": "/research#project-one"
+      "link": "/research#project-collab-vis-survey"
     },
     {
       "title": "Theory of Collaboration",
       "description": "A new way of looking at CSCW systems.",
       "imageSource": "../../assets/images/fulls/theory-of-collab.jpg",
-      "link": "/research#project-two"
+      "link": "/research#project-cscw-theory"
     },
     {
       "title": "Orchestrating Data Visualization",

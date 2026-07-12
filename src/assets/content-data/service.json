@@ -1,6 +1,15 @@
 {
     "sections": [
         {
+            "title": "Paper Reviewer",
+            "items": [
+                {
+                    "bullet": "2026",
+                    "text": "ACM Symposium on Virtual Reality Software and Technology (VRST)"
+                }
+            ]
+        },
+        {
             "title": "University Boards and Committees",
             "items": [
                 {

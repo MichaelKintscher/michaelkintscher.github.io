@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "title": "Identifying Productive Communication with the Public for Scientific Communities in a Fraught Fiscal Time",
+      "title": "Communicating the Value of Publicly Funded Science",
       "authors": [
         "Caro Williams-Pierce",
         "Michael Kintscher",
@@ -10,13 +10,13 @@
       ],
       "publisher": "Communications of the ACM. 2026.",
       "description": "stuff",
-      "image_source": "../../assets/images/fulls/acm-comms-article.jpg",
-      "doi": "",
-      "alt_link": "",
-      "paper_source": "../../assets/publications/williams-pierce2026identifying.pdf",
+      "image_source": "../../assets/images/fulls/cacm-article-2026.png",
+      "doi": "https://doi.org/10.1145/3771773",
+      "alt_link": "https://cacm.acm.org/opinion/communicating-the-value-of-publicly-funded-science/",
+      "paper_source": "../../assets/publications/williams-pierce2026communicating.pdf",
       "supplemental_materials": "",
       "category": "Full Paper",
-      "cite_key": "williams-pierce2026identifying"
+      "cite_key": "williams-pierce2026communicating"
     },
     {
       "title": "VizCoach: Designing an Orchestration-Based Tool for Data Visualization Education",
