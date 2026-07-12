@@ -117,6 +117,9 @@
               "src/assets/html-template/js/main.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
