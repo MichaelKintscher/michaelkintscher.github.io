@@ -18,6 +18,15 @@
             ]
         },
         {
+            "title": "Posters",
+            "items": [
+                {
+                    "bullet": "[P1]",
+                    "text": "Michael Kintscher, Ethan Stam, Rajiv Ranasinghe, Ayan Biswas, and Divya Banesh. \"Uncertainty Quantification for Domain Agnostic Multi-Agent Workflows for Scientific Visualization\" In Los Alamos National Laboratory Student Symposium. 2026."
+                }
+            ]
+        },
+        {
             "title": "Peer-Reviewed Contest Entries",
             "items": [
                 {
