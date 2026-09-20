@@ -5,6 +5,10 @@
             "items": [
                 {
                     "bullet": "2026",
+                    "text": "IEEE Access"
+                },
+                {
+                    "bullet": "2026",
                     "text": "ACM Symposium on Virtual Reality Software and Technology (VRST)"
                 }
             ]

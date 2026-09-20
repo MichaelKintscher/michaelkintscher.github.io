@@ -34,6 +34,26 @@
     }
   </section>
 
+  <!-- Posters -->
+  <section id="posters-section">
+    <h2>Posters</h2>
+
+    @for (publication of posters; track publication) {
+      <div class="publication-block">
+        <app-publication [title]="publication.title"
+          [authors]="publication.authors"
+          [publisher]="publication.publisher"
+          [description]="publication.description"
+          [imageSource]="publication.image_source"
+          [doi]="publication.doi"
+          [altLink]="publication.alt_link"
+          [paperSource]="publication.paper_source"
+          [supplementalMaterials]="publication.supplemental_materials"
+        [category]="publication.category"></app-publication>
+      </div>
+    }
+  </section>
+
   <!-- Contest Entries -->
   <section id="contest-entries-section">
     <h2>Peer-Reviewed Contest Entries</h2>
